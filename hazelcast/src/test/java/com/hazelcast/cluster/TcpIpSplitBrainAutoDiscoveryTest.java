@@ -50,7 +50,7 @@ public class TcpIpSplitBrainAutoDiscoveryTest extends HazelcastTestSupport {
     public static ChangeLoggingRule changeLoggingRule = new ChangeLoggingRule("log4j2-info.xml");
 
     @Parameters(name = "advancedNetwork:{0}")
-    public static Object[] paramteters() {
+    public static Object[] parameters() {
         return new Object[] { false, true };
     }
 
