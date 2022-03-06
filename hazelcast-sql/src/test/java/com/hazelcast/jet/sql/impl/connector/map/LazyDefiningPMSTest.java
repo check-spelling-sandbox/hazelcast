@@ -120,7 +120,7 @@ public class LazyDefiningPMSTest extends SimpleTestInClusterSupport {
     }
 
     private static class TestGenPSupplier implements ProcessorSupplier {
-        private Address ownderAddress;
+        private Address ownerAddress;
 
         @Override
         public void init(@NotNull ProcessorSupplier.Context context) {
@@ -128,10 +128,10 @@ public class LazyDefiningPMSTest extends SimpleTestInClusterSupport {
             Map<Address, int[]> addressMap = context.partitionAssignment();
             for (Entry<Address, int[]> entry : addressMap.entrySet()) {
                 if (Arrays.equals(memberPartitions, entry.getValue())) {
-                    ownderAddress = entry.getKey();
+                    ownerAddress = entry.getKey();
                 }
             }
-            if (ownderAddress == null) {
+            if (ownerAddress == null) {
                 throw new AssertionError("No owner address found");
             }
         }
@@ -139,7 +139,7 @@ public class LazyDefiningPMSTest extends SimpleTestInClusterSupport {
         @Nonnull
         @Override
         public Collection<? extends Processor> get(int count) {
-            return Collections.nCopies(count, new GenP(ownderAddress));
+            return Collections.nCopies(count, new GenP(ownerAddress));
         }
     }
 
