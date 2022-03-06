@@ -133,7 +133,7 @@ The new REST endpoint for getting and updating the member list is
 endpoint to fetch the current member list from the member and POST request for
 updating the member (note that in Hazelcast we're always using HTTP POST
 requests for updating different elements so I followed that convention). API
-documention for this request is as follow (example request/response for this
+documentation for this request is as follow (example request/response for this
 endpoint): 
 
 Request the fetch current member list in the join config:

@@ -38,7 +38,7 @@ import static java.util.Collections.unmodifiableSet;
  * </ul>
  *
  * @see <a href="https://docs.hazelcast.com/hazelcast/latest/system-properties">
- * System properties documentaiton</a>
+ * System properties documentation</a>
  */
 public class HazelcastProperties {
 
