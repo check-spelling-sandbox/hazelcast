@@ -152,8 +152,8 @@ class AddressUtilTest {
             fe80::62c5:*:fe05-fffddd:480a       | false
             fe80::62c5:*:fe05-ffxd:480a         | false
             """)
-    void testIsIpAddress(String address, boolean isIPAdress) {
-        assertEquals(isIPAdress, AddressUtil.isIpAddress(address));
+    void testIsIpAddress(String address, boolean isIPAddress) {
+        assertEquals(isIPAddress, AddressUtil.isIpAddress(address));
     }
 
     @Test
