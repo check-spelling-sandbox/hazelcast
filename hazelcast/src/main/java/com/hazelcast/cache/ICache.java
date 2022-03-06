@@ -418,7 +418,7 @@ public interface ICache<K, V>
 
     /**
      * Asynchronously removes the mapping for the given key if and only if the
-     * currently mapped value equals to the value of <code>oldValue</code>.
+     * currently mapped value equals the value of <code>oldValue</code>.
      * <p>
      * This is equivalent to:
      * <pre>

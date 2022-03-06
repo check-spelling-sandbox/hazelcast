@@ -200,7 +200,7 @@ public interface ConcurrentHeapMemoryAccessor extends HeapMemoryAccessor {
     /**
      * Compares and swaps a long value to an expected value atomically
      * based by given object with given offset
-     * if and only if its current value equals to the expected value.
+     * if and only if its current value equals the expected value.
      *
      * @param base     the object where long value will be written to
      * @param offset   offset from object's base to the accessed location
