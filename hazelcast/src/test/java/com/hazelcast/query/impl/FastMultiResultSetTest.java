@@ -105,7 +105,7 @@ public class FastMultiResultSetTest {
     }
 
     @Test(expected = UnsupportedOperationException.class)
-    public void testIterator_addUnsopperted() {
+    public void testIterator_addUnsupported() {
         result.add(mock(QueryableEntry.class));
     }
 
