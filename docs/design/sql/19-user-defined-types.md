@@ -355,7 +355,7 @@ We distinguish circular dependencies in types and in instances.
 
 ### Circular dependencies in types
 
-This happens when from type `A` exists a field path that that is also of type
+This happens when from type `A` exists a field path that is also of type
 `A`. Most simple example is a self-reference, such as:
 
 ```sql
