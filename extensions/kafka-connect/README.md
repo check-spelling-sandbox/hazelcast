@@ -16,7 +16,7 @@ directly.
 
 ### Source Attributes
 
-|  Atrribute  | Value |
+|  Attribute  | Value |
 |:-----------:|-------|
 | Has Source  | Yes   |
 |    Batch    | Yes   |
@@ -25,7 +25,7 @@ directly.
 
 ### Sink Attributes
 
-|  Atrribute  | Value |
+|  Attribute  | Value |
 |:-----------:|-------|
 |  Has Sink   | No    |
 | Distributed | No    |
