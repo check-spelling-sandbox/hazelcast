@@ -192,7 +192,7 @@ public final class PortableSerializer implements StreamSerializer<Object> {
         BufferObjectDataOutput output = (BufferObjectDataOutput) out;
         DefaultPortableWriter writer = new DefaultPortableWriter(this, output, cd);
         Set<String> fieldNames = cd.getFieldNames();
-        //TODO sancar why not use field operaitons
+        //TODO sancar why not use field operations
         for (String fieldName : fieldNames) {
             switch (cd.getFieldType(fieldName)) {
                 case PORTABLE:
@@ -326,7 +326,7 @@ public final class PortableSerializer implements StreamSerializer<Object> {
         ClassDefinition cd = setupPositionAndDefinition(in, factoryId, classId, version);
         PortableInternalGenericRecord reader = new PortableInternalGenericRecord(this, in, cd);
         GenericRecordBuilder genericRecordBuilder = GenericRecordBuilder.portable(cd);
-        //TODO sancar why not use field operaitons
+        //TODO sancar why not use field operations
         for (String fieldName : cd.getFieldNames()) {
             switch (cd.getFieldType(fieldName)) {
                 case PORTABLE:
