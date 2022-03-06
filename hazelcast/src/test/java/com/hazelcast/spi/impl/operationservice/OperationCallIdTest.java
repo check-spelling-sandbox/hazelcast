@@ -142,7 +142,7 @@ public class OperationCallIdTest {
 
     @Test
     public void when_concurrentlySetCallId_thenOnlyOneSucceeds() {
-        new ConcurrentExcerciser().run();
+        new ConcurrentExerciser().run();
     }
 
     class MockOperation extends Operation {
@@ -152,7 +152,7 @@ public class OperationCallIdTest {
         }
     }
 
-    class ConcurrentExcerciser {
+    class ConcurrentExerciser {
         final Operation op = new MockOperation();
         volatile AssertionFailedError testFailure;
         volatile int activationCount;
