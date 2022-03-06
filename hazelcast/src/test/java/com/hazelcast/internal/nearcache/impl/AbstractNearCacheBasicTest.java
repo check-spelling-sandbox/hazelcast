@@ -1540,7 +1540,7 @@ public abstract class AbstractNearCacheBasicTest<NK, NV> extends HazelcastTestSu
 
     /**
      * Checks that the Near Cache updates value for keys which are already in the Near Cache,
-     * even if the Near Cache is full an the eviction is disabled (via {@link com.hazelcast.config.EvictionPolicy#NONE}.
+     * even if the Near Cache is full and eviction is disabled (via {@link com.hazelcast.config.EvictionPolicy#NONE}.
      */
     @Test
     public void whenNearCacheIsFull_thenPutOnSameKeyShouldUpdateValue_onNearCacheAdapter() {
@@ -1549,7 +1549,7 @@ public abstract class AbstractNearCacheBasicTest<NK, NV> extends HazelcastTestSu
 
     /**
      * Checks that the Near Cache updates value for keys which are already in the Near Cache,
-     * even if the Near Cache is full an the eviction is disabled (via {@link com.hazelcast.config.EvictionPolicy#NONE}.
+     * even if the Near Cache is full and eviction is disabled (via {@link com.hazelcast.config.EvictionPolicy#NONE}.
      */
     @Test
     public void whenNearCacheIsFull_thenPutOnSameKeyShouldUpdateValue_onDataAdapter() {
