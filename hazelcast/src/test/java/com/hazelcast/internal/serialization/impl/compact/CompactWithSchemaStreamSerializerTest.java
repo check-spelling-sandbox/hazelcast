@@ -96,7 +96,7 @@ public class CompactWithSchemaStreamSerializerTest {
         EmployeeDTO employeeDTO = new EmployeeDTO(30, 102310312);
         Data data = serializationService.toDataWithSchema(employeeDTO);
 
-        // Create a second schema service so that schemas are not shared accross these two
+        // Create a second schema service so that schemas are not shared across these two
         // This is to make sure that toObject call will use the schema in the data
         SerializationService serializationService2 = createSerializationService();
         EmployeeDTO actual = serializationService2.toObject(data);
@@ -112,7 +112,7 @@ public class CompactWithSchemaStreamSerializerTest {
 
         Data data = serializationService.toDataWithSchema(employeeData);
 
-        // Create a second schema service so that schemas are not shared accross these two
+        // Create a second schema service so that schemas are not shared across these two
         // This is to make sure that toObject call will use the schema in the data
         SerializationService serializationService2 = createSerializationService();
         EmployeeDTO actual = serializationService2.toObject(data);
@@ -127,7 +127,7 @@ public class CompactWithSchemaStreamSerializerTest {
 
         Data data = serializationService.toDataWithSchema(expected);
 
-        // Create a second schema service so that schemas are not shared accross these two
+        // Create a second schema service so that schemas are not shared across these two
         // This is to make sure that toObject call will use the schema in the data
         SerializationService serializationService2 = createSerializationService();
         NodeDTO actual = serializationService2.toObject(data);
