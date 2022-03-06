@@ -72,7 +72,7 @@ public class AttributeConfigTest {
     }
 
     @Test(expected = IllegalArgumentException.class)
-    public void diactricsInName() {
+    public void diacriticsInName() {
         new AttributeConfig("ąćżźć^∆Ō∑ęĺłęŌ", "com.test.Extractor");
     }
 
