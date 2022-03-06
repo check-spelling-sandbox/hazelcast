@@ -153,7 +153,7 @@ public class MapKeyLoaderUtilTest extends HazelcastTestSupport {
         // assert no batch is bigger than nodeWideLimit.
         assertEquals(0,
                 batchSizes.stream().filter(size -> size > nodeWideLimit).count());
-        // assert sum of all batches equals to entryCount.
+        // assert sum of all batches equals entryCount.
         assertEquals(entryCount,
                 batchSizes.stream().mapToInt(size -> size).sum());
 

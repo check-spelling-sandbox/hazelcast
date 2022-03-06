@@ -76,7 +76,7 @@ joins and multiple tables, because there will be too many alternatives to consid
 indexes to the search space based on some heuristics. 
 
 The cost model works as follows:
-1. Get the expected number of rows to scan (`SCANNED_ROWS`). For the direct scan it equals to the number of rows in the map. For 
+1. Get the expected number of rows to scan (`SCANNED_ROWS`). For the direct scan it equals the number of rows in the map. For 
 the index scan this is `mapRowCount * selectivity(indexFilter)`.
 1. Get the expected number of returned rows (`RETURNED_ROWS`), that depend on the selectivity of the original filter.
 1. Assign a weight to the scanned rows, based on the access method (`SCAN_MULTIPLIER`). We assume that a direct scan is cheaper 

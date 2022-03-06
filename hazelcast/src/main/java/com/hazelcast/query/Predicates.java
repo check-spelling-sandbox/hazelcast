@@ -105,7 +105,7 @@ import java.util.Set;
  * </ul>
  * <li>{@link Boolean} type
  * <ul>
- * <li>A string that case-insensitively equals to {@code "true"} is converted to {@code true}, all other strings are
+ * <li>A string that case-insensitively equals {@code "true"} is converted to {@code true}, all other strings are
  * converted to {@code false}.
  * <li>Any non-zero numeric value is converted to {@code true}, the zero is converted to {@code false}.
  * </ul>

@@ -749,7 +749,7 @@ public final class ClusterProperty {
 
     /**
      * Maximum number of anti-entropy partition replications to be executed on a member.
-     * By default, equals to {@link #PARTITION_MAX_PARALLEL_MIGRATIONS}.
+     * By default, equals {@link #PARTITION_MAX_PARALLEL_MIGRATIONS}.
      */
     public static final HazelcastProperty PARTITION_MAX_PARALLEL_REPLICATIONS
             = new HazelcastProperty("hazelcast.partition.max.parallel.replications", PARTITION_MAX_PARALLEL_MIGRATIONS);
