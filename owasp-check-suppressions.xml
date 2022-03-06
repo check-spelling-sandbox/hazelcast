@@ -30,63 +30,63 @@
     </suppress>
     <suppress>
         <notes><![CDATA[
-        False positive. The flaws are relatated to the Hazelcast version and not the jsurfer.
+        False positive. The flaws are related to the Hazelcast version and not the jsurfer.
         ]]></notes>
         <packageUrl regex="true">^pkg:maven/com\.hazelcast\.jsurfer/jsurfer\-.*$</packageUrl>
         <cpe>cpe:/a:hazelcast:hazelcast</cpe>
     </suppress>
     <suppress>
         <notes><![CDATA[
-        False positive. The flaws are relatated to the postgres version and not the debezium-connector-postgres.
+        False positive. The flaws are related to the postgres version and not the debezium-connector-postgres.
         ]]></notes>
         <packageUrl regex="true">^pkg:maven/io\.debezium/debezium\-connector\-postgres@.*$</packageUrl>
         <cpe>cpe:/a:postgresql:postgresql</cpe>
     </suppress>
     <suppress>
         <notes><![CDATA[
-        False positive. The flaws are relatated to the Hadoop version and not the shaded guava.
+        False positive. The flaws are related to the Hadoop version and not the shaded guava.
         ]]></notes>
         <packageUrl regex="true">^pkg:maven/org\.apache\.hadoop\.thirdparty/hadoop\-shaded\-guava@.*$</packageUrl>
         <cpe>cpe:/a:apache:hadoop</cpe>
     </suppress>
     <suppress>
         <notes><![CDATA[
-        False positive. The flaws are relatated to the Hadoop version and not the shaded protobuf.
+        False positive. The flaws are related to the Hadoop version and not the shaded protobuf.
         ]]></notes>
         <packageUrl regex="true">^pkg:maven/org\.apache\.hadoop\.thirdparty/hadoop\-shaded\-protobuf_3_7@.*$</packageUrl>
         <cpe>cpe:/a:apache:hadoop</cpe>
     </suppress>
     <suppress>
         <notes><![CDATA[
-        False positive. The flaws are relatated to the Hadoop version and not the shaded protobuf.
+        False positive. The flaws are related to the Hadoop version and not the shaded protobuf.
         ]]></notes>
         <packageUrl regex="true">^pkg:maven/org\.apache\.hadoop\.thirdparty/hadoop\-shaded\-protobuf_3_21@.*$</packageUrl>
         <cpe>cpe:/a:apache:hadoop</cpe>
     </suppress>
     <suppress>
         <notes><![CDATA[
-        False positive. The flaws are relatated to the MySQL version and not the MySQL Binary Log connector.
+        False positive. The flaws are related to the MySQL version and not the MySQL Binary Log connector.
         ]]></notes>
         <packageUrl regex="true">^pkg:maven/com\.github\.shyiko/mysql\-binlog\-connector\-java@.*$</packageUrl>
         <cpe>cpe:/a:mysql:mysql</cpe>
     </suppress>
     <suppress>
         <notes><![CDATA[
-        False positive. The flaws are relatated to the MySQL version and not the MySQL Binary Log connector.
+        False positive. The flaws are related to the MySQL version and not the MySQL Binary Log connector.
         ]]></notes>
         <packageUrl regex="true">^pkg:maven/com\.zendesk/mysql\-binlog\-connector\-java@.*$</packageUrl>
         <cpe>cpe:/a:mysql:mysql</cpe>
     </suppress>
     <suppress>
         <notes><![CDATA[
-        False positive. The flaws are relatated to the MySQL version and not the MySQL Debezium connector.
+        False positive. The flaws are related to the MySQL version and not the MySQL Debezium connector.
         ]]></notes>
         <packageUrl regex="true">^pkg:maven/io\.debezium/debezium\-connector\-mysql@.*$</packageUrl>
         <cpe>cpe:/a:mysql:mysql</cpe>
     </suppress>
     <suppress>
         <notes><![CDATA[
-        False positive. The flaws are relatated to the WildFly and OpenSSL version and not the wildfly-openssl library.
+        False positive. The flaws are related to the WildFly and OpenSSL version and not the wildfly-openssl library.
         The OpenSSL is linked dynamically in the wildly-openssl.
         ]]></notes>
         <packageUrl regex="true">^pkg:maven/org\.wildfly\.openssl/wildfly\-openssl.*@.*$</packageUrl>
