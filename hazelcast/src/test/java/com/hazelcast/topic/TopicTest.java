@@ -156,7 +156,7 @@ public class TopicTest extends HazelcastTestSupport {
         ITopic<String> topic = instance.getTopic(randomName);
         topic.addMessageListener(message -> count.incrementAndGet());
 
-        final List<String> messages = Arrays.asList("message 1", "message 2", "messgae 3");
+        final List<String> messages = Arrays.asList("message 1", "message 2", "message 3");
         topic.publishAll(messages);
         assertTrueEventually(() -> assertEquals(messages.size(), count.get()));
     }
@@ -171,7 +171,7 @@ public class TopicTest extends HazelcastTestSupport {
         HazelcastInstance instance = factory.newHazelcastInstance();
         ITopic<String> topic = instance.getTopic(randomName);
         topic.addMessageListener(message -> count.incrementAndGet());
-        final List<String> messages = Arrays.asList("message 1", "message 2", "messgae 3");
+        final List<String> messages = Arrays.asList("message 1", "message 2", "message 3");
         final CompletableFuture<Void> f = topic.publishAllAsync(messages).toCompletableFuture();
         assertCompletesEventually(f);
         assertTrueEventually(() -> assertEquals(messages.size(), count.get()));

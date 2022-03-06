@@ -77,7 +77,7 @@ out: wm(13)
 #### Idle message
 
 An input can contain a special `IDLE_MESSAGE` that excludes the input stream on
-which it appeared from coalescing. When an `IDLE_MESAGE` is received from an
+which it appeared from coalescing. When an `IDLE_MESSAGE` is received from an
 input, that input is excluded from coalescing and the WM is output based on the
 minimum of the remaining non-idle inputs. Any new WM or event from that input
 clears the idle status and includes that input into coalescing again.
