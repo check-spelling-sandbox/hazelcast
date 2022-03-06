@@ -999,7 +999,7 @@ public abstract class SqlIndexAbstractTest extends SqlIndexTestSupport {
 
     private Query query(String condition, Object... parameters) {
         // parameters == null if single null argument was passed.
-        // lack of arguments => parameters is emtpy array
+        // lack of arguments => parameters is empty array
         return new Query(sql(condition), parameters != null ? Arrays.asList(parameters) : Arrays.asList(new Object[]{null}));
     }
 
