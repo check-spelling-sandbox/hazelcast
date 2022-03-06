@@ -34,7 +34,7 @@ import static com.hazelcast.client.impl.protocol.codec.builtin.FixedSizeTypesCod
  */
 
 /**
- * Applies the user defined EntryProcessor to the entry mapped by the key. Returns the the object which is result of
+ * Applies the user defined EntryProcessor to the entry mapped by the key. Returns the object which is result of
  * the process() method of EntryProcessor.
  */
 @SuppressWarnings("unused")
