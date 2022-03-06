@@ -35,7 +35,7 @@ import static java.lang.String.valueOf;
 import static org.assertj.core.api.Assertions.assertThat;
 
 /**
- * Regression test for a deadlock on either IO thread or reponse thread.
+ * Regression test for a deadlock on either IO thread or response thread.
  * A response message is processed either on IO thread or response thread
  * depending on which response handler is used:
  * - SyncResponseHandler always uses the IO thread to process the message
