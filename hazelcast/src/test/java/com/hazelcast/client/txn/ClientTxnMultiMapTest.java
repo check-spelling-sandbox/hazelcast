@@ -155,9 +155,9 @@ public class ClientTxnMultiMapTest {
 
         TransactionContext tx = client.newTransactionContext();
         tx.beginTransaction();
-        TransactionalMultiMap mulitMapTxn = tx.getMultiMap(mapName);
-        mulitMapTxn.put(key, value);
-        mulitMapTxn.put(key, value);
+        TransactionalMultiMap multiMapTxn = tx.getMultiMap(mapName);
+        multiMapTxn.put(key, value);
+        multiMapTxn.put(key, value);
         tx.rollbackTransaction();
 
         assertEquals(0, multiMap.get(key).size());
@@ -174,10 +174,10 @@ public class ClientTxnMultiMapTest {
 
         TransactionContext tx = client.newTransactionContext();
         tx.beginTransaction();
-        TransactionalMultiMap mulitMapTxn = tx.getMultiMap(mapName);
-        mulitMapTxn.put(key, "newValue");
-        mulitMapTxn.put("newKey", value);
-        assertEquals(3, mulitMapTxn.size());
+        TransactionalMultiMap multiMapTxn = tx.getMultiMap(mapName);
+        multiMapTxn.put(key, "newValue");
+        multiMapTxn.put("newKey", value);
+        assertEquals(3, multiMapTxn.size());
 
         tx.commitTransaction();
     }
@@ -193,10 +193,10 @@ public class ClientTxnMultiMapTest {
 
         TransactionContext tx = client.newTransactionContext();
         tx.beginTransaction();
-        TransactionalMultiMap mulitMapTxn = tx.getMultiMap(mapName);
-        mulitMapTxn.put(key, "newValue");
+        TransactionalMultiMap multiMapTxn = tx.getMultiMap(mapName);
+        multiMapTxn.put(key, "newValue");
 
-        assertEquals(2, mulitMapTxn.valueCount(key));
+        assertEquals(2, multiMapTxn.valueCount(key));
 
         tx.commitTransaction();
     }
@@ -214,8 +214,8 @@ public class ClientTxnMultiMapTest {
 
         TransactionContext tx = client.newTransactionContext();
         tx.beginTransaction();
-        TransactionalMultiMap mulitMapTxn = tx.getMultiMap(mapName);
-        Collection c = mulitMapTxn.get(key);
+        TransactionalMultiMap multiMapTxn = tx.getMultiMap(mapName);
+        Collection c = multiMapTxn.get(key);
         assertFalse(c.isEmpty());
         tx.commitTransaction();
     }
@@ -233,8 +233,8 @@ public class ClientTxnMultiMapTest {
 
         TransactionContext tx = client.newTransactionContext();
         tx.beginTransaction();
-        TransactionalMultiMap mulitMapTxn = tx.getMultiMap(mapName);
-        Collection c = mulitMapTxn.remove(key);
+        TransactionalMultiMap multiMapTxn = tx.getMultiMap(mapName);
+        Collection c = multiMapTxn.remove(key);
         assertFalse(c.isEmpty());
         tx.commitTransaction();
     }
