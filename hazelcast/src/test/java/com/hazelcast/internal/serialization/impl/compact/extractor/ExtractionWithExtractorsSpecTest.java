@@ -50,7 +50,7 @@ import static java.util.Arrays.asList;
  * <p>
  * Extraction mechanism: EXTRACTOR-BASED EXTRACTION
  * <p>
- * This test is parametrised on two axes (see the parametrisationData() method):
+ * This test is parametrised on two axes (see the parameterizationData() method):
  * - in memory format
  * - indexing
  * - extraction in collections and arrays
@@ -85,7 +85,7 @@ public class ExtractionWithExtractorsSpecTest extends AbstractExtractionTest {
     }
 
     @Parameterized.Parameters(name = "{index}: {0}")
-    public static Collection<Object[]> parametrisationData() {
+    public static Collection<Object[]> parameterizationData() {
         return axes(asList(NO_INDEX, HASH, BITMAP));
     }
 
