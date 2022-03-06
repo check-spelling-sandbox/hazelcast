@@ -76,7 +76,7 @@ public abstract class AbstractJsonSchemaTest {
         } else if (jsonValue.isArray()) {
             validateJsonArray(originalString, new JsonPattern(), jsonValue.asArray(), description, input, null);
         } else {
-            // shoult not reach here
+            // should not reach here
             fail();
         }
     }
