@@ -5,7 +5,7 @@
 
 |||
 |---|---|
-|Related Github issues|[Pull Request](https://github.com/hazelcast/hazelcast/pull/22480)|
+|Related GitHub issues|[Pull Request](https://github.com/hazelcast/hazelcast/pull/22480)|
 |Document Status / Completeness|REJECTED|
 |Developer(s)|Sasha Syrotenko|
 |Technical Reviewers|Viliam Durina|

@@ -2,4 +2,4 @@ blank_issues_enabled: true
 contact_links:
   - name: Hazelcast community Slack
     url: https://slack.hazelcast.com/
-    about: We're not actively answering questions in Github so feel free to ask one on Slack
+    about: We're not actively answering questions in GitHub so feel free to ask one on Slack

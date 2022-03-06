@@ -2,7 +2,7 @@
 
 |                                |                            |
 |--------------------------------|----------------------------|
-| Related Github issues          | TODO                       |
+| Related GitHub issues          | TODO                       |
 | Document Status / Completeness | Approved                   |
 | Author(s)                      | Viliam Durina              |
 | Developer(s)                   | Sasha Syrotenko, Burak Gök |
