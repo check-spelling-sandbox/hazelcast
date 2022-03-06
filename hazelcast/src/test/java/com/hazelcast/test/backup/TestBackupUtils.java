@@ -137,7 +137,7 @@ public final class TestBackupUtils {
 
             String msg;
             if (expirationTime == NON_EXISTENT_KEY) {
-                msg = String.format("Non existent key on backup partition key=%s, accessor=%s", key, accessor);
+                msg = String.format("Nonexistent key on backup partition key=%s, accessor=%s", key, accessor);
             } else {
                 // expirationTime is set to Duration.ETERNAL if no expiry policy is defined.
                 msg = String.format("key=%s, expirationTime=%d, accessor=%s", key, expirationTime, accessor);

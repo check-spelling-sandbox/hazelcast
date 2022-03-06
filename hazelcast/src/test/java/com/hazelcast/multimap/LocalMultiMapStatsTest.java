@@ -363,7 +363,7 @@ public class LocalMultiMapStatsTest extends HazelcastTestSupport {
     public void testLockedEntryCount_emptyMultiMap() {
         MultiMap<String, String> map = getMultiMap();
 
-        map.lock("non-existent-key");
+        map.lock("nonexistent-key");
 
         LocalMapStats stats = getMultiMapStats();
         assertEquals(1, stats.getLockedEntryCount());
@@ -375,7 +375,7 @@ public class LocalMultiMapStatsTest extends HazelcastTestSupport {
 
         map.put("key", "value");
         map.lock("key");
-        map.lock("non-existent-key");
+        map.lock("nonexistent-key");
 
         LocalMapStats stats = getMultiMapStats();
         assertEquals(2, stats.getLockedEntryCount());

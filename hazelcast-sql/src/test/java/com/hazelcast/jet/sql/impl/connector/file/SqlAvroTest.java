@@ -273,7 +273,7 @@ public class SqlAvroTest extends SqlTestSupport {
     @Test
     public void when_columnsSpecified_then_fileNotAccessed() {
         String name = randomName();
-        fileMapping(name, new File("/non-existent-directory/foo.avro"))
+        fileMapping(name, new File("/nonexistent-directory/foo.avro"))
                 .fields("field INT")
                 .create();
     }
@@ -295,7 +295,7 @@ public class SqlAvroTest extends SqlTestSupport {
                 .create();
 
         assertThat(sqlService.execute("SELECT * FROM " + name).iterator().hasNext())
-                .describedAs("no results from non existing file")
+                .describedAs("no results from nonexistent file")
                 .isFalse();
     }
 

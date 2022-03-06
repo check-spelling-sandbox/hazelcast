@@ -651,7 +651,7 @@ public class SqlPortableTest extends SqlTestSupport {
                 .hasMessage("Mismatch between declared and resolved type: id");
 
         String name = randomName();
-        // we map a non-existent field. This works, but will fail at runtime
+        // we map a nonexistent field. This works, but will fail at runtime
         sqlService.execute("CREATE MAPPING " + name + " ("
                 + "foo INT"
                 + ") TYPE IMap "

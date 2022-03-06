@@ -1939,10 +1939,10 @@ public interface IMap<K, V> extends ConcurrentMap<K, V>, BaseMap<K, V>, Iterable
      * <p>
      * You get a lock whether the value is present in the map or not. Other
      * threads (possibly on other systems) would block on their invoke of
-     * {@code lock()} until the non-existent key is unlocked. If the lock
+     * {@code lock()} until the nonexistent key is unlocked. If the lock
      * holder introduces the key to the map, the {@code put()} operation
-     * is not blocked. If a thread not holding a lock on the non-existent key
-     * tries to introduce the key while a lock exists on the non-existent key,
+     * is not blocked. If a thread not holding a lock on the nonexistent key
+     * tries to introduce the key while a lock exists on the nonexistent key,
      * the {@code put()} operation blocks until it is unlocked.
      * <p>
      * Scope of the lock is this map only.
