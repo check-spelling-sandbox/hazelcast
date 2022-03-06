@@ -55,7 +55,7 @@ public class DelegateAndSkipOnConcurrentExecutionDecoratorTest
 
 
     @Test
-    public void givenTheTaskIsAlreadyRunning_whenThreadAttemptToExecuteIt_theExutionWillBeSkipped() throws InterruptedException {
+    public void givenTheTaskIsAlreadyRunning_whenThreadAttemptToExecuteIt_theExecutionWillBeSkipped() throws InterruptedException {
         final ResumableCountingRunnable task = new ResumableCountingRunnable();
 
         final AtomicInteger counter = new AtomicInteger();

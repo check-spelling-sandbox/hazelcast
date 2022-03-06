@@ -277,16 +277,16 @@ Exported snapshots are performed as follows:
 
 First case will benefit from added protection against corruption.
 In addition, for terminal exported snapshot Jet will ensure that information about it
-was safely written to `JobExectutionRecord`. In case of indeterminate result or crash during 2nd phase
+was safely written to `JobExecutionRecord`. In case of indeterminate result or crash during 2nd phase
 the job will be restarted and may be restored from the just exported snapshot
 (such behavior was not possible before). This is a special case, when most recent snapshot
 is not an automatic snapshot but an exported one (which was meant to be terminal, but was not terminal due to the failure).
 
 Second case creates a dedicated Jet job which copies `IMap` content of last successful
-snapshot pointed by `JobExectutionRecord` using regular `readMapP` and `writeMapP` processors.
+snapshot pointed by `JobExecutionRecord` using regular `readMapP` and `writeMapP` processors.
 They will not be extended to support `failOnIndeterminateOperationState` setting,
 so it will still be possible that the exported snapshot can be silently corrupted.
-Note that in this case Jet does not ensure that `JobExectutionRecord` is safe before export.
+Note that in this case Jet does not ensure that `JobExecutionRecord` is safe before export.
 
 ### Rolling upgrade
 
