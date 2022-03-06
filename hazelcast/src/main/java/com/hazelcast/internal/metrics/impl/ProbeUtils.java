@@ -32,9 +32,9 @@ class ProbeUtils {
             flatten(clazz.getSuperclass(), result);
         }
 
-        for (final Class<?> interfaze : clazz.getInterfaces()) {
-            result.add(interfaze);
-            flatten(interfaze, result);
+        for (final Class<?> iface : clazz.getInterfaces()) {
+            result.add(iface);
+            flatten(iface, result);
         }
     }
 }
