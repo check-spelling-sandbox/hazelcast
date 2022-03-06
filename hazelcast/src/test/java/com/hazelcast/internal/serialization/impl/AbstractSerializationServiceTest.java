@@ -114,19 +114,19 @@ public class AbstractSerializationServiceTest {
 
     @Test
     public void testSerializable() {
-        SerializableleValue original = new SerializableleValue(100);
+        SerializableValue original = new SerializableValue(100);
 
         Data data = abstractSerializationService.toData(original);
-        SerializableleValue found = abstractSerializationService.toObject(data);
+        SerializableValue found = abstractSerializationService.toObject(data);
 
         assertNotNull(found);
         assertEquals(original.value, found.value);
     }
 
-    static class SerializableleValue implements Serializable {
+    static class SerializableValue implements Serializable {
         int value;
 
-        SerializableleValue(int value) {
+        SerializableValue(int value) {
             this.value = value;
         }
     }
