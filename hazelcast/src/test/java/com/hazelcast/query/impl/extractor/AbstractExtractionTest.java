@@ -42,12 +42,12 @@ public abstract class AbstractExtractionTest extends AbstractExtractionSpecifica
 
     protected IMap<String, Object> map;
 
-    // three parametrisation axes
+    // three parameterization axes
     protected Multivalue mv;
     private final InMemoryFormat inMemoryFormat;
     private final Index index;
 
-    // constructor required by JUnit for parametrisation purposes
+    // constructor required by JUnit for parameterization purposes
     public AbstractExtractionTest(InMemoryFormat inMemoryFormat, Index index, Multivalue multivalue) {
         this.inMemoryFormat = inMemoryFormat;
         this.index = index;
