@@ -131,7 +131,7 @@ public class LocalAddressRegistryIntegrationTest extends HazelcastTestSupport {
         // create members
         HazelcastInstance serverMember = Hazelcast.newHazelcastInstance(createConfigForServer());
         HazelcastInstance initiatorMember = Hazelcast.newHazelcastInstance(createConfigForInitiator());
-        UUID iniatiatorMemberUuid = initiatorMember.getCluster().getLocalMember().getUuid();
+        UUID initiatorMemberUuid = initiatorMember.getCluster().getLocalMember().getUuid();
         assertClusterSize(2, serverMember, initiatorMember);
         createConnectionsOnEachPlane(serverMember);
 
@@ -147,7 +147,7 @@ public class LocalAddressRegistryIntegrationTest extends HazelcastTestSupport {
 
         LinkedAddresses registeredAddressesOfInitiatorMember = serverNode
                 .getLocalAddressRegistry()
-                .linkedAddressesOf(iniatiatorMemberUuid);
+                .linkedAddressesOf(initiatorMemberUuid);
 
         assertNotNull(registeredAddressesOfInitiatorMember);
         assertContains(registeredAddressesOfInitiatorMember.getAllAddresses(), INITIATOR_MEMBER_ADDRESS);
@@ -159,7 +159,7 @@ public class LocalAddressRegistryIntegrationTest extends HazelcastTestSupport {
                 ), timeoutSecs);
         LinkedAddresses registeredAddressesAfterAllConnectionsClosed = serverNode
                 .getLocalAddressRegistry()
-                .linkedAddressesOf(iniatiatorMemberUuid);
+                .linkedAddressesOf(initiatorMemberUuid);
         assertNull(registeredAddressesAfterAllConnectionsClosed);
 
     }
