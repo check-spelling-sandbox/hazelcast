@@ -161,7 +161,7 @@ public class CacheDestroyTest extends CacheTestSupport {
         // Make sure that at least 1 invalidation event has been received
         assertTrueEventually(() -> assertTrue(counter.get() >= 1), 2);
 
-        // Make sure that no more than INSTNACE_COUNT events are received ever
+        // Make sure that no more than INSTANCE_COUNT events are received ever
         assertTrueAllTheTime(() -> assertTrue(counter.get() <= INSTANCE_COUNT), 3);
 
     }
