@@ -46,10 +46,10 @@ public class VectorCollectionConfigTest {
 
         assertThatThrownBy(() -> new VectorCollectionConfig("a").setBackupCount(MAX_BACKUP_COUNT).setAsyncBackupCount(1))
                 .isInstanceOf(IllegalArgumentException.class)
-                .hasMessage("the sum of backup-count and async-backup-count can't be larger than than 6");
+                .hasMessage("the sum of backup-count and async-backup-count can't be larger than 6");
         assertThatThrownBy(() -> new VectorCollectionConfig("a").setAsyncBackupCount(1).setBackupCount(MAX_BACKUP_COUNT))
                 .isInstanceOf(IllegalArgumentException.class)
-                .hasMessage("the sum of backup-count and async-backup-count can't be larger than than 6");
+                .hasMessage("the sum of backup-count and async-backup-count can't be larger than 6");
     }
 
     @Test
