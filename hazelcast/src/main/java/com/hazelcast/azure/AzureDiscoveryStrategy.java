@@ -126,7 +126,7 @@ public class AzureDiscoveryStrategy extends AbstractDiscoveryStrategy {
                     azureConfig.getSubscriptionId(),
                     azureConfig.getResourceGroup())) {
                 throw new InvalidConfigurationException("Invalid Azure Discovery config: "
-                        + "useInstanceMetada property is configured as `false`. Please configure all of tenantId, clientId, "
+                        + "useInstanceMetadata property is configured as `false`. Please configure all of tenantId, clientId, "
                         + "clientSecret, subscriptionId, and resourceGroup properties.");
             }
         } else {
@@ -137,7 +137,7 @@ public class AzureDiscoveryStrategy extends AbstractDiscoveryStrategy {
                     azureConfig.getResourceGroup(),
                     azureConfig.getScaleSet())) {
                 throw new InvalidConfigurationException("Invalid Azure Discovery config: "
-                        + "useInstanceMetada property is configured as `true`. Please DO NOT configure any of tenantId, "
+                        + "useInstanceMetadata property is configured as `true`. Please DO NOT configure any of tenantId, "
                         + "clientId, clientSecret, subscriptionId, resourceGroup, and scaleSet properties.");
             }
         }
