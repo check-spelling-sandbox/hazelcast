@@ -317,7 +317,7 @@ There are 3 cases where master address of a node is updated:
 When a slave starts its mastership claim, it sends a mastership claim
 operation to each of "non-suspected" member in its member list, younger
 than itself. As a response to mastership claim, members send their
-member lists. After collecting responses, mastership claiming member
+member lists. After collecting responses, the mastership claiming member
 creates a new member list with a new version and finalizes the process.
 It puts the members who accepted its mastership claim into the final
 member list.

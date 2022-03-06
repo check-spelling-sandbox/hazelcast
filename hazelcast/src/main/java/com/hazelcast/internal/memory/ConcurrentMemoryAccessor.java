@@ -155,7 +155,7 @@ public interface ConcurrentMemoryAccessor extends MemoryAccessor {
     /**
      * Compares and swaps the given int value to the expected value atomically
      * based in the given object with given offset
-     * if and only if its current value equals to specified expected value.
+     * if and only if its current value equals the specified expected value.
      *
      * @param address  address to access
      * @param expected the expected current int value to be set to the new int value

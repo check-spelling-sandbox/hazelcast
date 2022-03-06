@@ -34,7 +34,7 @@ import static com.hazelcast.client.impl.protocol.codec.builtin.FixedSizeTypesCod
  */
 
 /**
- * Replaces the the entry for a key only if existing values equal to the testValue
+ * Replaces the entry for a key only if existing values equal to the testValue
  */
 @SuppressWarnings("unused")
 @Generated("85d1a0f233af4bc37d9cff4617ba8de4")

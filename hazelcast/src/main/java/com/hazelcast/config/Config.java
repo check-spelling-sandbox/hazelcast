@@ -389,7 +389,7 @@ public class Config {
     }
 
     /**
-     * Creates a Config based on a the provided configuration file (XML or YAML)
+     * Creates a Config based on the provided configuration file (XML or YAML)
      * and uses the System.properties to resolve variables in the file.
      *
      * @param configFile the path of the configuration file
@@ -402,7 +402,7 @@ public class Config {
     }
 
     /**
-     * Creates a Config based on a the provided configuration file (XML or YAML)
+     * Creates a Config based on the provided configuration file (XML or YAML)
      * and uses the System.properties to resolve variables in the file.
      *
      * @param configFile the path of the configuration file

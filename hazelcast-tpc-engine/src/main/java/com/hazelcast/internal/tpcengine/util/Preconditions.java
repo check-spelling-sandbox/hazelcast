@@ -52,7 +52,7 @@ public final class Preconditions {
      * Tests if the {@code value} is &gt;= 0.
      *
      * @param value     the  value tested to see if it is not negative.
-     * @param paramName the the name of the checked parameter that will be in exception message
+     * @param paramName the name of the checked parameter that will be in exception message
      * @return the value
      * @throws java.lang.IllegalArgumentException if the value is negative.
      */
@@ -67,7 +67,7 @@ public final class Preconditions {
      * Tests if the {@code value} is &gt;= 0.
      *
      * @param value     the  value tested to see if it is not negative.
-     * @param paramName the the name of the checked parameter that will be in exception message
+     * @param paramName the name of the checked parameter that will be in exception message
      * @return the value
      * @throws java.lang.IllegalArgumentException if the value is negative.
      */
