@@ -68,21 +68,21 @@ public class XmlClientFailoverConfigBuilderConfigResolutionTest {
 
     @Test
     public void testResolveSystemProperty_classpath_nonExistentXml_throws() {
-        System.setProperty(SYSPROP_CLIENT_FAILOVER_CONFIG, "classpath:idontexist.xml");
+        System.setProperty(SYSPROP_CLIENT_FAILOVER_CONFIG, "classpath:nonexistent.xml");
 
         assertThatThrownBy(XmlClientFailoverConfigBuilder::new)
                 .isInstanceOf(HazelcastException.class)
                 .hasMessageContaining("classpath")
-                .hasMessageContaining("idontexist.xml");
+                .hasMessageContaining("nonexistent.xml");
     }
 
     @Test
     public void testResolveSystemProperty_file_nonExistentXml_throws() {
-        System.setProperty(SYSPROP_CLIENT_FAILOVER_CONFIG, "idontexist.xml");
+        System.setProperty(SYSPROP_CLIENT_FAILOVER_CONFIG, "nonexistent.xml");
 
         assertThatThrownBy(XmlClientFailoverConfigBuilder::new)
                 .isInstanceOf(HazelcastException.class)
-                .hasMessageContaining("idontexist.xml");
+                .hasMessageContaining("nonexistent.xml");
     }
 
     @Test
@@ -113,13 +113,13 @@ public class XmlClientFailoverConfigBuilderConfigResolutionTest {
 
     @Test
     public void testResolveSystemProperty_classpath_nonExistentNonXml_throws() {
-        System.setProperty(SYSPROP_CLIENT_FAILOVER_CONFIG, "classpath:idontexist.yaml");
+        System.setProperty(SYSPROP_CLIENT_FAILOVER_CONFIG, "classpath:nonexistent.yaml");
 
         assertThatThrownBy(XmlClientFailoverConfigBuilder::new)
                 .isInstanceOf(HazelcastException.class)
                 .hasMessageContaining(SYSPROP_CLIENT_FAILOVER_CONFIG)
                 .hasMessageContaining("classpath")
-                .hasMessageContaining("idontexist.yaml")
+                .hasMessageContaining("nonexistent.yaml")
                 .hasMessageContaining(XML_ACCEPTED_SUFFIXES_STRING);
     }
 

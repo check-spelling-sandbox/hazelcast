@@ -288,7 +288,7 @@ public class YamlClientConfigImportVariableReplacementTest extends AbstractClien
         String yaml = """
                 hazelcast-client:
                   import:
-                    - notexisting.yaml""";
+                    - nonexistent.yaml""";
 
         buildConfig(yaml);
     }
@@ -299,7 +299,7 @@ public class YamlClientConfigImportVariableReplacementTest extends AbstractClien
         String yaml = """
                 hazelcast-client:
                   import:
-                    - file:///notexisting.yaml""";
+                    - file:///nonexistent.yaml""";
 
         buildConfig(yaml);
     }

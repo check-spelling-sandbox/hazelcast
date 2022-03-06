@@ -35,14 +35,14 @@ public abstract class AbstractClientFailoverConfigBuilderTest {
     }
 
     @Test(expected = HazelcastException.class)
-    public void loadingThroughSystemProperty_nonExistingFile() {
-        System.setProperty("hazelcast.client.failover.config", "idontexist");
+    public void loadingThroughSystemProperty_nonexistentFile() {
+        System.setProperty("hazelcast.client.failover.config", "nonexistent");
         buildConfig();
     }
 
     @Test(expected = HazelcastException.class)
-    public void loadingThroughSystemProperty_nonExistingClasspathResource() {
-        System.setProperty("hazelcast.client.failover.config", "classpath:idontexist");
+    public void loadingThroughSystemProperty_nonexistentClasspathResource() {
+        System.setProperty("hazelcast.client.failover.config", "classpath:nonexistent");
         buildConfig();
     }
 

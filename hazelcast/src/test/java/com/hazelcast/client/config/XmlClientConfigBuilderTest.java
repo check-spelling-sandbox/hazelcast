@@ -145,7 +145,7 @@ public class XmlClientConfigBuilderTest extends AbstractClientConfigBuilderTest 
     @Override
     @Test(expected = HazelcastException.class)
     public void loadingThroughSystemProperty_nonExistingClasspathResource() {
-        System.setProperty("hazelcast.client.config", "classpath:idontexist.xml");
+        System.setProperty("hazelcast.client.config", "classpath:nonexistent.xml");
         new XmlClientConfigBuilder();
     }
 

@@ -50,8 +50,8 @@ import static org.junit.Assert.assertTrue;
 public class ActionConstantsTest {
 
     @Test(expected = IllegalArgumentException.class)
-    public void getPermission_whenNonExistingService() {
-        ActionConstants.getPermission("foo", "idon'texist");
+    public void getPermission_whenNonexistentService() {
+        ActionConstants.getPermission("foo", "nonexistent");
     }
 
     @Test

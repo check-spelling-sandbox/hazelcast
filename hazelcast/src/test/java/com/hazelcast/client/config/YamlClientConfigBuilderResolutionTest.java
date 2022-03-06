@@ -84,21 +84,21 @@ public class YamlClientConfigBuilderResolutionTest {
 
     @Test
     public void testResolveSystemProperty_classpath_nonExistentYaml_throws() {
-        System.setProperty(SYSPROP_CLIENT_CONFIG, "classpath:idontexist.yaml");
+        System.setProperty(SYSPROP_CLIENT_CONFIG, "classpath:nonexistent.yaml");
 
         assertThatThrownBy(YamlClientConfigBuilder::new)
                 .isInstanceOf(HazelcastException.class)
                 .hasMessageContaining("classpath")
-                .hasMessageContaining("idontexist.yaml");
+                .hasMessageContaining("nonexistent.yaml");
     }
 
     @Test
     public void testResolveSystemProperty_file_nonExistentYaml_throws() {
-        System.setProperty(SYSPROP_CLIENT_CONFIG, "idontexist.yaml");
+        System.setProperty(SYSPROP_CLIENT_CONFIG, "nonexistent.yaml");
 
         assertThatThrownBy(YamlClientConfigBuilder::new)
                 .isInstanceOf(HazelcastException.class)
-                .hasMessageContaining("idontexist.yaml");
+                .hasMessageContaining("nonexistent.yaml");
     }
 
     @Test
@@ -140,13 +140,13 @@ public class YamlClientConfigBuilderResolutionTest {
 
     @Test
     public void testResolveSystemProperty_classpath_nonExistentNonYaml_throws() {
-        System.setProperty(SYSPROP_CLIENT_CONFIG, "classpath:idontexist.xml");
+        System.setProperty(SYSPROP_CLIENT_CONFIG, "classpath:nonexistent.xml");
 
         assertThatThrownBy(YamlClientConfigBuilder::new)
                 .isInstanceOf(HazelcastException.class)
                 .hasMessageContaining(SYSPROP_CLIENT_CONFIG)
                 .hasMessageContaining("classpath")
-                .hasMessageContaining("idontexist.xml")
+                .hasMessageContaining("nonexistent.xml")
                 .hasMessageContaining(YAML_ACCEPTED_SUFFIXES_STRING);
     }
 

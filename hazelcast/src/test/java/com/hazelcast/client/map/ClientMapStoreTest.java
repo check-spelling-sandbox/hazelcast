@@ -268,7 +268,7 @@ public class ClientMapStoreTest extends HazelcastTestSupport {
         HazelcastInstance node = createHazelcastInstance(config);
         IMap<String, String> map = node.getMap(MAP_NAME);
 
-        //load not existent entries
+        //load nonexistent entries
         Map<String, String> responseMap = map.getAll(new HashSet<>(asList("key1", "key2", "key3")));
         assertEquals(0, responseMap.size());
         assertEquals(0, map.size());

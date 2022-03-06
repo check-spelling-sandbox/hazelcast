@@ -332,7 +332,7 @@ public class SqlCsvTest extends SqlTestSupport {
                 + "TYPE " + FileSqlConnector.TYPE_NAME + ' '
                 + "OPTIONS ( "
                 + '\'' + OPTION_FORMAT + "'='" + CSV_FORMAT + '\''
-                + ", '" + FileSqlConnector.OPTION_PATH + "'='/non-existent-directory'"
+                + ", '" + FileSqlConnector.OPTION_PATH + "'='/nonexistent-directory'"
                 + ", '" + FileSqlConnector.OPTION_GLOB + "'='" + "foo.csv" + '\''
                 + ")"
         );
@@ -367,7 +367,7 @@ public class SqlCsvTest extends SqlTestSupport {
         );
 
         assertThat(sqlService.execute("SELECT * FROM " + name).iterator().hasNext())
-                .describedAs("no results from non existing file")
+                .describedAs("no results from nonexistent file")
                 .isFalse();
     }
 

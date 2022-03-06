@@ -123,7 +123,7 @@ public final class CdcSinks {
      * value functions, other behaviors are possible as well.
      * <p>
      * <strong>NOTE</strong>: in order for the sink behavior to be predictable,
-     * the map should be non-existent or empty at the time the sink starts
+     * the map should be nonexistent or empty at the time the sink starts
      * using it.
      * <p>
      * For each item the sink receives, it uses the {@code keyFn} to
@@ -165,7 +165,7 @@ public final class CdcSinks {
      * value functions, other behaviors are possible as well.
      * <p>
      * <strong>NOTE</strong>: in order for the sink behavior to be predictable,
-     * the map should be non-existent or empty at the time the sink starts
+     * the map should be nonexistent or empty at the time the sink starts
      * using it.
      * <p>
      * For each item the sink receives it uses the {@code keyFn} to
@@ -203,7 +203,7 @@ public final class CdcSinks {
      * Hazelcast cluster identified by the supplied {@code ClientConfig}.
      * <p>
      * <strong>NOTE 1</strong>: in order for the sink behavior to be
-     * predictable, the map should be non-existent or empty at the time the
+     * predictable, the map should be nonexistent or empty at the time the
      * sink starts
      * using it.
      * <p>

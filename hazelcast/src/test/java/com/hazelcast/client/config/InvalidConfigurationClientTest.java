@@ -232,7 +232,7 @@ public class InvalidConfigurationClientTest {
 
     @Test(expected = IllegalArgumentException.class)
     public void testClassPathConfigWhenNonExistentConfig() {
-        new ClientClasspathXmlConfig(Thread.currentThread().getContextClassLoader(), "non-existent-client-config.xml", System.getProperties());
+        new ClientClasspathXmlConfig(Thread.currentThread().getContextClassLoader(), "nonexistent-client-config.xml", System.getProperties());
     }
 
     @Test(expected = InvalidConfigurationException.class)

@@ -415,7 +415,7 @@ public class SqlHadoopTest extends SqlTestSupport {
         );
 
         assertThat(sqlService.execute("SELECT * FROM " + name).iterator().hasNext())
-                .describedAs("no results from non existing file")
+                .describedAs("no results from nonexistent file")
                 .isFalse();
     }
 

@@ -31,7 +31,7 @@ public class AddressTest {
 
     @Test(expected = IllegalArgumentException.class)
     public void newAddress_InetSocketAddress_whenHostUnresolved() {
-        InetSocketAddress inetAddress = InetSocketAddress.createUnresolved("dontexist", 1);
+        InetSocketAddress inetAddress = InetSocketAddress.createUnresolved("nonexistent", 1);
         new Address(inetAddress);
     }
 

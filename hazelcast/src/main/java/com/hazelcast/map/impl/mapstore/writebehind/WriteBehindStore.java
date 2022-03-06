@@ -101,7 +101,7 @@ public class WriteBehindStore extends AbstractMapDataStore<Data, Object> {
      * triggers a map store flush, and in write-behind mode this flush
      * operation should not cause any inconsistencies, such as reading
      * a stale value from map store. To prevent reading stale values
-     * when the time of a non-existent key is requested, before loading
+     * when the time of a nonexistent key is requested, before loading
      * it from map-store we search for an evicted entry in this space.
      * If the entry is not there, we ask map store to load it. All read
      * operations use this staging area to return the last set value

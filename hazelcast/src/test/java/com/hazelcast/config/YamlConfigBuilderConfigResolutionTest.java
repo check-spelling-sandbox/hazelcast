@@ -91,21 +91,21 @@ public class YamlConfigBuilderConfigResolutionTest {
 
     @Test
     public void testResolveSystemProperty_classpath_nonExistentYaml_throws() {
-        System.setProperty(SYSPROP_MEMBER_CONFIG, "classpath:idontexist.yaml");
+        System.setProperty(SYSPROP_MEMBER_CONFIG, "classpath:nonexistent.yaml");
 
         expectedException.expect(HazelcastException.class);
         expectedException.expectMessage("classpath");
-        expectedException.expectMessage("idontexist.yaml");
+        expectedException.expectMessage("nonexistent.yaml");
 
         new YamlConfigBuilder().build();
     }
 
     @Test
     public void testResolveSystemProperty_file_nonExistentYaml_throws() {
-        System.setProperty(SYSPROP_MEMBER_CONFIG, "idontexist.yaml");
+        System.setProperty(SYSPROP_MEMBER_CONFIG, "nonexistent.yaml");
 
         expectedException.expect(HazelcastException.class);
-        expectedException.expectMessage("idontexist.yaml");
+        expectedException.expectMessage("nonexistent.yaml");
 
         new YamlConfigBuilder().build();
     }
@@ -152,12 +152,12 @@ public class YamlConfigBuilderConfigResolutionTest {
 
     @Test
     public void testResolveSystemProperty_classpath_nonExistentNonYaml_throws() {
-        System.setProperty(SYSPROP_MEMBER_CONFIG, "classpath:idontexist.xml");
+        System.setProperty(SYSPROP_MEMBER_CONFIG, "classpath:nonexistent.xml");
 
         expectedException.expect(HazelcastException.class);
         expectedException.expectMessage(SYSPROP_MEMBER_CONFIG);
         expectedException.expectMessage("classpath");
-        expectedException.expectMessage("idontexist.xml");
+        expectedException.expectMessage("nonexistent.xml");
         expectedException.expectMessage(YAML_ACCEPTED_SUFFIXES_STRING);
 
         new YamlConfigBuilder().build();

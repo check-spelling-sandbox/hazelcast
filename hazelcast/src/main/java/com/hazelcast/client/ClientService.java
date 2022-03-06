@@ -53,7 +53,7 @@ public interface ClientService {
     /**
      * Removes a ClientListener.
      *
-     * Can safely be called with a non existing ID, or when the ClientListener already is removed.
+     * Can safely be called with a nonexistent ID, or when the ClientListener already is removed.
      *
      * @param registrationId ID of the ClientListener registration
      * @return {@code true} if registration is removed, {@code false} otherwise

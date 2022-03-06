@@ -70,21 +70,21 @@ public class XmlConfigBuilderConfigResolutionTest {
 
     @Test
     public void testResolveSystemProperty_classpath_nonExistentXml_throws() {
-        System.setProperty(SYSPROP_MEMBER_CONFIG, "classpath:idontexist.xml");
+        System.setProperty(SYSPROP_MEMBER_CONFIG, "classpath:nonexistent.xml");
 
         expectedException.expect(HazelcastException.class);
         expectedException.expectMessage("classpath");
-        expectedException.expectMessage("idontexist.xml");
+        expectedException.expectMessage("nonexistent.xml");
 
         new XmlConfigBuilder().build();
     }
 
     @Test
     public void testResolveSystemProperty_file_nonExistentXml_throws() {
-        System.setProperty(SYSPROP_MEMBER_CONFIG, "idontexist.xml");
+        System.setProperty(SYSPROP_MEMBER_CONFIG, "nonexistent.xml");
 
         expectedException.expect(HazelcastException.class);
-        expectedException.expectMessage("idontexist.xml");
+        expectedException.expectMessage("nonexistent.xml");
 
         new XmlConfigBuilder().build();
     }
@@ -119,12 +119,12 @@ public class XmlConfigBuilderConfigResolutionTest {
 
     @Test
     public void testResolveSystemProperty_classpath_nonExistentNonXml_throws() {
-        System.setProperty(SYSPROP_MEMBER_CONFIG, "classpath:idontexist.yaml");
+        System.setProperty(SYSPROP_MEMBER_CONFIG, "classpath:nonexistent.yaml");
 
         expectedException.expect(HazelcastException.class);
         expectedException.expectMessage(SYSPROP_MEMBER_CONFIG);
         expectedException.expectMessage("suffix");
-        expectedException.expectMessage("idontexist.yaml");
+        expectedException.expectMessage("nonexistent.yaml");
         expectedException.expectMessage(XML_ACCEPTED_SUFFIXES_STRING);
 
         new XmlConfigBuilder().build();

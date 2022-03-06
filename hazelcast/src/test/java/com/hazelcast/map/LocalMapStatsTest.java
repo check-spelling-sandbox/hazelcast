@@ -594,7 +594,7 @@ public class LocalMapStatsTest extends HazelcastTestSupport {
     public void testLockedEntryCount_emptyMap() {
         IMap<String, String> map = getMap();
 
-        map.lock("non-existent-key");
+        map.lock("nonexistent-key");
 
         LocalMapStats stats = getMapStats();
         assertEquals(1, stats.getLockedEntryCount());
@@ -606,7 +606,7 @@ public class LocalMapStatsTest extends HazelcastTestSupport {
 
         map.put("key", "value");
         map.lock("key");
-        map.lock("non-existent-key");
+        map.lock("nonexistent-key");
 
         LocalMapStats stats = getMapStats();
         assertEquals(2, stats.getLockedEntryCount());

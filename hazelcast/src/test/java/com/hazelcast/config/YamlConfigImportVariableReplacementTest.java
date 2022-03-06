@@ -295,7 +295,7 @@ public class YamlConfigImportVariableReplacementTest extends AbstractConfigImpor
         String yaml = """
                 hazelcast:
                   import:
-                    - notexisting.yaml""";
+                    - nonexistent.yaml""";
         buildConfig(yaml, null);
     }
 
@@ -305,7 +305,7 @@ public class YamlConfigImportVariableReplacementTest extends AbstractConfigImpor
         String yaml = """
                 hazelcast:
                   import:
-                    - file:///notexisting.yaml""";
+                    - file:///nonexistent.yaml""";
         buildConfig(yaml, null);
     }
 
