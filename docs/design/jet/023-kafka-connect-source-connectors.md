@@ -27,7 +27,7 @@
 |                                |                                                           |
 |--------------------------------|-----------------------------------------------------------|
 | Related Jira                   | [HZ-1510](https://hazelcast.atlassian.net/browse/HZ-1510) |
-| Related Github issues          | None                                                      |
+| Related GitHub issues          | None                                                      |
 | Document Status / Completeness | DRAFT                                                     |
 | Requirement owner              | Nandan Kidambi                                            |
 | Developer(s)                   | Łukasz Dziedziul                                          |

@@ -20,7 +20,7 @@
 |                                |                                                  |
 |--------------------------------|--------------------------------------------------|
 | Related Jira                   | _https://hazelcast.atlassian.net/browse/HZ-1455_ |
-| Related Github issues          | _None_                                           |
+| Related GitHub issues          | _None_                                           |
 | Document Status / Completeness | DRAFT                                            |
 | Requirement owner              | _TBD_                                            |
 | Developer(s)                   | _Orçun Çolak_                                    |

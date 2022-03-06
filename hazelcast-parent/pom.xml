@@ -36,7 +36,7 @@
     </scm>
 
     <issueManagement>
-        <system>Github</system>
+        <system>GitHub</system>
         <url>https://github.com/hazelcast/hazelcast/issues</url>
     </issueManagement>
 
