@@ -123,7 +123,7 @@ public class ClientClusterViewListenerService implements ConnectionListener {
 
     private void tryReregisterToRandomConnection(Connection oldConnection) {
         if (!listenerAddedConnection.compareAndSet(oldConnection, null)) {
-            //somebody else already trying to re-register
+            //somebody else already trying to reregister
             return;
         }
         ClientConnection newConnection = connectionManager.getRandomConnection();
