@@ -110,7 +110,7 @@ public class GcpComputeApiTest {
     }
 
     /**
-     * Reponse recorded from the real Cloud Compute API call.
+     * Response recorded from the real Cloud Compute API call.
      */
     private static String instancesResponse() {
         return String.format("""
