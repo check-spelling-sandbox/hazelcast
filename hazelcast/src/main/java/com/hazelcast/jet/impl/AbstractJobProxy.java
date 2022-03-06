@@ -78,7 +78,7 @@ public abstract class AbstractJobProxy<C, M> implements Job {
     // Subject that is used to submit a job. Not available for jobs obtained by id.
     //
     // Technical debt: this field should is used only in JobProxy and should be there
-    // but because AbstractJobProxy constructor invokes overriden (!) invokeSubmitJob method
+    // but because AbstractJobProxy constructor invokes overridden (!) invokeSubmitJob method
     // that needs this field we initialize in it superclass constructor.
     protected final Subject subject;
 
