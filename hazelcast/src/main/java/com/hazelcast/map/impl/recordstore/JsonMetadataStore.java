@@ -80,7 +80,7 @@ public interface JsonMetadataStore {
     /**
      * Sets the new metadata key of the metadata associated with the key
      * @param key the key
-     * @param metadataKey the matadata key
+     * @param metadataKey the metadata key
      */
     void setKey(Data key, Object metadataKey);
 
