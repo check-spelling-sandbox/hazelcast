@@ -194,7 +194,7 @@ public class ServiceLoaderTest extends HazelcastTestSupport {
     }
 
     @Test
-    public void testFailFastWhenHookDoesNotImplementExpectedInteface() {
+    public void testFailFastWhenHookDoesNotImplementExpectedInterface() {
         Class<?> otherInterface = newInterface("com.hazelcast.internal.serialization.DifferentInterface");
         ClassLoader otherClassloader = otherInterface.getClassLoader();
 
