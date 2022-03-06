@@ -1172,7 +1172,7 @@
                 </executions>
                 <configuration>
                     <configLocation>${checkstyle.configLocation}</configLocation>
-                    <suppressionsLocation>${checkstyle.supressionsLocation}</suppressionsLocation>
+                    <suppressionsLocation>${checkstyle.suppressionsLocation}</suppressionsLocation>
                     <headerLocation>${checkstyle.headerLocation}</headerLocation>
                     <linkXRef>false</linkXRef>
                     <consoleOutput>true</consoleOutput>
