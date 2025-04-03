@@ -20,7 +20,7 @@ isn’t done by default.
 ## Eventloop
 
 The eventloop is a loop which processes events. This can be I/O events,
-but also ‘tasks’. It is very similar to the eventloop in Javascript. The
+but also ‘tasks’. It is very similar to the eventloop in JavaScript. The
 eventloop will wait for async I/O and tasks ‘events’ and will call the
 appropriate handler for that event and just run the tasks (like an
 executor).
