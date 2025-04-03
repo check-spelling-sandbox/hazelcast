@@ -182,7 +182,7 @@ Describe testing approach to developed functionality
   [Connect To Hazelcast Running on Kubernetes from Outside](https://guides.hazelcast.org/kubernetes-external-client/) and
   [GH workflow](https://github.com/hazelcast-guides/kubernetes-external-client/blob/main/.github/workflows/integrational-tests.yml) for example of automated tests and
   [Create automated tests in Kubernetes/OpenShift for enterprise features](https://hazelcast.atlassian.net/browse/CN-150) for JIRA task on automated testing of EE features.
-  For more information about testing in kubernetes please see [here](https://guides.hazelcast.org/kubernetes/) and
+  For more information about testing in kubernetes please see [Hazelcast for Kubernetes](https://docs.hazelcast.com/tutorials/kubernetes) and
   [here](https://docs.hazelcast.com/hazelcast/latest/deploy/deploying-in-kubernetes),
   for testing in AWS, GCP and Azure please see [here](https://guides.hazelcast.org/terraform-quickstarts/).
 
