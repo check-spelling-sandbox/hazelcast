@@ -21,7 +21,7 @@ import com.hazelcast.spi.impl.operationservice.WrappableException;
 
 /**
  * This exception is thrown when an exception that is coming from server is not recognized by the protocol and
- * it can not be constructed by the client via reflection.
+ * it cannot be constructed by the client via reflection.
  * For the client to be able to recreate original exception it should be available on the classpath and
  * it should have one of the following constructors publicly.
  * new Throwable(String message, Throwable cause)

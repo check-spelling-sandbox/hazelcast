@@ -47,7 +47,7 @@ public class ShutdownNodeOp extends AbstractClusterOperation implements AllowedD
                 logger.info("Node is already shutting down. NodeState: " + nodeEngine.getNode().getState());
             }
         } else {
-            logger.severe("Can not shut down node because cluster is in " + clusterState + " state. Requested by: "
+            logger.severe("Cannot shut down node because cluster is in " + clusterState + " state. Requested by: "
                     + getCallerAddress());
         }
     }

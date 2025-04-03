@@ -57,7 +57,7 @@ import static com.hazelcast.spi.impl.operationexecutor.OperationRunner.runDirect
 public class MigrationOperation extends BaseMigrationOperation implements TargetAware {
 
     private static final OperationResponseHandler ERROR_RESPONSE_HANDLER = (op, obj) -> {
-        throw new HazelcastException("Migration operations can not send response!");
+        throw new HazelcastException("Migration operations cannot send response!");
     };
 
     private ReplicaFragmentMigrationState fragmentMigrationState;

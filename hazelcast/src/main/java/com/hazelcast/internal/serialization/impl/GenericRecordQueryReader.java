@@ -96,7 +96,7 @@ public final class GenericRecordQueryReader implements ValueReader {
     @SuppressWarnings({"CyclomaticComplexity", "MethodLength", "NPathComplexity"})
     public Object read(String fieldPath) {
         if (fieldPath == null) {
-            throw new IllegalArgumentException("field path can not be null");
+            throw new IllegalArgumentException("field path cannot be null");
         }
         if (fieldPath.endsWith(".")) {
             throw new IllegalArgumentException("Malformed path " + fieldPath);

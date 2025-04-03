@@ -32,7 +32,7 @@ public final class MultiTypeOperandChecker extends TypedOperandChecker {
     ) {
         super(primaryTypeChecker.type);
         if (secondaryOperandCheckers == null || secondaryOperandCheckers.length == 0) {
-            throw new IllegalArgumentException("SecondaryOperandCheckers argument can not be empty");
+            throw new IllegalArgumentException("SecondaryOperandCheckers argument cannot be empty");
         }
         this.secondaryOperandCheckers = Arrays.asList(secondaryOperandCheckers);
 

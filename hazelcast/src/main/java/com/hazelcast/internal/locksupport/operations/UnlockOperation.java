@@ -69,7 +69,7 @@ public class UnlockOperation extends AbstractLockOperation implements Notifier, 
         boolean unlocked = lockStore.unlock(key, getCallerUuid(), threadId, getReferenceCallId());
         response = unlocked;
         if (!unlocked) {
-            // we can not check for retry here, hence just throw the exception
+            // we cannot check for retry here, hence just throw the exception
             String ownerInfo = lockStore.getOwnerInfo(key);
             throw new IllegalMonitorStateException("Current thread is not owner of the lock! -> " + ownerInfo);
         } else {

@@ -200,7 +200,7 @@ public abstract class AbstractCacheIterator<K, V> implements Iterator<Cache.Entr
 
     protected void ensureOpen() {
         if (cache.isClosed()) {
-            throw new IllegalStateException("Cache operations can not be performed. The cache closed");
+            throw new IllegalStateException("Cache operations cannot be performed. The cache closed");
         }
     }
 

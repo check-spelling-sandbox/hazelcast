@@ -223,7 +223,7 @@ public class SerializationServiceV1 extends AbstractSerializationService {
     @Override
     public Schema extractSchemaFromData(@Nonnull Data data) throws IOException {
         if (!data.isCompact()) {
-            throw new IllegalArgumentException("Can not extract schema from given data type " + data.getType());
+            throw new IllegalArgumentException("Cannot extract schema from given data type " + data.getType());
         }
         return compactStreamSerializer.extractSchema(createObjectDataInput(data));
     }
@@ -231,7 +231,7 @@ public class SerializationServiceV1 extends AbstractSerializationService {
     @Override
     public Schema extractSchemaFromObject(@Nonnull Object object) {
         if (!isCompactSerializable(object)) {
-            throw new IllegalArgumentException("Can not extract schema from given class " + object.getClass());
+            throw new IllegalArgumentException("Cannot extract schema from given class " + object.getClass());
         }
         return compactStreamSerializer.extractSchema(object);
     }

@@ -149,7 +149,7 @@ public final class ClientPartitionServiceImpl implements ClientPartitionService 
     public int getPartitionId(@Nonnull Data key) {
         int pc = getPartitionCount();
         if (pc == 0) {
-            //Partition count can not be zero for the sync mode.
+            //Partition count cannot be zero for the sync mode.
             // On the sync mode, we are waiting for the first connection to be established.
             // We are initializing the partition count with the value coming from the server with authentication.
             // This exception is used only for async mode client.

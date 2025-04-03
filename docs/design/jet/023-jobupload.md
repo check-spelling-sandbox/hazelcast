@@ -68,7 +68,7 @@ Jar On Client case :
 
 - The new functionality requires that all resources accessed by the uploaded job to be available on the server. For
   example a text file that is used to populate an IMap needs to be available on the server or within the uploaded jar.
-  Because a server side job can not access client side resources.
+  Because a server side job cannot access client side resources.
 - The client should send multi parts in a sequential manner. Out of order messages are not handled since it would
   require more resources on the server.
 

@@ -126,7 +126,7 @@ public class TopicConfig implements IdentifiedDataSerializable, NamedConfig, Ver
      */
     public TopicConfig setGlobalOrderingEnabled(boolean globalOrderingEnabled) {
         if (this.multiThreadingEnabled && globalOrderingEnabled) {
-            throw new IllegalArgumentException("Global ordering can not be enabled when multi-threading is used.");
+            throw new IllegalArgumentException("Global ordering cannot be enabled when multi-threading is used.");
         }
         this.globalOrderingEnabled = globalOrderingEnabled;
         return this;
@@ -158,7 +158,7 @@ public class TopicConfig implements IdentifiedDataSerializable, NamedConfig, Ver
      */
     public TopicConfig setMultiThreadingEnabled(boolean multiThreadingEnabled) {
         if (this.globalOrderingEnabled && multiThreadingEnabled) {
-            throw new IllegalArgumentException("Multi-threading can not be enabled when global ordering is used.");
+            throw new IllegalArgumentException("Multi-threading cannot be enabled when global ordering is used.");
         }
         this.multiThreadingEnabled = multiThreadingEnabled;
         return this;

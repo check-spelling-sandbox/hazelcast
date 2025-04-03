@@ -51,7 +51,7 @@ public final class JarOnClientValidator {
     static void validateJobParameters(List<String> jobParameters) {
         // Check that parameter is not null
         if (Objects.isNull(jobParameters)) {
-            throw new JetException("jobParameters can not be null");
+            throw new JetException("jobParameters cannot be null");
         }
     }
 }

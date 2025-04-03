@@ -127,7 +127,7 @@ public final class HazelcastComparisonPredicateUtils {
             valid = false;
         }
 
-        // Custom types can not be converted to each other.
+        // Custom types cannot be converted to each other.
         if (highHZType.isCustomType() && lowHZType.isCustomType()) {
             if (!highHZType.getObjectTypeName().equals(lowHZType.getObjectTypeName())) {
                 valid = false;

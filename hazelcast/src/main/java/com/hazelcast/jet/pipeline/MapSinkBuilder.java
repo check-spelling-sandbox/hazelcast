@@ -88,7 +88,7 @@ public class MapSinkBuilder<T, K, V> {
         if (clientConfig != null) {
             throw new IllegalStateException("You cannot set dataConnectionRef, clientConfig is already set");
         }
-        this.dataConnectionRef = requireNonNull(dataConnectionRef, "dataConnectionRef can not be null");
+        this.dataConnectionRef = requireNonNull(dataConnectionRef, "dataConnectionRef cannot be null");
         return this;
     }
 
@@ -104,7 +104,7 @@ public class MapSinkBuilder<T, K, V> {
         if (dataConnectionRef != null) {
             throw new IllegalStateException("You cannot set clientConfig, dataConnectionRef is already set");
         }
-        this.clientConfig = requireNonNull(clientConfig, "clientConfig can not be null");
+        this.clientConfig = requireNonNull(clientConfig, "clientConfig cannot be null");
         return this;
     }
 

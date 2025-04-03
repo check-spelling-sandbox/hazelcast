@@ -305,7 +305,7 @@ public abstract class HttpCommand extends AbstractTextCommand {
     void setStatusCode(int statusCode) {
         int existingStatusCode = executionDetails.getStatusCode();
         if (existingStatusCode > 0) {
-            throw new IllegalStateException("can not set statusCode to " + statusCode + ", it is already " + existingStatusCode);
+            throw new IllegalStateException("cannot set statusCode to " + statusCode + ", it is already " + existingStatusCode);
         }
         executionDetails.setStatusCode(statusCode);
     }

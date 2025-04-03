@@ -714,7 +714,7 @@ public abstract class HazelcastTestSupport {
         Set<Member> members = cluster.getMembers();
         if (members.size() < 2) {
             throw new UnsupportedOperationException(
-                    "Cluster has only one member, you can not generate a `not owned key`");
+                    "Cluster has only one member, you cannot generate a `not owned key`");
         }
     }
 

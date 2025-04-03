@@ -177,7 +177,7 @@ public abstract class JsonValue implements Serializable {
    * @throws UnsupportedOperationException
    *           if this value is not a JSON number
    * @throws NumberFormatException
-   *           if this JSON number can not be interpreted as <code>int</code> value
+   *           if this JSON number cannot be interpreted as <code>int</code> value
    */
   public int asInt() {
     throw new UnsupportedOperationException("Not a number: " + toString());
@@ -196,7 +196,7 @@ public abstract class JsonValue implements Serializable {
    * @throws UnsupportedOperationException
    *           if this value is not a JSON number
    * @throws NumberFormatException
-   *           if this JSON number can not be interpreted as <code>long</code> value
+   *           if this JSON number cannot be interpreted as <code>long</code> value
    */
   public long asLong() {
     throw new UnsupportedOperationException("Not a number: " + toString());

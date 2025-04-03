@@ -82,7 +82,7 @@ public class FieldAccessExpression<T> implements Expression<T> {
         }
 
         if (isPrimitive(result.getClass())) {
-            throw QueryException.error("Field Access expression can not be applied to primitive types");
+            throw QueryException.error("Field Access expression cannot be applied to primitive types");
         }
 
         if (getterCache == null) {

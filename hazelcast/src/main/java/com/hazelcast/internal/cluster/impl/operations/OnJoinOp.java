@@ -57,7 +57,7 @@ public class OnJoinOp
     public OnJoinOp(Collection<Operation> ops) {
         for (Operation op : ops) {
             checkNotNull(op, "op can't be null");
-            checkNegative(op.getPartitionId(), "Post join operation can not have a partition ID!");
+            checkNegative(op.getPartitionId(), "Post join operation cannot have a partition ID!");
         }
         operations = ops;
     }

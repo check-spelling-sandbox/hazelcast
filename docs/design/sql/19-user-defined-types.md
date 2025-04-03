@@ -126,7 +126,7 @@ schema, as all other objects.
 
 ### No mixing of formats
 
-Type formats can not be mixed together. For example a `java` type can not be
+Type formats cannot be mixed together. For example a `java` type cannot be
 used as column inside of `portable` type or mapping or vice-versa. Violations
 are reported at runtime when using such mapping/type in a statement, not when
 executing the DDL. (TODO test)
@@ -232,7 +232,7 @@ INSERT INTO tMap VALUES (1, 100, (101, 'testUserName'));
 ```
 
 In the example above ROW value `(101, 'testUserName')` is implicitly converted into UDT during INSERT operation.
-Note that this mechanism does not support cyclic structures as ROW type can not support cycles in current implementation.
+Note that this mechanism does not support cyclic structures as ROW type cannot support cycles in current implementation.
 
 Additionally its possible to manually construct ROW values inside of SELECT, but
 

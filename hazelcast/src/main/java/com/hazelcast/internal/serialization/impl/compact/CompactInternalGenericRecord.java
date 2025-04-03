@@ -958,7 +958,7 @@ public class CompactInternalGenericRecord extends CompactGenericRecord implement
 
     private <T> T getFixedSizeFieldFromArray(@Nonnull String fieldName, FieldKind fieldKind,
                                              Reader<T> reader, int index) {
-        checkNotNegative(index, "Array indexes can not be negative");
+        checkNotNegative(index, "Array indexes cannot be negative");
         FieldDescriptor fd = getFieldDescriptor(fieldName, fieldKind);
         int position = readVariableSizeFieldPosition(fd);
         if (position == NULL_OFFSET) {
@@ -1088,7 +1088,7 @@ public class CompactInternalGenericRecord extends CompactGenericRecord implement
             }
             int dataLength = in.readInt(pos);
             int itemCount = in.readInt(pos + INT_SIZE_IN_BYTES);
-            checkNotNegative(index, "Array index can not be negative");
+            checkNotNegative(index, "Array index cannot be negative");
             if (itemCount <= index) {
                 return null;
             }

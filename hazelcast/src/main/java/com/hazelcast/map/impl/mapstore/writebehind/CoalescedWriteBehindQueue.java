@@ -135,7 +135,7 @@ class CoalescedWriteBehindQueue implements WriteBehindQueue<DelayedEntry> {
 
     @Override
     public int drainTo(Collection<DelayedEntry> collection) {
-        checkNotNull(collection, "collection can not be null");
+        checkNotNull(collection, "collection cannot be null");
 
         collection.addAll(map.values());
         map.clear();

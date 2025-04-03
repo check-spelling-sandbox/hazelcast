@@ -405,7 +405,7 @@ public class TransactionalMapProxy
     @SuppressWarnings("unchecked")
     public Collection values(Predicate predicate) {
         checkTransactionState();
-        checkNotNull(predicate, "Predicate can not be null!");
+        checkNotNull(predicate, "Predicate cannot be null!");
         checkNotInstanceOf(PagingPredicate.class, predicate,
                 "Paging is not supported for Transactional queries");
 

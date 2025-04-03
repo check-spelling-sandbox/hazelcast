@@ -54,7 +54,7 @@ public class ClientIcmpPingConfig {
 
     /**
      * Default value is 1000 milliseconds.
-     * This value can not be smaller than 1000 milliseconds
+     * This value cannot be smaller than 1000 milliseconds
      */
     private int intervalMilliseconds = DEFAULT_INTERVAL_MILLISECONDS;
 

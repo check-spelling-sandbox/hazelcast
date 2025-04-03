@@ -109,9 +109,9 @@ public class ClientFailoverConfig {
      * For each alternative cluster, the client will try to connect to the cluster
      * respecting related ConnectionRetryConfig.
      * <p>
-     * When the client can not connect a cluster, it will try to connect tryCount times going
+     * When the client cannot connect a cluster, it will try to connect tryCount times going
      * over the alternative client configs in a round-robin fashion. This is triggered at the
-     * start and also when the client disconnects from the cluster and can not connect back
+     * start and also when the client disconnects from the cluster and cannot connect back
      * to it by exhausting attempts described in ConnectionRetryConfig. In that case,
      * the client will continue from where it is left off in ClientConfig lists, and try
      * the next one again in round-robin tryCount X number of alternative cluster times.
@@ -121,7 +121,7 @@ public class ClientFailoverConfig {
      * Let's call them cluster A , B and C .
      * When the tryCount is set as 2, the maximum number of subsequent connection attempts done
      * by the client is 3 x 2 = 6.
-     * They will be tried in the following order as long as the client can not connect to any of them:
+     * They will be tried in the following order as long as the client cannot connect to any of them:
      * A -> B -> C -> A -> B -> C -> Client Shutdown.
      * Trial 1     ->  Trial 2    -> Client Shutdown.
      * <p>

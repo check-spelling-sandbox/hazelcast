@@ -171,8 +171,8 @@ public abstract class AbstractHazelcastCacheManager implements HazelcastCacheMan
     @SuppressWarnings("unchecked")
     public <K, V> ICache<K, V> getCache(String cacheName, Class<K> keyType, Class<V> valueType) {
         ensureOpen();
-        checkNotNull(keyType, "keyType can not be null");
-        checkNotNull(valueType, "valueType can not be null");
+        checkNotNull(keyType, "keyType cannot be null");
+        checkNotNull(valueType, "valueType cannot be null");
         ICacheInternal<?, ?> cache = getCacheUnchecked(cacheName);
         if (cache != null) {
             Configuration<?, ?> configuration = cache.getConfiguration(CacheConfig.class);

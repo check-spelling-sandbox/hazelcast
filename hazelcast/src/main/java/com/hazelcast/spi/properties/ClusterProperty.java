@@ -770,7 +770,7 @@ public final class ClusterProperty {
 
     /**
      * Timeout duration to decide if a client is still part of the cluster.
-     * If a member can not find any connection to a client in the cluster, it
+     * If a member cannot find any connection to a client in the cluster, it
      * will clean up local resources that is owned by that client.
      */
     public static final HazelcastProperty CLIENT_CLEANUP_TIMEOUT

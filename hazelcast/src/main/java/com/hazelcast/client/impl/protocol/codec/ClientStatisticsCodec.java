@@ -41,7 +41,7 @@ import static com.hazelcast.client.impl.protocol.codec.builtin.FixedSizeTypesCod
  * The second parameter, the clientAttribute is a String that is composed of key=value pairs separated by ','. The
  * following characters ('=' '.' ',' '\') should be escaped.
  * 
- * Please note that if any client implementation can not provide the value for statistics, the corresponding key, value
+ * Please note that if any client implementation cannot provide the value for statistics, the corresponding key, value
  * pair will not be presented in the statistics string. Only the ones, that the client can provide will be added.
  * 
  * The third parameter, metrics is a compressed byte array containing all metrics recorded by the client.

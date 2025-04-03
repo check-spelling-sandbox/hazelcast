@@ -108,7 +108,7 @@ public class IcmpFailureDetectorConfig {
 
     /**
      * Sets the time in milliseconds between each ping
-     * This value can not be smaller than 1000 milliseconds
+     * This value cannot be smaller than 1000 milliseconds
      *
      * @param intervalMilliseconds the interval millis between each ping
      * @return this {@link IcmpFailureDetectorConfig} instance

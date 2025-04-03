@@ -126,7 +126,7 @@ public class QueueProxyImpl<E> extends QueueProxySupport<E> implements IQueue<E>
     @Override
     public int drainTo(@Nonnull Collection<? super E> objects, int i) {
         checkNotNull(objects, "Null objects parameter is not allowed!");
-        checkFalse(this.equals(objects), "Can not drain to same Queue");
+        checkFalse(this.equals(objects), "Cannot drain to same Queue");
 
         final NodeEngine nodeEngine = getNodeEngine();
         Collection<Data> dataList = drainInternal(i);

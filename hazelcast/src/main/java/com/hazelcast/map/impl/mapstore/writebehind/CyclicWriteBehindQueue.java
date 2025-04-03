@@ -132,7 +132,7 @@ class CyclicWriteBehindQueue implements WriteBehindQueue<DelayedEntry> {
      */
     @Override
     public int drainTo(Collection<DelayedEntry> collection) {
-        checkNotNull(collection, "collection can not be null");
+        checkNotNull(collection, "collection cannot be null");
 
         Iterator<DelayedEntry> iterator = deque.iterator();
         while (iterator.hasNext()) {

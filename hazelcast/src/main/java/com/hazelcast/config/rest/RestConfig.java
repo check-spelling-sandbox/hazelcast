@@ -549,7 +549,7 @@ public class RestConfig {
 
     /**
      * Set the HTTP request timeout. Default is 120 seconds.
-     * <b>WARNING:</b> The resolution for requestTimeoutDuration can not be more than a second.
+     * <b>WARNING:</b> The resolution for requestTimeoutDuration cannot be more than a second.
      * @param requestTimeoutDuration
      * @throws IllegalArgumentException if requestTimeoutDuration is negative
      */
@@ -628,7 +628,7 @@ public class RestConfig {
 
     /**
      * Sets the expiration duration for jwt token.
-     * <b>WARNING:</b> The resolution for tokenValidityDuration can not be more than a second.
+     * <b>WARNING:</b> The resolution for tokenValidityDuration cannot be more than a second.
      *
      * @param tokenValidityDuration the duration for which the token should be valid.
      */

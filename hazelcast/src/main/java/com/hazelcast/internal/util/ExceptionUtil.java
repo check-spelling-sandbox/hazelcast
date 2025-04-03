@@ -216,7 +216,7 @@ public final class ExceptionUtil {
      * @param exceptionClass class of the exception
      * @param message        message to be pass to constructor of the exception
      * @param cause          cause to be set to the exception
-     * @return {@code null} if can not find a constructor as
+     * @return {@code null} if cannot find a constructor as
      * described above, otherwise returns newly constructed exception
      */
     @SuppressWarnings("checkstyle:npathcomplexity")

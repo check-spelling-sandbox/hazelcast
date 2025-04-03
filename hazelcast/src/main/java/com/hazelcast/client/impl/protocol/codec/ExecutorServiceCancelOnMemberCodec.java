@@ -67,7 +67,7 @@ public final class ExecutorServiceCancelOnMemberCodec {
         public java.util.UUID memberUUID;
 
         /**
-         * If true, then the thread interrupt call can be used to cancel the thread, otherwise interrupt can not be used.
+         * If true, then the thread interrupt call can be used to cancel the thread, otherwise interrupt cannot be used.
          */
         public boolean interrupt;
     }

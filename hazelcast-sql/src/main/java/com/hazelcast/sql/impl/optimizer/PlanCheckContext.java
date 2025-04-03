@@ -50,7 +50,7 @@ public class PlanCheckContext {
             return false;
         }
 
-        // Plans are created for specific partitions. If distribution changes, the plan can not be used anymore.
+        // Plans are created for specific partitions. If distribution changes, the plan cannot be used anymore.
         return partitions.equals(expectedPartitions);
     }
 }

@@ -61,7 +61,7 @@ import static org.junit.Assert.assertTrue;
  * This test is failing because of order problem between actual invoke and cancel.
  * For random and partition, the reason of broken order is also unknown to me (@sancar)
  * For submit to member, it is because we do not have order guarantee in the first place.
- * and when there is partition movement, we can not is partition ID since tasks will not move with partitions
+ * and when there is partition movement, we cannot is partition ID since tasks will not move with partitions
  */ public class ClientExecutorServiceCancelTest
         extends HazelcastTestSupport {
 

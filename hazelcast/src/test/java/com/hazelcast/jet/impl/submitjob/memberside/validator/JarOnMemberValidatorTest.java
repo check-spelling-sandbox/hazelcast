@@ -38,7 +38,7 @@ public class JarOnMemberValidatorTest {
     public void testValidateJarPathNotNull() {
         assertThatThrownBy(() -> JarOnMemberValidator.validateJarPathNotNull(null))
                 .isInstanceOf(JetException.class)
-                .hasMessageContaining("File path can not be null");
+                .hasMessageContaining("File path cannot be null");
     }
 
     @Test
@@ -61,6 +61,6 @@ public class JarOnMemberValidatorTest {
     public void testValidateJobParameters() {
         assertThatThrownBy(() -> JarOnMemberValidator.validateJobParameters(null))
                 .isInstanceOf(JetException.class)
-                .hasMessageContaining("jobParameters can not be null");
+                .hasMessageContaining("jobParameters cannot be null");
     }
 }
