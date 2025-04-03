@@ -89,7 +89,7 @@ public final class SqlRowMetadata {
      * Find index of the column with the given name. Returned index can be used to get column value
      * from {@link SqlRow}.
      *
-     * @param columnName column name (case sensitive)
+     * @param columnName column name (case-sensitive)
      * @return column index or {@link #COLUMN_NOT_FOUND} if a column with the given name is not found
      * @throws NullPointerException if column name is null
      *
