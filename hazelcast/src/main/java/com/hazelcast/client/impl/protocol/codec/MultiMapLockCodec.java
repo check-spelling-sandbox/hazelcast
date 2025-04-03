@@ -37,7 +37,7 @@ import static com.hazelcast.client.impl.protocol.codec.builtin.FixedSizeTypesCod
  * Acquires the lock for the specified key for the specified lease time. After the lease time, the lock will be
  * released. If the lock is not available, then the current thread becomes disabled for thread scheduling
  * purposes and lies dormant until the lock has been acquired. Scope of the lock is for this map only. The acquired
- * lock is only for the key in this map.Locks are re-entrant, so if the key is locked N times, then it should be
+ * lock is only for the key in this map.Locks are reentrant, so if the key is locked N times, then it should be
  * unlocked N times before another thread can acquire it.
  */
 @SuppressWarnings("unused")
