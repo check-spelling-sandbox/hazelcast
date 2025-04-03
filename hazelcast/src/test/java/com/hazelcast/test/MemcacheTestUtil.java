@@ -28,7 +28,7 @@ public final class MemcacheTestUtil {
     }
 
     /**
-     * Shutdowns {@link MemcachedClient} ignoring exceptions. Problems are just logged on FINE level. Workaround a
+     * Shutdowns {@link MemcachedClient} ignoring exceptions. Problems are just logged on FINE level. Work around a
      * {@link java.util.ConcurrentModificationException} issue in Selector.shutdown() on IBM JDK.
      *
      * @param client a {@link MemcachedClient} to be shut down
