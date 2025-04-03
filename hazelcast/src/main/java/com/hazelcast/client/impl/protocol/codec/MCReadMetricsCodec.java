@@ -35,7 +35,7 @@ import static com.hazelcast.client.impl.protocol.codec.builtin.FixedSizeTypesCod
 
 /**
  * Reads the recorded metrics starting with the smallest sequence number
- * greater or equals to the sequence number set in fromSequence.
+ * greater than or equal to the sequence number set in fromSequence.
  */
 @SuppressWarnings("unused")
 @Generated("dbf01c7d56f74c0ebdd974766a2dae6e")
