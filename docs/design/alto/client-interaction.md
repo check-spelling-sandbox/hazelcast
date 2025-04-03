@@ -3,7 +3,7 @@
 ## Exposed Ports
 
 TPC engine exposes a port for each of its event loops. The number of event 
-loops(by default, equals to the number of available processors) and the 
+loops(by default, equal to the number of available processors) and the 
 ranges of the ports(by default, it is between `11000` and `21000`) 
 to be exposed are configurable.
 
