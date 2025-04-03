@@ -178,7 +178,7 @@ Describe testing approach to developed functionality
 - Negative tests?
 - Stress tests?
 - Tests related to deployment on AWS or Kubernetes?
-  See [Hazelcast Guides](https://guides.hazelcast.org/home/) for examples on deployments,
+  See [Hazelcast Documentation](https://docs.hazelcast.com/home/) for examples on deployments,
   [Connect To Hazelcast Running on Kubernetes from Outside](https://guides.hazelcast.org/kubernetes-external-client/) and
   [GH workflow](https://github.com/hazelcast-guides/kubernetes-external-client/blob/main/.github/workflows/integrational-tests.yml) for example of automated tests and
   [Create automated tests in Kubernetes/OpenShift for enterprise features](https://hazelcast.atlassian.net/browse/CN-150) for JIRA task on automated testing of EE features.
