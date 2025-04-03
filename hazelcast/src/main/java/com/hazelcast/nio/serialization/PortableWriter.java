@@ -289,7 +289,7 @@ public interface PortableWriter {
     void writeStringArray(@Nonnull String fieldName, @Nullable String[] values) throws IOException;
 
     /**
-     * Writes a an array of Portables.
+     * Writes an array of Portables.
      *
      * @param fieldName name of the field
      * @param values    portable array to be written
