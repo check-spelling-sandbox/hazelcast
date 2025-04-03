@@ -253,8 +253,8 @@ class KubernetesClient {
     /**
      * Retrieves zone name for the specified {@code namespace} and the given {@code podName}.
      * <p>
-     * Note that the Kubernetes environment provides such information as defined
-     * <a href="https://kubernetes.io/docs/reference/kubernetes-api/labels-annotations-taints">here</a>.
+     * Note that the Kubernetes environment provides such information as defined in
+     * <a href="https://kubernetes.io/docs/reference/labels-annotations-taints/">Well-Known Labels, Annotations and Taints</a>.
      *
      * @param podName POD name
      * @return zone name
