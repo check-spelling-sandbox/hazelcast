@@ -103,9 +103,9 @@ cluster or reconciles the existing ones with the desired state.
 
 ## Certification
 
-### RedHat Certified Operators
+### Red Hat Certified Operators
 
-RedHat has a certification programme for Operators and certified
+Red Hat has a certification programme for Operators and certified
 Operators will get published to the OpenShift catalog. The criteria for
 certification can be found
 [here](https://redhat-connect.gitbook.io/certified-operator-guide/what-if-ive-already-published-a-community-operator#certification-of-a-community-operator)
@@ -116,9 +116,9 @@ and it can be installed directly from the OpenShift catalog from the UI.
 During the process we've created OpenShift specific docker images for
 [Hazelcast Jet Enterprise](https://github.com/hazelcast/hazelcast-jet-docker/tree/master/openshift/hazelcast-jet-enterprise)
 and [Hazelcast Jet Management Center](https://github.com/hazelcast/hazelcast-jet-management-center-docker/tree/master/openshift)
-. Those images are built and published using RedHat Partner Connect
+. Those images are built and published using Red Hat Partner Connect
 build service. Released versions of those images can be found in the
-RedHat Container Catalog for [Hazelcast Jet Enterprise](https://access.redhat.com/containers/#/registry.connect.redhat.com/hazelcast/hazelcast-jet-enterprise-4)
+Red Hat Container Catalog for [Hazelcast Jet Enterprise](https://access.redhat.com/containers/#/registry.connect.redhat.com/hazelcast/hazelcast-jet-enterprise-4)
 and [Hazelcast Jet Management Center](https://access.redhat.com/containers/#/registry.connect.redhat.com/hazelcast/hazelcast-jet-management-center-4).
 
 ## Testing Details
