@@ -118,7 +118,7 @@ public class IteratorWithCursorTest extends HazelcastTestSupport {
         // prevCursorId == cursorId, cursorId == new id
         assertThatThrownBy(() -> iterator.iterate(initialCursorId, 100)).isInstanceOf(IllegalStateException.class)
                 .hasMessageContaining("The cursor id " + initialCursorId
-                        + " is not the current cursor id nor the previous cursor id.");
+                        + " is neither the current cursor id nor the previous cursor id.");
     }
 
 

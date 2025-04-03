@@ -42,7 +42,7 @@ public interface SplitBrainProtectionFunction {
      * Determines whether the minimum cluster size property is satisfied based on the current list of members
      * in the cluster. Lite members are excluded and only data members are provided to this method.
      * <br>
-     * This method should not block nor execute time-consuming operations, otherwise it may stall other split brain
+     * This method should neither block nor execute time-consuming operations, otherwise it may stall other split brain
      * protection function invocations.
      *
      * @param members snapshot of current member list

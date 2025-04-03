@@ -36,7 +36,7 @@ import static java.util.Collections.nCopies;
 
 public class TestProcessor extends AbstractProcessor {
 
-    // The supplier is not on test nor member classpath - it is on processor classpath
+    // The supplier is on neither test nor member classpath - it is on processor classpath
     private final SupplierEx<SupplierEx<String>> resourceReaderSupplier;
     private SupplierEx<String> resourceReader;
 

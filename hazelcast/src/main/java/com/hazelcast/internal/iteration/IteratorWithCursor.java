@@ -57,7 +57,7 @@ public class IteratorWithCursor<T> {
             return new IterationResult<>(this.page, this.cursorId, null);
         } else if (!cursorId.equals(this.cursorId)) {
             throw new IllegalStateException("The cursor id " + cursorId
-                    + " is not the current cursor id nor the previous cursor id.");
+                    + " is neither the current cursor id nor the previous cursor id.");
         }
         List<T> currentPage = new ArrayList<>(maxCount);
         while (currentPage.size() < maxCount && iterator.hasNext()) {
