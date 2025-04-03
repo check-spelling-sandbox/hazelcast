@@ -491,7 +491,7 @@ public class ReplicatedMapTest extends ReplicatedMapAbstractTest {
             Set<Entry<Integer, Integer>> entries = map.entrySet();
             for (Entry<Integer, Integer> entry : entries) {
                 if (entry.getKey().equals(1)) {
-                    fail(String.format("We do not expect an entry which's key equals to %d in entry set", 1));
+                    fail(String.format("We do not expect an entry whose key equals %d in entry set", 1));
                 }
             }
         }, 20);
