@@ -33,7 +33,7 @@ Type mapping
 
 
 `*` - Type `date` in BSON represents seconds from Unix epoch in UTC timezone. 
-Therefore it's not mapped to pure `DATE` SQL type nor `LocalDate` 
+Therefore it is neither mapped to pure `DATE` SQL type nor `LocalDate` 
 in Java (nor any formats with timezones).
 
 The "Java Type" column represents an object returned by SQL query

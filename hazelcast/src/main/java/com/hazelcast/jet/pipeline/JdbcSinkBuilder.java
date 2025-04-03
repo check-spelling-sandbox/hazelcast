@@ -91,7 +91,7 @@ public class JdbcSinkBuilder<T> {
     /**
      * Set the function to bind values to a {@code PreparedStatement} created
      * with the query set with {@link #updateQuery(String)}. The function
-     * should not execute the query, nor call {@code commit()} or any other
+     * should neither execute the query nor call {@code commit()} or any other
      * method.
      *
      * @param bindFn the bind function. The function must be stateless.

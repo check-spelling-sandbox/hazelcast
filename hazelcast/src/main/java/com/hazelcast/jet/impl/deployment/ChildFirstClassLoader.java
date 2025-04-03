@@ -57,7 +57,7 @@ public class ChildFirstClassLoader extends URLClassLoader {
         }
 
         if (urls.length == 0) {
-            throw new IllegalArgumentException("urls must not be null nor empty");
+            throw new IllegalArgumentException("urls must neither be null nor empty");
         }
         if (parent == null) {
             throw new IllegalArgumentException("parent must not be null");
