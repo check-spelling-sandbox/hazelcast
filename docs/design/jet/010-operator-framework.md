@@ -87,7 +87,7 @@ case. After creating the initial version of the CSV, making updates to
 it is pretty straightforward.
 
 CSV for Hazelcast Jet Operator listed in [OperatorHub.io](https://operatorhub.io/operator/hazelcast-jet-operator)
-can be viewed from [here](https://github.com/operator-framework/community-operators/blob/master/upstream-community-operators/hazelcast-jet-operator/0.0.2/hazelcast-jet-operator.v0.0.2.clusterserviceversion.yaml).
+can be viewed from [clusterserviceversion.yaml](https://github.com/operator-framework/community-operators/blob/master/upstream-community-operators/hazelcast-jet-operator/0.5.0/hazelcast-jet-operator.v0.5.0.clusterserviceversion.yaml).
 
 ## High Level Overview
 
