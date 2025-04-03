@@ -184,7 +184,7 @@ Describe testing approach to developed functionality
   [Create automated tests in Kubernetes/OpenShift for enterprise features](https://hazelcast.atlassian.net/browse/CN-150) for JIRA task on automated testing of EE features.
   For more information about testing in kubernetes please see [Hazelcast for Kubernetes](https://docs.hazelcast.com/tutorials/kubernetes) and
   [Deploying on Kubernetes](https://docs.hazelcast.com/hazelcast/latest/kubernetes/deploying-in-kubernetes),
-  for testing in AWS, GCP and Azure please see [here](https://guides.hazelcast.org/terraform-quickstarts/).
+  for testing in AWS, GCP and Azure please see [Deploy a Hazelcast Cluster in the Cloud using Terraform](https://docs.hazelcast.com/tutorials/terraform-quickstarts).
 
 Provide references to Testlink or Testing artifacts.
 
