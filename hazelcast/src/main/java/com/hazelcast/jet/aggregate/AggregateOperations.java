@@ -1174,7 +1174,7 @@ public final class AggregateOperations {
      * window in O(1) time. It must undo the effects of a previous {@code
      * combineAccValuesFn} call:
      * <pre>
-     *     A accVal;  // has some pre-existing value
+     *     A accVal;  // has some preexisting value
      *     A itemAccVal = toAccValueFn.apply(item);
      *     A combined = combineAccValuesFn.apply(accVal, itemAccVal);
      *     A deducted = deductAccValueFn.apply(combined, itemAccVal);
