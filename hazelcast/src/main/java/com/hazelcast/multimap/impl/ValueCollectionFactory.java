@@ -70,7 +70,7 @@ public final class ValueCollectionFactory {
      *
      * @param collectionType  one of {@link com.hazelcast.config.MultiMapConfig.ValueCollectionType#SET}
      *                        or {@link MultiMapConfig.ValueCollectionType#LIST}
-     * @param initialCapacity if smaller than or equals to 0 falls back to default initial capacity of corresponding collection.
+     * @param initialCapacity if less than or equal to 0 falls back to default initial capacity of corresponding collection.
      * @return {@link java.util.Set} or {@link java.util.List} depending on the collectionType argument
      * @throws java.lang.IllegalArgumentException if collectionType is unknown
      */
