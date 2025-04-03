@@ -210,7 +210,7 @@ public final class Util {
      * Long.MIN_VALUE} if the result would overflow.
      *
      * @param a amount
-     * @param b the value to subtract
+     * @param b value to subtract
      * @return {@code a - b}, clamped
      */
     public static long subtractClamped(long a, long b) {
