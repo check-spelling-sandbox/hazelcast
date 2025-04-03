@@ -267,7 +267,7 @@ public final class CompactUtil {
          * <ul>
          *     <li>starts with the unsupported {@code prefix + "."}, hence
          *     under some package with the given prefix</li>
-         *     <li>equals to the {@code prefix}, hence directly in the
+         *     <li>equal to the {@code prefix}, hence directly in the
          *     given package</li>
          * </ul>
          * <p>
