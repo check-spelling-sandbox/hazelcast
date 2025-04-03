@@ -18,7 +18,7 @@
  * This package contains supporting classes for data structure specific event journals.
  * The event journal is a container for events related to a data structure.
  * This includes events such as add, update, remove, evict and others.
- * Each distributed object and partition has it's own event journal.
+ * Each distributed object and partition has its own event journal.
  *
  * @since 3.9
  */
