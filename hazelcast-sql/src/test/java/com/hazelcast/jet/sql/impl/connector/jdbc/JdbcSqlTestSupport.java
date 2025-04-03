@@ -145,7 +145,7 @@ public abstract class JdbcSqlTestSupport extends SqlTestSupport {
 
     /**
      * Creates table with given column definitions
-     * Does not quote the given tableName nor the column names.
+     * Without quoting the given tableName / column names.
      */
     public static void createTableNoQuote(String tableName, String... columns) throws SQLException {
         executeJdbc("CREATE TABLE " + tableName + " (" + String.join(", ", columns) + ")");
