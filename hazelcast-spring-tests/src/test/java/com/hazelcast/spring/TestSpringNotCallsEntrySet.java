@@ -44,7 +44,7 @@ import static org.junit.jupiter.api.Assertions.assertInstanceOf;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 /**
- * Test addresses tip given <a href="https://docs.hazelcast.com/hazelcast/5.5/spring/best-practices">here</a>.
+ * Test addresses tip given in <a href="https://web.archive.org/web/20241109161259/https://docs.hazelcast.com/hazelcast/5.5/spring/best-practices">Spring Best Practices</a>.
  */
 @ExtendWith({SpringExtension.class, CustomSpringExtension.class})
 @ContextConfiguration(classes = TestSpringNotCallsEntrySet.Conf.class)
