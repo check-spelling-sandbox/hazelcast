@@ -129,7 +129,7 @@ public class SocketOptions {
 
     /**
      * Enable/disable SO_LINGER with the specified linger time in seconds
-     * If set to a value of 0 or less then it is disabled.
+     * If set to a value of 0 or less, then it is disabled.
      * <p>
      * Default value is {@link SocketOptions#DEFAULT_LINGER_SECONDS}
      *
