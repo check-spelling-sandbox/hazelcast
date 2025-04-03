@@ -217,7 +217,7 @@ public final class OperationExecutorImpl implements OperationExecutor, StaticMet
 
             // the TpcOperationQueue is unbound just like HZ classic. Since we do not have any
             // back pressure mechanism between members, there is no proper way to prevent overload.
-            // So we keep the same bad bad behavior for now.
+            // So we keep the same bad behavior for now.
             PartitionOperationThread partitionThread = new TpcPartitionOperationThread(threadName, threadId,
                     operationQueue, logger, nodeExtension, partitionOperationRunners, configClassLoader);
             threads[threadId] = partitionThread;
