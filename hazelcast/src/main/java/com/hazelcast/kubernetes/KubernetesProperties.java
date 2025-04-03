@@ -52,8 +52,8 @@ public final class KubernetesProperties {
      * <p>Configuration key: <code>service-dns</code></p>
      * Defines the DNS service lookup domain. This is defined as something similar
      * to <code>my-svc.my-namespace.svc.cluster.local</code>.<br>
-     * For more information please refer to the official documentation of the Kubernetes DNS addon,
-     * <a href="https://github.com/kubernetes/kubernetes/tree/v1.0.6/cluster/addons/dns">here</a>.
+     * For more information please refer to the official documentation of the
+     * <a href="https://github.com/kubernetes/kubernetes/tree/v1.0.6/cluster/addons/dns">Kubernetes DNS addon</a>.
      */
     public static final PropertyDefinition SERVICE_DNS = property("service-dns", STRING);
 
