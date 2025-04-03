@@ -90,7 +90,7 @@ abstract class FileTable extends JetTable {
 
     /**
      * A table with non-deterministic schema (i.e. result of a file table function).
-     * Plans containing it must/can not be cached.
+     * Plans containing it must not be cached.
      */
     static class DynamicFileTable extends FileTable {
 
