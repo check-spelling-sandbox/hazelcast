@@ -461,7 +461,7 @@ public class EntryOperation extends LockAwareOperation
 
         @SuppressWarnings("unchecked")
         private void executeMutatingEntryProcessor(final Object oldValue, String executorName) {
-            // callerId is random since the local locks are NOT re-entrant
+            // callerId is random since the local locks are NOT reentrant
             // using a randomID every time prevents from re-entering the already acquired lock
             final UUID finalCaller = UuidUtil.newUnsecureUUID();
             final Data finalDataKey = dataKey;

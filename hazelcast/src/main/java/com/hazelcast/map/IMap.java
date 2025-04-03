@@ -1948,7 +1948,7 @@ public interface IMap<K, V> extends ConcurrentMap<K, V>, BaseMap<K, V>, Iterable
      * Scope of the lock is this map only.
      * Acquired lock is only for the key in this map.
      * <p>
-     * Locks are re-entrant so if the key is locked N times then
+     * Locks are reentrant so if the key is locked N times then
      * it should be unlocked N times before another thread can acquire it.
      * <p>
      * There is no lock timeout on this method. Locks will be held infinitely.
@@ -1976,7 +1976,7 @@ public interface IMap<K, V> extends ConcurrentMap<K, V>, BaseMap<K, V>, Iterable
      * Scope of the lock is this map only.
      * Acquired lock is only for the key in this map.
      * <p>
-     * Locks are re-entrant, so if the key is locked N times then
+     * Locks are reentrant, so if the key is locked N times then
      * it should be unlocked N times before another thread can acquire it.
      * <p>
      * <b>Warning:</b>

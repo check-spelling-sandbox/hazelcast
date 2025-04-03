@@ -395,7 +395,7 @@ public interface MultiMap<K, V> extends BaseMultiMap<K, V> {
      * The scope of the lock is for this multimap only. The acquired lock is
      * only for the key in this multimap.
      * <p>
-     * Locks are re-entrant, so if the key is locked N times, then it should
+     * Locks are reentrant, so if the key is locked N times, then it should
      * be unlocked N times before another thread can acquire it.
      * <p>
      * <b>Warning:</b> This method uses {@code hashCode} and {@code equals} of
@@ -418,7 +418,7 @@ public interface MultiMap<K, V> extends BaseMultiMap<K, V> {
      * Scope of the lock is for this map only.The acquired lock is only for
      * the key in this map.
      * <p>
-     * Locks are re-entrant, so if the key is locked N times, then it should
+     * Locks are reentrant, so if the key is locked N times, then it should
      * be unlocked N times before another thread can acquire it.
      * <p>
      * <b>Warning:</b> This method uses {@code hashCode} and {@code equals} of
