@@ -354,7 +354,7 @@ public class RangeVisitor extends AbstractVisitor {
             } else if (to == null) {
                 return new GreaterLessPredicate(attribute, from, fromInclusive, false);
             } else if (from == to || Comparables.compare(from, to) == 0) {
-                // If from equals to, the predicate may be satisfiable only if
+                // If `from` equals `to`, the predicate may be satisfiable only if
                 // both bounds are inclusive.
                 assert fromInclusive && toInclusive;
                 return new EqualPredicate(attribute, from);
