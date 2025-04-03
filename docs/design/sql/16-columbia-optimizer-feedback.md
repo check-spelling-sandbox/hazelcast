@@ -18,8 +18,7 @@ of transferring Hazelcast SQL engine to Columbia optimizer.
 ## Design
 
 Apache Calcite introduced Columbia optimizer implementation with 1.24 release. 
-It implements CASCADES optimization algorithm designed by Columbia optimizer creator,
-described [here](https://15721.courses.cs.cmu.edu/spring2019/papers/22-optimizer1/xu-columbia-thesis1998.pdf).
+It implements [CASCADES optimization algorithm designed by Columbia optimizer creator](https://15721.courses.cs.cmu.edu/spring2019/papers/22-optimizer1/xu-columbia-thesis1998.pdf).
 
 Apache Calcite names its Columbia optimizer implementation as 
 a "[Top-Down Rule Driver](https://issues.apache.org/jira/browse/CALCITE-3916)". We will also name it with that style : Top-Down Optimizer.
