@@ -76,16 +76,16 @@ public class StreamFilesP_integrationTest extends JetTestSupport {
     public void when_appendingToPreexisting_then_pickupNewLines() throws Exception {
         DAG dag = buildDag();
 
-        // this is a pre-existing file, should not be picked up
+        // this is a preexisting file, should not be picked up
         File file = createNewFile();
-        appendToFile(file, "hello", "pre-existing");
+        appendToFile(file, "hello", "preexisting");
         sleepAtLeastMillis(50);
 
         Future<Void> jobFuture = instance.getJet().newJob(dag).getFuture();
         // wait for the processor to initialize
         sleepAtLeastSeconds(2);
 
-        // pre-existing file should not be picked up
+        // preexisting file should not be picked up
         assertEquals(0, list.size());
         appendToFile(file, "third line");
         // now, all three lines are picked up
@@ -98,7 +98,7 @@ public class StreamFilesP_integrationTest extends JetTestSupport {
     public void when_appendingToPreexistingIncompleteLine_then_pickupCompleteLines() throws Exception {
         DAG dag = buildDag();
 
-        // this is a pre-existing file, should not be picked up
+        // this is a preexisting file, should not be picked up
         File file = createNewFile();
         try (PrintWriter writer = new PrintWriter(new FileOutputStream(file, true))) {
             // note: no newline appended
@@ -110,7 +110,7 @@ public class StreamFilesP_integrationTest extends JetTestSupport {
         // wait for the processor to initialize
         sleepAtLeastSeconds(2);
 
-        // pre-existing file should not be picked up
+        // preexisting file should not be picked up
         assertEquals(0, list.size());
         // this completes the first line and a second one - only the second one should be picked
         appendToFile(file, "world", "second line");
@@ -125,7 +125,7 @@ public class StreamFilesP_integrationTest extends JetTestSupport {
     public void when_withCrlf_then_pickupCompleteLines() throws Exception {
         DAG dag = buildDag();
 
-        // this is a pre-existing file, should not be picked up
+        // this is a preexisting file, should not be picked up
         File file = createNewFile();
         try (PrintWriter writer = new PrintWriter(new FileOutputStream(file, true))) {
             // note: no newline appended
@@ -137,7 +137,7 @@ public class StreamFilesP_integrationTest extends JetTestSupport {
         // wait for the processor to initialize
         sleepAtLeastSeconds(2);
 
-        // pre-existing file should not be picked up
+        // preexisting file should not be picked up
         assertEquals(0, list.size());
         // this completes the first line and a second one - only the second one should be picked
         try (PrintWriter writer = new PrintWriter(new FileOutputStream(file, true))) {

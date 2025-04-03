@@ -394,9 +394,9 @@ public class SourcesTest extends PipelineTestSupport {
     public void fileChanges() throws Exception {
         // Given
         File directory = createTempDirectory();
-        // this is a pre-existing file, should not be picked up
+        // this is a preexisting file, should not be picked up
         File file = new File(directory, randomName());
-        appendToFile(file, "hello", "pre-existing");
+        appendToFile(file, "hello", "preexisting");
         sleepAtLeastMillis(50);
 
         // When
@@ -407,7 +407,7 @@ public class SourcesTest extends PipelineTestSupport {
         Job job = hz().getJet().newJob(p);
         // wait for the processor to initialize
         assertThat(job).eventuallyHasStatus(JobStatus.RUNNING);
-        // pre-existing file should not be picked up
+        // preexisting file should not be picked up
         assertEquals(0, sinkList.size());
         appendToFile(file, "third line");
         // now, only new line should be picked up

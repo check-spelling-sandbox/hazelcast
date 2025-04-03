@@ -196,7 +196,7 @@ public final class ServiceFactory<C, S> implements Serializable, Cloneable {
      * Since the call of this method establishes the {@code <S>} type parameter
      * of the service factory, you must call it before setting the {@link
      * #withDestroyServiceFn(ConsumerEx) destroyService} function. Calling
-     * this method resets any pre-existing {@code destroyService} function to a
+     * this method resets any preexisting {@code destroyService} function to a
      * no-op.
      *
      * @param createServiceFn the function that creates the service instance.

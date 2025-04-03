@@ -63,7 +63,7 @@ itself (see `SqlOperator.rewriteCall`).
 
 Normally, Calcite's parser inspects the hardcoded `SqlStdOperatorTable`
 implementation of `SqlOperatorTable` to resolve a certain operator, so
-it's hard to customize the pre-existing operators. To make the
+it's hard to customize the preexisting operators. To make the
 customization possible, operators from `SqlStdOperatorTable` are patched
 to the ones from `HazelcastSqlOperatorTable` during the AST rewriting
 process (see `HazelcastSqlValidator.performUnconditionalRewrites` and
@@ -226,17 +226,17 @@ with some additional information.
 
 ## Implementing Expressions
 
-First of all, check for the pre-existing operator or function
+First of all, check for the preexisting operator or function
 implementation that might be provided by Calcite. Usually, references to
-such pre-existing implementations are listed in `SqlStdOperatorTable`
+such preexisting implementations are listed in `SqlStdOperatorTable`
 and the implementations themselves are located at
 `org.apache.calcite.sql.fun` package.
 
-If the pre-existing implementation satisfies the requirements, create
+If the preexisting implementation satisfies the requirements, create
 its runtime counterpart based on `Expression` interface.
-If the pre-existing implementation requires some modifications of its
+If the preexisting implementation requires some modifications of its
 behavior, try to modify it using parametrization or inheritance, resort
-to copying if that's impossible. If there is no pre-existing implementation
+to copying if that's impossible. If there is no preexisting implementation
 provided by Calcite, create it from scratch.
 Add the translation support to `RexToExpressionVisitor` and make sure the
 corresponding operator or function is listed as allowed in
