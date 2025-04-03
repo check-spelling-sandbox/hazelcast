@@ -164,8 +164,8 @@ will be able to proceed.
 
 Also, we integrated the tcp-ip member list update support to already existing
 config update APIs that are namely `hazelcast/rest/config/update` and
-`hazelcast/rest/config/reload`. See the docs for it
-[here](https://docs.hazelcast.com/hazelcast/latest/configuration/dynamic-config-update-and-reload)
+`hazelcast/rest/config/reload`. See the docs for
+[dynamic config update and reload](https://docs.hazelcast.com/hazelcast/latest/configuration/dynamic-config-update-and-reload)
 
 #### Technical Design
 #### Proposed Solution 1
