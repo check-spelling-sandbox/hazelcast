@@ -180,7 +180,7 @@ public class PartitionWideEntryWithPredicateOperationFactory extends PartitionAw
         // to avoid auto-boxing.
         final Int2ObjectHashMap<List<Data>> partitionToKeys = createInt2ObjectHashMap(partitions.length);
 
-        // Pre-populate the map with the requested partitions to use it as a set
+        // Prepopulate the map with the requested partitions to use it as a set
         // to filter out possible unrequested partitions encountered among the
         // fetched keys.
         for (int partition : partitions) {

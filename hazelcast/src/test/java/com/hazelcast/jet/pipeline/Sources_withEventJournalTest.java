@@ -194,7 +194,7 @@ public class Sources_withEventJournalTest extends PipelineTestSupport {
     }
 
     private void testMapJournal(IMap<String, Integer> map, StreamSource<Entry<String, Integer>> source) {
-        // Given a pre-populated source map...
+        // Given a prepopulated source map...
         List<Integer> input = sequence(itemCount);
         int[] key = {0};
         input.forEach(i -> map.put(String.valueOf(key[0]++), Integer.MIN_VALUE + i));
@@ -392,7 +392,7 @@ public class Sources_withEventJournalTest extends PipelineTestSupport {
     }
 
     private void testMapJournal_withPredicateAndProjection(IMap<String, Integer> srcMap, StreamSource<Integer> source) {
-        // Given a pre-populated source map...
+        // Given a prepopulated source map...
         List<Integer> input = sequence(itemCount);
         int[] key = {0};
         input.forEach(i -> srcMap.put(String.valueOf(key[0]++), Integer.MIN_VALUE + i));
@@ -513,7 +513,7 @@ public class Sources_withEventJournalTest extends PipelineTestSupport {
     }
 
     private void testCacheJournal(ICache<String, Integer> cache, StreamSource<Entry<String, Integer>> source) {
-        // Given a pre-populated source cache...
+        // Given a prepopulated source cache...
         List<Integer> input = sequence(itemCount);
         int[] key = {0};
         input.forEach(i -> cache.put(String.valueOf(key[0]++), Integer.MIN_VALUE + i));
@@ -581,7 +581,7 @@ public class Sources_withEventJournalTest extends PipelineTestSupport {
     private void testCacheJournal_withPredicateAndProjection(
             ICache<String, Integer> srcCache, StreamSource<Integer> source
     ) {
-        // Given a pre-populated source map...
+        // Given a prepopulated source map...
         List<Integer> input = sequence(itemCount);
         int[] key = {0};
         input.forEach(i -> srcCache.put(String.valueOf(key[0]++), Integer.MIN_VALUE + i));
