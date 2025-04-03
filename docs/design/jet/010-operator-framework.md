@@ -105,10 +105,8 @@ cluster or reconciles the existing ones with the desired state.
 
 ### Red Hat Certified Operators
 
-Red Hat has a certification programme for Operators and certified
-Operators will get published to the OpenShift catalog. The criteria for
-certification can be found
-[here](https://redhat-connect.gitbook.io/certified-operator-guide/what-if-ive-already-published-a-community-operator#certification-of-a-community-operator)
+Red Hat has a [certification programme for certifying and publishing
+Operators to the OpenShift catalog](https://redhat-connect.gitbook.io/certified-operator-guide/what-if-ive-already-published-a-community-operator#certification-of-a-community-operator).
 
 We've passed through this process for Hazelcast Jet Enterprise Operator
 and it can be installed directly from the OpenShift catalog from the UI.
