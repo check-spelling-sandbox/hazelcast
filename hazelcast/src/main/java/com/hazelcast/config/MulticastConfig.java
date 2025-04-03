@@ -228,7 +228,7 @@ public class MulticastConfig implements TrustedInterfacesConfigurable<MulticastC
     /**
      * Sets the time to live for the multicast package; a value between 0..255.
      * <p>
-     * See this <a href="http://www.tldp.org/HOWTO/Multicast-HOWTO-2.html">link</a> for more information.
+     * See <a href="http://www.tldp.org/HOWTO/Multicast-HOWTO-2.html">Multicast Explained</a> for more information.
      *
      * @param multicastTimeToLive the time to live for the multicast package
      * @return the updated MulticastConfig
