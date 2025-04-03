@@ -268,17 +268,17 @@ earlier undetected communication failures.
 
 Cases where a member sends explicit suspicion request are;
 
--   when a master receives master-confirmation message from an unknown
+-   when a master receives a master-confirmation message from an unknown
     endpoint
 
--   when a master receives heartbeat message from an unknown endpoint
+-   when a master receives a heartbeat message from an unknown endpoint
 
--   when a member receives membership update from a non-master member
+-   when a member receives a membership update from a non-master member
 
--   when a non-joined member receives finalize join message from an
+-   when a non-joined member receives a finalize join message from an
     invalid master
 
-When a non-master member receives heartbeat message from an unknown
+When a non-master member receives a heartbeat message from an unknown
 endpoint, it sends a complaint message to master and master receiving a
 complaint explicit suspicion messages to either of one or both of
 complainee and complainer, according to its own verification.

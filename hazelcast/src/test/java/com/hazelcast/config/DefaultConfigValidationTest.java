@@ -56,7 +56,7 @@ public class DefaultConfigValidationTest extends HazelcastTestSupport {
         IGNORED_CONFIGS.put(PREFIX + "RingbufferConfig", Collections.singletonList(PREFIX + "RingbufferStoreConfig"));
         // Default MergePolicy is HyperLogLogMergePolicy in CardinalityEstimatorConfig and PutIfAbsentMergePolicy in
         // MergePolicyConfig. MergePolicyConfig is a general-purpose configuration for handling split-brain healing and
-        // HyperLogLogMergePolicy is the a specific policy for merging our HyperLogLog impl (the CardinalityEstimator)
+        // HyperLogLogMergePolicy is a specific policy for merging our HyperLogLog impl (the CardinalityEstimator)
         IGNORED_CONFIGS.put(PREFIX + "CardinalityEstimatorConfig", Collections.singletonList(PREFIX + "MergePolicyConfig"));
     }
 

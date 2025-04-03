@@ -1134,7 +1134,7 @@ public final class ClusterProperty {
      * that the results backed by the underlying index-map can change after the
      * query has been executed. Specifically an entry might have been added / removed
      * from an index, or it might have been remapped.
-     * Should be used in cases when a the caller expects "mostly correct"
+     * Should be used in cases when a caller expects "mostly correct"
      * results - specifically, if it's ok if some entries returned in the result
      * set do not match the initial query criteria.
      * The fastest solution for read and writes, since no copying takes place.
@@ -1160,7 +1160,7 @@ public final class ClusterProperty {
      * query to a separate map. It means that the results backed by the underlying
      * index-map can change after the query has been executed. Specifically an
      * entry might have been added / removed from an index, or it might have been
-     * remapped. Should be used in cases when a the caller expects "mostly correct"
+     * remapped. Should be used in cases when a caller expects "mostly correct"
      * results - specifically, if it's ok if some entries returned in the result
      * set do not match the initial query criteria.
      * The fastest solution for read and writes, since no copying takes place.
