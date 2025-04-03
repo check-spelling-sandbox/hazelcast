@@ -174,8 +174,7 @@ have abandoned using it in this first implementation. In other words,
 this approach requires the user to know which stages of the pipeline are
 order-sensitive or not. I leave this section in the TDD as this approach
 can be used for fine-grained optimizations. You can also find the
-implementation we deleted
-[here](https://github.com/hazelcast/hazelcast-jet/pull/2522/commits/a745b678f5fa05ee54400750bcb69117bcf37f1f#diff-e841e6cd817336dba2e28b8598d91ba0105f513b9ad56ddbbe79513c4bf63613L210-L231).
+[implementation we deleted](https://github.com/hazelcast/hazelcast-jet/pull/2522/commits/a745b678f5fa05ee54400750bcb69117bcf37f1f#diff-e841e6cd817336dba2e28b8598d91ba0105f513b9ad56ddbbe79513c4bf63613L210-L231).
 
 We classified the transforms as order-sensitive and order-insensitive.
 This allows us to analyze the graph of the pipeline and identify which
