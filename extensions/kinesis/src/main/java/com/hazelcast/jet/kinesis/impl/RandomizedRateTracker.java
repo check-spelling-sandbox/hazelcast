@@ -21,8 +21,8 @@ import java.util.concurrent.ThreadLocalRandom;
 import java.util.stream.Collectors;
 
 /**
- * Kinesis Data Streams impose various limits on their operations (details
- * <a href="https://docs.aws.amazon.com/streams/latest/dev/service-sizes-and-limits.html">here</a>).
+ * Kinesis Data Streams impose various <a href="https://docs.aws.amazon.com/streams/latest/dev/service-sizes-and-limits.html">Quotas and limits</a>
+ * on their operations.
  * For example the <em>GetRecords</em> operation is allowed only 5 times per
  * second, per shard. This rate could be enforced, for example, with fixed
  * delays of 200ms between starting two consecutive such operations, but then
