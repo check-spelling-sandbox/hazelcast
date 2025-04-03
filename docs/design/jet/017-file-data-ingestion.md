@@ -277,8 +277,7 @@ nothing new
 
 What's new is:
 
-* "The Go license" - this is permissive BSD style license,
-[link](https://golang.org/LICENSE)
+* "[The Go license](https://golang.org/LICENSE)" - this is permissive BSD style license
 
 * CDDL (1.0) - Common Development and Distribution License - this is
 a weak copyleft license, based on mozilla public license and its
