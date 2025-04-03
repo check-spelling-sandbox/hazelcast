@@ -289,7 +289,7 @@ class DefaultWriteBehindProcessor extends AbstractWriteBehindProcessor<DelayedEn
         for (Collection<DelayedEntry> value : values) {
             size += value.size();
         }
-        final String logMessage = String.format("Map store flush operation can not be done for %d entries", size);
+        final String logMessage = String.format("Map store flush operation cannot be done for %d entries", size);
         logger.severe(logMessage);
     }
 
@@ -342,7 +342,7 @@ class DefaultWriteBehindProcessor extends AbstractWriteBehindProcessor<DelayedEn
         // retry occurred.
         if (k > 0) {
             if (!result) {
-                // List of entries which can not be stored for this round.
+                // List of entries which cannot be stored for this round.
                 // We will re-add these failed entries to the front of the
                 // partition-write-behind-queues and will try to re-process
                 // them. This fail and retry cycle will be repeated indefinitely.

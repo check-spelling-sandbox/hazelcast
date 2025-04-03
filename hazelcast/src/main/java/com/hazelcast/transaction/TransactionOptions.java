@@ -106,7 +106,7 @@ public final class TransactionOptions implements DataSerializable {
      */
     public TransactionOptions setTimeout(long timeout, TimeUnit timeUnit) {
         if (timeout < 0) {
-            throw new IllegalArgumentException("Timeout can not be negative!");
+            throw new IllegalArgumentException("Timeout cannot be negative!");
         }
         if (timeUnit == null) {
             throw new IllegalArgumentException("timeunit can't be null");

@@ -292,7 +292,7 @@ final class PartitionStateGeneratorImpl implements PartitionStateGenerator {
 
     private Queue<Integer> getUnownedPartitions(PartitionReplica[][] state, int replicaIndex) {
         LinkedList<Integer> freePartitions = new LinkedList<>();
-        // if owner of a partition can not be found then add partition to free partitions queue.
+        // if owner of a partition cannot be found then add partition to free partitions queue.
         for (int partitionId = 0; partitionId < state.length; partitionId++) {
             PartitionReplica[] replicas = state[partitionId];
             if (replicas[replicaIndex] == null) {

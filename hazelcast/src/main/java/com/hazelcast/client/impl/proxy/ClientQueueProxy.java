@@ -150,7 +150,7 @@ public final class ClientQueueProxy<E> extends PartitionSpecificClientProxy impl
 
     /**
      * It is advised to use this method in a try-catch block to take the offer operation
-     * full lifecycle control, in a "lost node" scenario you can not be sure
+     * full lifecycle control, in a "lost node" scenario you cannot be sure
      * offer is succeeded or not so you may want to retry.
      *
      * @param e the element to add

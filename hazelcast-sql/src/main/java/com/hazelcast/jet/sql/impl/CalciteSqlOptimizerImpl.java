@@ -957,7 +957,7 @@ public class CalciteSqlOptimizerImpl implements CalciteSqlOptimizer {
                             .filter(f -> f.getName().equals(columnName))
                             .findFirst()
                             .map(mapTableField -> mapTableField.getPath().getPath())
-                            .orElseThrow(() -> QueryException.error(format("Can not find column %s in table %s",
+                            .orElseThrow(() -> QueryException.error(format("Cannot find column %s in table %s",
                                     tableName, columnName)));
 
                     final RexNode rexNode = variant.get(columnName);

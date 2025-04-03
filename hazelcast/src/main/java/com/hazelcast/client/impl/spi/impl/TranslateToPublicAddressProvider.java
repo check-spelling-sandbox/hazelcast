@@ -156,7 +156,7 @@ public class TranslateToPublicAddressProvider implements InitialMembershipListen
             s.connect(new InetSocketAddress(address.getHost(), address.getPort()), timeoutMs);
         } catch (Exception e) {
             if (logger.isFineEnabled()) {
-                logger.fine("TranslateToPublicAddressProvider can not reach to address " + address
+                logger.fine("TranslateToPublicAddressProvider cannot reach to address " + address
                         + " in " + timeoutMs + " millis", e);
             }
             return false;

@@ -206,11 +206,11 @@ public class ClusterStateManager {
         clusterServiceLock.lock();
         try {
             if (!node.getNodeExtension().isStartCompleted()) {
-                throw new IllegalStateException("Can not lock cluster state! Startup is not completed yet!");
+                throw new IllegalStateException("Cannot lock cluster state! Startup is not completed yet!");
             }
 
             if (node.getClusterService().getClusterJoinManager().isMastershipClaimInProgress()) {
-                throw new IllegalStateException("Can not lock cluster state! Mastership claim is in progress!");
+                throw new IllegalStateException("Cannot lock cluster state! Mastership claim is in progress!");
             }
 
             if (stateChange.isOfType(Version.class)) {
@@ -240,7 +240,7 @@ public class ClusterStateManager {
         int thisMemberListVersion = node.getClusterService().getMemberListVersion();
         if (memberListVersion != thisMemberListVersion) {
             throw new IllegalStateException(
-                    "Can not lock cluster state! Member list versions are not matching!"
+                    "Cannot lock cluster state! Member list versions are not matching!"
                             + " Expected version: " + memberListVersion
                             + ", Current version: " + thisMemberListVersion);
         }
@@ -291,7 +291,7 @@ public class ClusterStateManager {
                     + "cannot lock cluster state! New state: " + stateChange
                     + ", current state: " + getState());
         } else if (partitionStateStamp != thisPartitionStateStamp) {
-            throw new IllegalStateException("Can not lock cluster state! Partition tables have different stamps! "
+            throw new IllegalStateException("Cannot lock cluster state! Partition tables have different stamps! "
                     + "Expected stamp: " + partitionStateStamp + " Current stamp: " + thisPartitionStateStamp);
         }
     }

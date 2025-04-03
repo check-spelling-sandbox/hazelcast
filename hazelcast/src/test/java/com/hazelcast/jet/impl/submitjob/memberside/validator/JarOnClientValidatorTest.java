@@ -34,6 +34,6 @@ public class JarOnClientValidatorTest {
     public void testValidateJobParameters() {
         assertThatThrownBy(() -> JarOnClientValidator.validateJobParameters(null))
                 .isInstanceOf(JetException.class)
-                .hasMessageContaining("jobParameters can not be null");
+                .hasMessageContaining("jobParameters cannot be null");
     }
 }

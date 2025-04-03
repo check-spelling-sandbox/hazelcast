@@ -36,7 +36,7 @@ import static java.util.concurrent.TimeUnit.SECONDS;
 /**
  * Client icmp based ping manager
  * Periodically at each `icmpIntervalMillis` checks if the address is reachable.
- * If the address can not be reached for `icmpTimeoutMillis` at each attempt, counts that as a failure attempt.
+ * If the address cannot be reached for `icmpTimeoutMillis` at each attempt, counts that as a failure attempt.
  * After the configured count `icmpMaxAttempts`, closes the connection with {@link TargetDisconnectedException}
  */
 public final class ClientICMPManager {

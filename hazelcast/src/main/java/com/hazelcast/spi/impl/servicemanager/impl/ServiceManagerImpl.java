@@ -321,7 +321,7 @@ public final class ServiceManagerImpl implements ServiceManager {
         if (currentServiceInfo != null) {
             logger.warning("Replacing " + currentServiceInfo + " with " + serviceInfo);
             if (currentServiceInfo.isCoreService()) {
-                throw new HazelcastException("Can not replace a CoreService! Name: " + serviceName
+                throw new HazelcastException("Cannot replace a CoreService! Name: " + serviceName
                         + ", Service: " + currentServiceInfo.getService());
             }
             if (currentServiceInfo.isManagedService()) {

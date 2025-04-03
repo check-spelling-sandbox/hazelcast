@@ -109,7 +109,7 @@ public class AccumulatorInfo implements IdentifiedDataSerializable {
     }
 
     private static int calculateBatchSize(QueryCacheConfig config) {
-        // batchSize can not be higher than bufferSize.
+        // batchSize cannot be higher than bufferSize.
         int batchSize = config.getBatchSize();
         int bufferSize = config.getBufferSize();
         return batchSize > bufferSize ? bufferSize : batchSize;

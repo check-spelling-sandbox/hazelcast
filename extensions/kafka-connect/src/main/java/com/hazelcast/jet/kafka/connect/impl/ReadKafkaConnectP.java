@@ -120,7 +120,7 @@ public class ReadKafkaConnectP<T> extends AbstractProcessor implements DynamicMe
             emitFromTraverser(eventTimeMapper.flatMapIdle());
             return false;
         }
-        // The taskConfig has not been received yet. We can not complete the processor
+        // The taskConfig has not been received yet. We cannot complete the processor
         if (!configurationReceived()) {
             return false;
         }

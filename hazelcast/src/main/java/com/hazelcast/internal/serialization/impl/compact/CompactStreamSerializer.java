@@ -215,7 +215,7 @@ public class CompactStreamSerializer implements StreamSerializer<Object> {
             }
             return schema;
         }
-        throw new HazelcastSerializationException("The schema can not be found with id " + schemaId);
+        throw new HazelcastSerializationException("The schema cannot be found with id " + schemaId);
     }
 
     private CompactSerializableRegistration getOrCreateRegistration(Class clazz) {

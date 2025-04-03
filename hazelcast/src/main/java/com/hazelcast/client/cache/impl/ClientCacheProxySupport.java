@@ -272,7 +272,7 @@ abstract class ClientCacheProxySupport<K, V> extends ClientProxy implements ICac
 
     protected void ensureOpen() {
         if (isClosed()) {
-            throw new IllegalStateException("Cache operations can not be performed. The cache closed");
+            throw new IllegalStateException("Cache operations cannot be performed. The cache closed");
         }
     }
 

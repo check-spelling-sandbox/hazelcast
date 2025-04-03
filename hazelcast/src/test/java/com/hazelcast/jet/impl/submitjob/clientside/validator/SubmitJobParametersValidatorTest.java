@@ -50,7 +50,7 @@ public class SubmitJobParametersValidatorTest {
         SubmitJobParameters parameterObject = SubmitJobParameters.withJarOnClient();
         assertThatThrownBy(() -> SubmitJobParametersValidator.validateJarOnClient(parameterObject))
                 .isInstanceOf(JetException.class)
-                .hasMessageContaining("jarPath can not be null");
+                .hasMessageContaining("jarPath cannot be null");
     }
 
     @Test
@@ -81,6 +81,6 @@ public class SubmitJobParametersValidatorTest {
         parameterObject.setJobParameters(null);
         assertThatThrownBy(() -> SubmitJobParametersValidator.validateJarOnClient(parameterObject))
                 .isInstanceOf(JetException.class)
-                .hasMessageContaining("jobParameters can not be null");
+                .hasMessageContaining("jobParameters cannot be null");
     }
 }

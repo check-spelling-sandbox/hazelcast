@@ -78,12 +78,12 @@ public class QueryCacheRequest {
     }
 
     public QueryCacheRequest withContext(QueryCacheContext context) {
-        this.context = checkNotNull(context, "context can not be null");
+        this.context = checkNotNull(context, "context cannot be null");
         return this;
     }
 
     public QueryCacheRequest withQueryCacheConfig(QueryCacheConfig queryCacheConfig) {
-        this.queryCacheConfig = checkNotNull(queryCacheConfig, "queryCacheConfig can not be null");
+        this.queryCacheConfig = checkNotNull(queryCacheConfig, "queryCacheConfig cannot be null");
         return this;
     }
 

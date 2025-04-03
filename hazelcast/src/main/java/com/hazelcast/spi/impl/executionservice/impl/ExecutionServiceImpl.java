@@ -198,7 +198,7 @@ public final class ExecutionServiceImpl implements ExecutionService {
         ManagedExecutorService executor;
         if (type == ExecutorType.CACHED) {
             if (threadFactory != null) {
-                throw new IllegalArgumentException("Cached executor can not be used with external thread factory");
+                throw new IllegalArgumentException("Cached executor cannot be used with external thread factory");
             }
             executor = new CachedExecutorServiceDelegate(name, cachedExecutorService, poolSize, queueCapacity);
         } else if (type == ExecutorType.CONCRETE) {

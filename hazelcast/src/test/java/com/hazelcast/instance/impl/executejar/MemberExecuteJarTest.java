@@ -32,7 +32,7 @@ import static org.mockito.Mockito.when;
 
 public class MemberExecuteJarTest {
 
-    // Empty method for testing because Method.class can not be mocked
+    // Empty method for testing because Method.class cannot be mocked
     public static void main(String[] args) {
     }
 

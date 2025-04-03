@@ -117,7 +117,7 @@ class TestClientRegistry {
                 HazelcastInstance instance = nodeRegistry.getInstance(remoteAddress);
                 UUID remoteUuid = nodeRegistry.uuidOf(remoteAddress);
                 if (instance == null) {
-                    throw new IOException("Can not connect to " + remoteAddress + ": instance does not exist");
+                    throw new IOException("Cannot connect to " + remoteAddress + ": instance does not exist");
                 }
                 Address localAddress = new Address(host, ports.incrementAndGet());
                 LockPair lockPair = getLockPair(remoteAddress);

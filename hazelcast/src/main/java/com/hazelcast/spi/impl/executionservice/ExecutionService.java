@@ -134,7 +134,7 @@ public interface ExecutionService {
 
     /**
      * This register method creates the executor only on @{@link ExecutorType#CONCRETE} type.
-     * The executors with @{@link ExecutorType#CACHED} types can not have custom thread factory since they will share the
+     * The executors with @{@link ExecutorType#CACHED} types cannot have custom thread factory since they will share the
      * threads with other @{@link ExecutorType#CACHED} executors.
      *
      * @param name          for the executor service

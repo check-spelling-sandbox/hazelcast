@@ -96,10 +96,10 @@ public abstract class AbstractPredicate<K, V> implements Predicate<K, V>, Identi
         }
         if (attributeValue instanceof PortableGenericRecord portableGenericRecord) {
             ClassDefinition classDefinition = portableGenericRecord.getClassDefinition();
-            throw new QueryException(attributeName + " field can not be compared, because "
+            throw new QueryException(attributeName + " field cannot be compared, because "
                     + "the user class could not be constructed. ClassDefinition " + classDefinition);
         }
-        throw new QueryException(attributeName + " field can not be compared, "
+        throw new QueryException(attributeName + " field cannot be compared, "
                 + "because it does not implement Comparable interface. Class " + attributeValue.getClass());
     }
 

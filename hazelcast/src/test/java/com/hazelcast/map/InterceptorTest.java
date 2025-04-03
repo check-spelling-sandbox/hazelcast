@@ -420,7 +420,7 @@ public class InterceptorTest extends HazelcastTestSupport {
         @Override
         public Object interceptRemove(Object removedValue) {
             if (removedValue.equals("ISTANBUL")) {
-                throw new RuntimeException("you can not remove this");
+                throw new RuntimeException("you cannot remove this");
             }
             return removedValue;
         }

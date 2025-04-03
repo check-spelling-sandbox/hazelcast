@@ -45,7 +45,7 @@ public final class JarOnMemberValidator {
     static void validateJarPathNotNull(Path jarPath) {
         // Check that parameter is not null, because it is used to access the file
         if (Objects.isNull(jarPath)) {
-            throw new JetException("File path can not be null");
+            throw new JetException("File path cannot be null");
         }
     }
 
@@ -61,7 +61,7 @@ public final class JarOnMemberValidator {
         try {
             long jarSize = Files.size(jarPath);
             if (jarSize == 0) {
-                throw new JetException("File size can not be 0");
+                throw new JetException("File size cannot be 0");
             }
         } catch (IOException exception) {
             throw new JetException("File is not accessible ", exception);
@@ -71,7 +71,7 @@ public final class JarOnMemberValidator {
     static void validateJobParameters(List<String> jobParameters) {
         // Check that parameter is not null
         if (Objects.isNull(jobParameters)) {
-            throw new JetException("jobParameters can not be null");
+            throw new JetException("jobParameters cannot be null");
         }
     }
 }

@@ -119,7 +119,7 @@ public class JoinPredicateScanResultSetIterator<T> implements AutoCloseableItera
     }
 
     private boolean getNextItemFromRowMapper() {
-        // We can not iterate over the ResultSet because we don't know how to merge leftRows with the ResultSet
+        // We cannot iterate over the ResultSet because we don't know how to merge leftRows with the ResultSet
         // Therefore rowMapper should iterate over the ResultSet
         nextItem = rowMapper.apply(resultSet);
         return (nextItem != null);

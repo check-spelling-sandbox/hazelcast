@@ -35,7 +35,7 @@ import java.util.Set;
 
 /**
  * A generic object interface that is returned to the user when the domain class
- * can not be created from any of the distributed Hazelcast data structures like
+ * cannot be created from any of the distributed Hazelcast data structures like
  * {@link IMap}, {@link IQueue} etc.
  * <p>
  * On remote calls like in the distributed executor service or EntryProcessors,

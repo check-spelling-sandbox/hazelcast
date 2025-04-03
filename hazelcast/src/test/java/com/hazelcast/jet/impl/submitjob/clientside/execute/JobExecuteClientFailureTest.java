@@ -71,7 +71,7 @@ public class JobExecuteClientFailureTest extends JetTestSupport {
 
         assertThatThrownBy(() -> jetService.submitJobFromJar(submitJobParameters))
                 .isInstanceOf(JetException.class)
-                .hasMessageContaining("jarPath can not be null");
+                .hasMessageContaining("jarPath cannot be null");
     }
 
     @Test
@@ -85,7 +85,7 @@ public class JobExecuteClientFailureTest extends JetTestSupport {
 
         assertThatThrownBy(() -> jetService.submitJobFromJar(submitJobParameters))
                 .isInstanceOf(JetException.class)
-                .hasMessageContaining("jobParameters can not be null");
+                .hasMessageContaining("jobParameters cannot be null");
     }
 
     @Test

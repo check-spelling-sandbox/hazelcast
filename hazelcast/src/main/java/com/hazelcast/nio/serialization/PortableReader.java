@@ -352,7 +352,7 @@ public interface PortableReader {
     /**
      * {@link PortableWriter#getRawDataOutput()}.
      * <p>
-     * Note that portable fields can not be read after this method is called. If this happens,
+     * Note that portable fields cannot be read after this method is called. If this happens,
      * an IOException will be thrown.
      *
      * @return rawDataInput

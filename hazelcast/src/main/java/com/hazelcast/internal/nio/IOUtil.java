@@ -912,7 +912,7 @@ public final class IOUtil {
     public static void fsyncDir(Path dir) throws IOException {
         // If the file is a directory we have to open read-only.
         if (OS.isWindows()) {
-            // opening a directory on Windows fails, directories can not be fsynced there
+            // opening a directory on Windows fails, directories cannot be fsynced there
             if (!Files.exists(dir)) {
                 // yet do not suppress trying to fsync directories that do not exist
                 throw new NoSuchFileException(dir.toString());

@@ -1105,7 +1105,7 @@ public class QueueContainer implements IdentifiedDataSerializable {
     private void age(QueueItem item, long currentTime) {
         long elapsed = currentTime - item.getCreationTime();
         if (elapsed <= 0) {
-            // elapsed time can not be a negative value, a system clock problem maybe (ignored)
+            // elapsed time cannot be a negative value, a system clock problem maybe (ignored)
             return;
         }
         totalAgedCount++;

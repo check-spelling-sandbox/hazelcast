@@ -43,7 +43,7 @@ public interface AddressProvider {
      *                       address provider tries to access an address that
      *                       doesn't exist.
      * @return The possible member addresses to connect to.
-     * @throws Exception when a remote service can not provide addressee
+     * @throws Exception when a remote service cannot provide addressee
      */
     Addresses loadAddresses(ClientConnectionProcessListenerRegistry listenerRunner) throws Exception;
 
@@ -53,7 +53,7 @@ public interface AddressProvider {
      *
      * @param address to be translated
      * @return new address if given address is known, otherwise return null
-     * @throws Exception when a remote service can not provide addressee
+     * @throws Exception when a remote service cannot provide addressee
      */
     Address translate(Address address) throws Exception;
 

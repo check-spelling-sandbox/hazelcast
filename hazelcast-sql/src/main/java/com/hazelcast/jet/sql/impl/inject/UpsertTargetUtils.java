@@ -53,7 +53,7 @@ public final class UpsertTargetUtils {
         }
 
         if (!(value instanceof RowValue)) {
-            throw QueryException.error("Can not assign value of class " + value.getClass().getName()
+            throw QueryException.error("Cannot assign value of class " + value.getClass().getName()
                     + " to OBJECT field.");
         }
 
@@ -84,13 +84,13 @@ public final class UpsertTargetUtils {
                     }
                     continue;
                 } catch (IllegalAccessException | InvocationTargetException | IllegalArgumentException e) {
-                    throw QueryException.error("Can not use setter for field " + typeField.getName(), e);
+                    throw QueryException.error("Cannot use setter for field " + typeField.getName(), e);
                 }
             }
 
             final Field field = ReflectionUtils.findPropertyField(targetClass, typeField.getName());
             if (field == null) {
-                throw QueryException.error("Can not find field: " + typeField.getName());
+                throw QueryException.error("Cannot find field: " + typeField.getName());
             }
 
             try {
@@ -103,7 +103,7 @@ public final class UpsertTargetUtils {
                     field.set(result, toConverter.convert(fieldValue));
                 }
             } catch (IllegalAccessException e) {
-                throw QueryException.error("Can not set value for field " + typeField.getName(), e);
+                throw QueryException.error("Cannot set value for field " + typeField.getName(), e);
             }
         }
 
@@ -192,7 +192,7 @@ public final class UpsertTargetUtils {
                     } else if (value instanceof GenericRecord) {
                         builder.setGenericRecord(name, (GenericRecord) value);
                     } else {
-                        throw QueryException.error("Can not set non-GenericRecord or RowValue to field " + name);
+                        throw QueryException.error("Cannot set non-GenericRecord or RowValue to field " + name);
                     }
                     break;
                 default:

@@ -144,7 +144,7 @@ public class ClientListenerServiceImpl
         } catch (Exception e) {
             if (connection.isAlive()) {
                 deregisterListenerInternal(userRegistrationId);
-                throw new HazelcastException("Listener can not be added ", e);
+                throw new HazelcastException("Listener cannot be added ", e);
             }
         }
     }
@@ -351,7 +351,7 @@ public class ClientListenerServiceImpl
         try {
             invoke(registrationKey, connection);
         } catch (Exception e) {
-            logger.warning("Listener " + registrationKey + " can not be added to a new connection: "
+            logger.warning("Listener " + registrationKey + " cannot be added to a new connection: "
                     + connection + ", reason: " + e.getMessage());
         }
     }

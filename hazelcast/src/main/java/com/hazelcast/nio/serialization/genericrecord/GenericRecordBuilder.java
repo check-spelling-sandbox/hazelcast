@@ -1057,7 +1057,7 @@ public interface GenericRecordBuilder {
     /**
      * It is legal to set the field again only when Builder is created with
      * {@link GenericRecord#newBuilderWithClone()}. Otherwise, it is illegal to
-     * set to the same field twice. Array items can not be null.
+     * set to the same field twice. Array items cannot be null.
      *
      * @param fieldName name of the field as it is defined in its schema/class
      *                  definition. It should be composed of only alphanumeric
@@ -1082,7 +1082,7 @@ public interface GenericRecordBuilder {
     /**
      * It is legal to set the field again only when Builder is created with
      * {@link GenericRecord#newBuilderWithClone()}. Otherwise, it is illegal to
-     * set to the same field twice. Array items can not be null.
+     * set to the same field twice. Array items cannot be null.
      *
      * @param fieldName name of the field as it is defined in its schema/class
      *                  definition. It should be composed of only alphanumeric
@@ -1108,7 +1108,7 @@ public interface GenericRecordBuilder {
     /**
      * It is legal to set the field again only when Builder is created with
      * {@link GenericRecord#newBuilderWithClone()}. Otherwise, it is illegal to
-     * set to the same field twice. Array items can not be null.
+     * set to the same field twice. Array items cannot be null.
      *
      * @param fieldName name of the field as it is defined in its schema/class
      *                  definition. It should be composed of only alphanumeric
@@ -1134,7 +1134,7 @@ public interface GenericRecordBuilder {
     /**
      * It is legal to set the field again only when Builder is created with
      * {@link GenericRecord#newBuilderWithClone()}. Otherwise, it is illegal to
-     * set to the same field twice. Array items can not be null.
+     * set to the same field twice. Array items cannot be null.
      *
      * @param fieldName name of the field as it is defined in its schema/class
      *                  definition. It should be composed of only alphanumeric
@@ -1160,7 +1160,7 @@ public interface GenericRecordBuilder {
     /**
      * It is legal to set the field again only when Builder is created with
      * {@link GenericRecord#newBuilderWithClone()}. Otherwise, it is illegal to
-     * set to the same field twice. Array items can not be null.
+     * set to the same field twice. Array items cannot be null.
      *
      * @param fieldName name of the field as it is defined in its schema/class
      *                  definition. It should be composed of only alphanumeric
@@ -1186,7 +1186,7 @@ public interface GenericRecordBuilder {
     /**
      * It is legal to set the field again only when Builder is created with
      * {@link GenericRecord#newBuilderWithClone()}. Otherwise, it is illegal to
-     * set to the same field twice. Array items can not be null.
+     * set to the same field twice. Array items cannot be null.
      *
      * @param fieldName name of the field as it is defined in its schema/class
      *                  definition. It should be composed of only alphanumeric
@@ -1215,7 +1215,7 @@ public interface GenericRecordBuilder {
      * set to the same field twice. This method allows nested structures.
      * Subclasses should also be created as `GenericRecord`.
      * <p>
-     * Array items can not be null.
+     * Array items cannot be null.
      * <p>
      * For {@link com.hazelcast.config.CompactSerializationConfig Compact}
      * objects, it is not allowed write an array containing different item

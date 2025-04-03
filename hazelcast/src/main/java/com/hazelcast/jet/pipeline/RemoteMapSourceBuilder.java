@@ -93,7 +93,7 @@ public class RemoteMapSourceBuilder<K, V, T> {
     private Projection<? super Entry<K, V>, ? extends T> projection;
 
     RemoteMapSourceBuilder(String mapName) {
-        requireNonNull(mapName, "mapName can not be null");
+        requireNonNull(mapName, "mapName cannot be null");
         this.mapName = mapName;
     }
 
@@ -110,7 +110,7 @@ public class RemoteMapSourceBuilder<K, V, T> {
      * @return this builder
      */
     public RemoteMapSourceBuilder<K, V, T> dataConnectionRef(@Nonnull DataConnectionRef dataConnectionRef) {
-        this.dataConnectionRef = requireNonNull(dataConnectionRef, "dataConnectionRef can not be null");
+        this.dataConnectionRef = requireNonNull(dataConnectionRef, "dataConnectionRef cannot be null");
         return this;
     }
 
@@ -125,7 +125,7 @@ public class RemoteMapSourceBuilder<K, V, T> {
      * @return this builder
      */
     public RemoteMapSourceBuilder<K, V, T> clientConfig(@Nonnull ClientConfig clientConfig) {
-        this.clientConfig = requireNonNull(clientConfig, "clientConfig can not be null");
+        this.clientConfig = requireNonNull(clientConfig, "clientConfig cannot be null");
         return this;
     }
 
@@ -136,7 +136,7 @@ public class RemoteMapSourceBuilder<K, V, T> {
      * @return this builder
      */
     public RemoteMapSourceBuilder<K, V, T> predicate(@Nonnull Predicate<K, V> predicate) {
-        requireNonNull(predicate, "predicate can not be null");
+        requireNonNull(predicate, "predicate cannot be null");
         checkSerializable(predicate, "predicate");
         this.predicate = predicate;
         return this;
@@ -152,7 +152,7 @@ public class RemoteMapSourceBuilder<K, V, T> {
     public <T_NEW> RemoteMapSourceBuilder<K, V, T_NEW> projection(
             @Nonnull Projection<? super Entry<K, V>, ? extends T_NEW> projection
     ) {
-        requireNonNull(projection, "projection can not be null");
+        requireNonNull(projection, "projection cannot be null");
         checkSerializable(projection, "projection");
         @SuppressWarnings("unchecked")
         RemoteMapSourceBuilder<K, V, T_NEW> newThis = (RemoteMapSourceBuilder<K, V, T_NEW>) this;

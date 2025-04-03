@@ -71,7 +71,7 @@ public abstract class WatermarkCoalescer {
      * @param queueIndex index of the queue on which the WM was received.
      * @param wmValue    the watermark value, it can be {@link #IDLE_MESSAGE}
      * @return the watermark value to emit or {@link #NO_NEW_WM} if no
-     * watermark should be forwarded. It can not return {@link #IDLE_MESSAGE}
+     * watermark should be forwarded. It cannot return {@link #IDLE_MESSAGE}
      */
     public abstract long observeWm(int queueIndex, long wmValue);
 

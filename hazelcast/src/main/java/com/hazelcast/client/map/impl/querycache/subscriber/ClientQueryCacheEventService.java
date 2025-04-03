@@ -134,7 +134,7 @@ public class ClientQueryCacheEventService implements QueryCacheEventService {
                         serializationService, EVENT_QUEUE_TIMEOUT_MILLIS));
             } catch (RejectedExecutionException e) {
                 // TODO Should we notify user when we overloaded?
-                logger.warning("EventQueue overloaded! Can not process IMap=[" + mapName + "]"
+                logger.warning("EventQueue overloaded! Cannot process IMap=[" + mapName + "]"
                         + ", QueryCache=[ " + cacheId + "]" + ", Event=[" + event + "]");
             }
         }

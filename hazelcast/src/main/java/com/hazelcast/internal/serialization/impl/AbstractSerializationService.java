@@ -720,7 +720,7 @@ public abstract class AbstractSerializationService implements InternalSerializat
             }
 
             throw new IllegalArgumentException("Compact serializer for the "
-                    + "class '" + clazz + " can not be registered as it "
+                    + "class '" + clazz + " cannot be registered as it "
                     + "overrides the default serializer for that class "
                     + "provided by Hazelcast."
             );

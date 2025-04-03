@@ -199,7 +199,7 @@ public final class Address implements IdentifiedDataSerializable {
 
 
     /**
-     * Creates an unresolved address. This API is used by the client for the case where the hostname can not be resolved.
+     * Creates an unresolved address. This API is used by the client for the case where the hostname cannot be resolved.
      * Members achieve the same thing via Serialization where we don't resolve the hostname when Address comes as Data
      * from another member.
      *

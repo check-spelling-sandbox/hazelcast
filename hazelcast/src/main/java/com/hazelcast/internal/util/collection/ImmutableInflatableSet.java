@@ -47,7 +47,7 @@ public final class ImmutableInflatableSet<T> extends InflatableSet<T> {
     @Override
     public Iterator<T> iterator() {
         if (state == State.INFLATED) {
-            throw new IllegalStateException("Set is immutable and can not be inflated.");
+            throw new IllegalStateException("Set is immutable and cannot be inflated.");
         }
         return new ImmutableHybridIterator();
     }

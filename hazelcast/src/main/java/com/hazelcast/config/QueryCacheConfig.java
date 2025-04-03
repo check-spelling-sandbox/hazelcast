@@ -200,7 +200,7 @@ public class QueryCacheConfig implements IdentifiedDataSerializable {
      * @return this {@code QueryCacheConfig} instance
      */
     public QueryCacheConfig setPredicateConfig(PredicateConfig predicateConfig) {
-        this.predicateConfig = checkNotNull(predicateConfig, "predicateConfig can not be null");
+        this.predicateConfig = checkNotNull(predicateConfig, "predicateConfig cannot be null");
         return this;
     }
 

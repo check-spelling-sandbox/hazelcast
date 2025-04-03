@@ -331,7 +331,7 @@ public class DefaultPortableWriter implements PortableWriter {
             for (int i = 0; i < len; i++) {
                 int position = out.position();
                 if (values[i] == null) {
-                    throw new HazelcastSerializationException("Array items can not be null");
+                    throw new HazelcastSerializationException("Array items cannot be null");
                 } else {
                     out.writeInt(offset + i * INT_SIZE_IN_BYTES, position);
                     writer.write(out, values[i]);

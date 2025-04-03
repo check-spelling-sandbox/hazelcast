@@ -19,7 +19,7 @@ package com.hazelcast.client;
 import com.hazelcast.core.HazelcastException;
 
 /**
- * A {@link HazelcastException} that is thrown when the client can not use a cluster. Examples:
+ * A {@link HazelcastException} that is thrown when the client cannot use a cluster. Examples:
  * <ul>
  * <li>Cluster blacklisted the client</li>
  * <li>Cluster partition counts are different between alternative clusters</li>

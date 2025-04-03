@@ -557,7 +557,7 @@ public class TcpClientConnectionManager implements ClientConnectionManager, Memb
                 for (Address address : getPossibleMemberAddresses(context.getAddressProvider())) {
                     checkClientActive();
                     if (!triedAddressesPerAttempt.add(address)) {
-                        // If we can not add it means that it is already tried to be connected with the member list
+                        // If we cannot add it means that it is already tried to be connected with the member list
                         continue;
                     }
                     connectionProcessListenerRunner.onAttemptingToConnectToTarget(this::translate, address);
@@ -1191,7 +1191,7 @@ public class TcpClientConnectionManager implements ClientConnectionManager, Memb
             connection.close(reason, null);
             throw new AuthenticationException(reason);
         }
-        //Following state can not happen. There is only one path with `switchingToNextCluster` as true
+        //Following state cannot happen. There is only one path with `switchingToNextCluster` as true
         //and that path starts only when the old switch fails. There are no concurrent run of that path.
         if (clientState != ClientState.SWITCHING_CLUSTER && switchingToNextCluster) {
             String reason = "The cluster switch is already completed. "
@@ -1238,7 +1238,7 @@ public class TcpClientConnectionManager implements ClientConnectionManager, Memb
         ClientPartitionServiceImpl partitionService = (ClientPartitionServiceImpl) client.getClientPartitionService();
         if (!partitionService.checkAndSetPartitionCount(response.getPartitionCount())) {
             ClientNotAllowedInClusterException exception =
-                    new ClientNotAllowedInClusterException("Client can not work with this cluster"
+                    new ClientNotAllowedInClusterException("Client cannot work with this cluster"
                             + " because it has a different partition count. "
                             + "Expected partition count: " + partitionService.getPartitionCount()
                             + ", Member partition count: " + response.getPartitionCount());

@@ -139,7 +139,7 @@ public class QueueConfig implements IdentifiedDataSerializable, NamedConfig, Ver
      */
     public QueueConfig setMaxSize(int maxSize) {
         if (maxSize < 0) {
-            throw new IllegalArgumentException("Size of the queue can not be a negative value!");
+            throw new IllegalArgumentException("Size of the queue cannot be a negative value!");
         }
         this.maxSize = maxSize;
         return this;

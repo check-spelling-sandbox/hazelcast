@@ -125,7 +125,7 @@ public final class MemberImpl
     public void setAttribute(String key, String value) {
         ensureLocalMember();
         if (instance != null && instance.node.clusterService.isJoined()) {
-            throw new UnsupportedOperationException("Attributes can not be changed after instance has started");
+            throw new UnsupportedOperationException("Attributes cannot be changed after instance has started");
         }
 
         isNotNull(key, "key");

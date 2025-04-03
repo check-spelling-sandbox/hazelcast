@@ -198,14 +198,14 @@ public class AttributePartitioningStrategyIntegrationTest extends SimpleTestInCl
     private HazelcastInstance getOwner(Object partitionKey) {
         final Partition partition = instance().getPartitionService().getPartition(partitionKey);
         if (partition == null) {
-            throw new HazelcastException("Can not find partition for key: " + partitionKey);
+            throw new HazelcastException("Cannot find partition for key: " + partitionKey);
         }
 
         return Arrays.stream(instances())
                 .filter(instance -> ((HazelcastInstanceProxy) instance).getOriginal().node.address
                         .equals(partition.getOwner().getAddress()))
                 .findFirst()
-                .orElseThrow(() -> new HazelcastException("Can not find partition owner"));
+                .orElseThrow(() -> new HazelcastException("Cannot find partition owner"));
     }
 
     private List<HazelcastInstance> getNonOwners(final HazelcastInstance owner) {

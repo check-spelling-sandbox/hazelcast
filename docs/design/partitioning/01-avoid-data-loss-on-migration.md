@@ -561,7 +561,7 @@ Repartitioning algorithm may generate a new partition table that will
 require cyclic migrations. The example below shows a cyclic migration
 where R\[a\] is migrated from A1 to A3, R\[b\] is migrated from A2 to
 A1, and R\[c\] is migrated from A3 to A2. Cyclic migrations are a
-problem for us because we can not perform them without decreasing the
+problem for us because we cannot perform them without decreasing the
 available replica count. To perform these migrations, we need to clear
 one of these replicas first.
 
@@ -630,7 +630,7 @@ for each replica index of the partition, denoted by i
         schedule a SHIFT DOWN down migration for replica indices i and j
 
 
-    else # it means that we can not perform a migration at the current index without decreasing the available replica count. Therefore, we will perform another migration at a colder index to overcome this situation.
+    else # it means that we cannot perform a migration at the current index without decreasing the available replica count. Therefore, we will perform another migration at a colder index to overcome this situation.
 
         look for a SHIFT UP or a MOVE migration at a colder index j > i that will enable the necessary migration at the current index i without decreasing the available replica count, and perform it before this index
 ```
@@ -693,7 +693,7 @@ Replica indices : 0, 1, 2, 3
 CURRENT         : A, B, C, D
 TARGET          : A, C, D, E
 
-We can not migrate index 1 from B to C without decreasing available replica count. 
+We cannot migrate index 1 from B to C without decreasing available replica count. 
 If we perform a shift up, the immediate partition replica state will be: A, C, NULL, D which decreases available replica count and therefore not allowed by the algorithm.
 
 PLANNED MIGRATIONS:

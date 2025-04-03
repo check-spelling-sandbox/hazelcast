@@ -242,7 +242,7 @@ public class ClientInvocation extends BaseInvocation implements Runnable {
     }
 
     /**
-     * We make sure that `notifyResponse` can not be called by multiple threads concurrently
+     * We make sure that `notifyResponse` cannot be called by multiple threads concurrently
      * Only ones that can set a null on `sentConnection` can notify the invocation
      *
      * @param clientMessage return true if invocation completed
@@ -313,7 +313,7 @@ public class ClientInvocation extends BaseInvocation implements Runnable {
     }
 
     /**
-     * We make sure that this method can not be called from multiple threads per invocation at the same time
+     * We make sure that this method cannot be called from multiple threads per invocation at the same time
      * Only ones that can set a null on `sentConnection` can notify the invocation
      */
     void notifyExceptionWithOwnedPermission(Throwable exception) {
