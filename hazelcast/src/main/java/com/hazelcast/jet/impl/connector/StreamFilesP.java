@@ -375,7 +375,7 @@ public class StreamFilesP<R> extends AbstractProcessor {
         // Background: Java 7 SE defines no standard modifiers for a watch service. However, some JDKs use internal
         // modifiers to increase sensitivity. This field contains modifiers to be used for highest possible sensitivity.
         // It's JVM-specific and hence it's just a best-effort.
-        // I believe this is useful on platforms without native watch service (or where Java does not use it) e.g. MacOSX
+        // I believe this is useful on platforms without native watch service (or where Java does not use it) e.g. macOS
         Object modifier = ReflectionUtils.readStaticFieldOrNull(SENSITIVITY_MODIFIER_CLASS_NAME, "HIGH");
         if (modifier instanceof WatchEvent.Modifier eventModifier) {
             return new WatchEvent.Modifier[]{eventModifier};

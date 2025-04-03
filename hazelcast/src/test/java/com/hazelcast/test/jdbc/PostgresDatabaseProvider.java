@@ -79,7 +79,7 @@ public class PostgresDatabaseProvider extends JdbcDatabaseProvider<PostgreSQLCon
     PostgreSQLContainer<?> createContainer(String dbName) {
         PostgreSQLContainer<?> postgreSQLContainer = new PostgreSQLContainer<>("postgres:" + TEST_POSTGRES_VERSION)
                 .withDatabaseName(dbName)
-                // On MacOS there seems to be some delay before the port is available for connections (maybe only with colima?).
+                // On macOS there seems to be some delay before the port is available for connections (maybe only with colima?).
                 // As a result, container is reported started based only on logs earlier that it can be connected to.
                 // If we wait for both conditions (port and log) we should get robust behavior.
                 .waitingFor(new WaitAllStrategy().withStrategy(PG_DEFAULT_WAIT).withStrategy(Wait.defaultWaitStrategy()))

@@ -904,7 +904,7 @@ public final class IOUtil {
 
 
     /**
-     * Fsyncs a directory on Linux and MacOSX. On Windows, this method does nothing.
+     * Fsyncs a directory on Linux and macOS. On Windows, this method does nothing.
      * <p>
      * @param dir the directory to fsync.
      * @throws IOException if an I/O error occurs.
@@ -924,7 +924,7 @@ public final class IOUtil {
                 file.force(true);
             } catch (final IOException e) {
                 assert !(OS.isLinux() || OS.isMac())
-                        : "On Linux and MacOSX fsyncing a directory should not throw IOException, "
+                        : "On Linux and macOS fsyncing a directory should not throw IOException, "
                         + "we just don't want to rely on that in production (undocumented). Got: "
                         + e;
             }
