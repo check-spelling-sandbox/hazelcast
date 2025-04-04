@@ -153,23 +153,23 @@ abstract class AbstractInternalQueryCache<K, V> implements InternalQueryCache<K,
     }
 
     protected Set scanAndGetResult(Predicate predicate, ResultType resultType) {
-        ResulCollector resulCollector = new ResulCollector(resultType);
+        ResultCollector resultCollector = new ResultCollector(resultType);
 
         // 1. Optimization when predicate is true-predicate,
         // in this case no need to scan indexes.
         if (predicate == TruePredicate.INSTANCE) {
-            doFullScan(predicate, resulCollector);
-            return toImmutableLazySet(resulCollector.getResult());
+            doFullScan(predicate, resultCollector);
+            return toImmutableLazySet(resultCollector.getResult());
         }
 
         // 2. Try to query over indexes
-        if (tryQueryOverIndexes(predicate, resulCollector)) {
-            return toImmutableLazySet(resulCollector.getResult());
+        if (tryQueryOverIndexes(predicate, resultCollector)) {
+            return toImmutableLazySet(resultCollector.getResult());
         }
 
         // 3. If query can't be performed over indexes, scan full data set.
-        doFullScan(predicate, resulCollector);
-        return toImmutableLazySet(resulCollector.getResult());
+        doFullScan(predicate, resultCollector);
+        return toImmutableLazySet(resultCollector.getResult());
     }
 
     private Set toImmutableLazySet(List resultSet) {
@@ -184,12 +184,12 @@ abstract class AbstractInternalQueryCache<K, V> implements InternalQueryCache<K,
         KEY, VALUE, ENTRY
     }
 
-    private final class ResulCollector implements BiConsumer {
+    private final class ResultCollector implements BiConsumer {
 
         private final ResultType resultType;
         private final List result = new ArrayList();
 
-        private ResulCollector(ResultType resultType) {
+        private ResultCollector(ResultType resultType) {
             this.resultType = resultType;
         }
 

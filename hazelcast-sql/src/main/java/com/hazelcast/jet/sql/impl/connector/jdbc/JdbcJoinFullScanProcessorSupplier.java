@@ -63,7 +63,7 @@ public class JdbcJoinFullScanProcessorSupplier
     }
 
     private FullScanResultSetIterator<JetSqlRow> joinRow(JetSqlRow leftRow) {
-        // Full scan : Select * from the table and iterate over the ResulSet
+        // Full scan : Select * from the table and iterate over the ResultSet
         Connection connection = dataConnection.getConnection();
         TypeResolver typeResolver = JdbcSqlConnector.typeResolver(connection);
         return new FullScanResultSetIterator<>(
