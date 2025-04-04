@@ -23,7 +23,7 @@ import java.util.Objects;
 import com.hazelcast.config.LoginModuleConfig;
 
 /**
- * This {@link AuthenticationConfig} implementation is a imple holder for login module configurations.
+ * This {@link AuthenticationConfig} implementation is a simple holder for login module configurations.
  */
 public class JaasAuthenticationConfig implements AuthenticationConfig {
 
