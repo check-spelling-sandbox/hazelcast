@@ -153,7 +153,7 @@ abstract class AbstractInternalQueryCache<K, V> implements InternalQueryCache<K,
     }
 
     protected Set scanAndGetResult(Predicate predicate, ResultType resultType) {
-        ResulCollector resulCollector = new ResulCollector(resultType);
+        ResultCollector resulCollector = new ResultCollector(resultType);
 
         // 1. Optimization when predicate is true-predicate,
         // in this case no need to scan indexes.
@@ -184,12 +184,12 @@ abstract class AbstractInternalQueryCache<K, V> implements InternalQueryCache<K,
         KEY, VALUE, ENTRY
     }
 
-    private final class ResulCollector implements BiConsumer {
+    private final class ResultCollector implements BiConsumer {
 
         private final ResultType resultType;
         private final List result = new ArrayList();
 
-        private ResulCollector(ResultType resultType) {
+        private ResultCollector(ResultType resultType) {
             this.resultType = resultType;
         }
 
