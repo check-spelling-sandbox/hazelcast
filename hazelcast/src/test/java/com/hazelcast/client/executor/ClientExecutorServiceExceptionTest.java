@@ -84,7 +84,7 @@ public class ClientExecutorServiceExceptionTest {
     }
 
     @Test
-    public void testRetriableIOException() throws Throwable {
+    public void testRetryableIOException() throws Throwable {
         hazelcastFactory.newHazelcastInstance();
         ClientConfig clientConfig = new ClientConfig();
         clientConfig.getNetworkConfig().getClusterRoutingConfig().setRoutingMode(RoutingMode.SINGLE_MEMBER);
