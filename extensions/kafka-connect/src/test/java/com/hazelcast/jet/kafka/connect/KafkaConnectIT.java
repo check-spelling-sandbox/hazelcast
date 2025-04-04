@@ -373,7 +373,7 @@ public class KafkaConnectIT extends SimpleTestInClusterSupport {
             return "Order{" +
                     "orderId=" + orderId +
                     ", orderTime=" + orderTime +
-                    ", itemtId='" + itemId + '\'' +
+                    ", itemId='" + itemId + '\'' +
                     ", orderUnits=" + orderUnits +
                     ", headers=" + headers +
                     '}';
