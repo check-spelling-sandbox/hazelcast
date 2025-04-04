@@ -82,7 +82,7 @@ public class NestedPredicateVersionedPortablesTest extends HazelcastTestSupport 
     }
 
     @Test
-    public void singleAttributeQuery_versionedProtables_predicates() {
+    public void singleAttributeQuery_versionedPortables_predicates() {
         // GIVEN
         map.put(1, new NestedPredicateVersionedPortablesTest.Body("body1", new NestedPredicateVersionedPortablesTest.Limb("hand")));
         map.put(2, new NestedPredicateVersionedPortablesTest.Body("body2", new NestedPredicateVersionedPortablesTest.Limb("leg")));
