@@ -16,7 +16,7 @@
 
 /**
  * <p>
- *     Event classes to define listenters for JCache other than EntryListener
+ *     Event classes to define listeners for JCache other than EntryListener
  *     @since 3.6
  * </p>
  */
