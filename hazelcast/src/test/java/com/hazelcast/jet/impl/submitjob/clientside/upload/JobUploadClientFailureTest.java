@@ -206,7 +206,7 @@ public class JobUploadClientFailureTest extends JetTestSupport {
         // upload the jar to member and call and within the jar start the job from another thread
         // It fails because member uses ThreadLocal to find ExecuteJobParameters
         SubmitJobParameters submitJobParameters = SubmitJobParameters.withJarOnClient()
-                .setJarPath(getParalleJarPath())
+                .setJarPath(getParallelJarPath())
                 .setJobName("parallel_job");
 
         jetService.submitJobFromJar(submitJobParameters);
@@ -432,7 +432,7 @@ public class JobUploadClientFailureTest extends JetTestSupport {
         return getPath(SIMPLE_JAR);
     }
 
-    public static Path getParalleJarPath() {
+    public static Path getParallelJarPath() {
         return getPath(PARALLEL_JAR);
     }
 
