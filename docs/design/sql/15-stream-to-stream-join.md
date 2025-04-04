@@ -103,7 +103,7 @@ inputRight.time >= inputLeft.time - constant
 
 We must be able to extract both of these conditions. We'll decompose
 conjunctions in the join condition (the ANDed expressions). There must be at
-least one such inequation for each input. If there are multiple inequations of
+least one such inequation for each input. If there are multiple inequalities of
 this for either input, we'll use the lowest constant. If we can't convert the
 inequation into this form, we'll not use that part of the join condition for a
 time bound. Obviously, we'll apply the whole condition after joining. The point
