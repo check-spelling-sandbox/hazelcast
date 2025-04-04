@@ -16,7 +16,7 @@ By default, Jet uses local DAG edges, which means that the data that
 originated on a given cluster member stays within it. This has the
 advantage of avoiding the latency of network hops and congesting the
 links between members. The disadvantage is that the data may be
-imbalanced across members, especially when using a non-distributed data
+unbalanced across members, especially when using a non-distributed data
 source. We are therefore introducing a Pipeline API method,
 `stage.rebalance()`, that allows the user to decide where the data
 should be distributed across all members.

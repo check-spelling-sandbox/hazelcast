@@ -1098,7 +1098,7 @@ public interface GeneralStage<T> extends Stage {
      * reroute the data to other members, but propagates the backpressure to
      * the upstream. If you choose a partitioning key that has a skewed
      * distribution (some keys being much more frequent), this will result in
-     * an imbalanced data flow.
+     * an unbalanced data flow.
      * <p>
      * These are some basic invariants:
      * <ol><li>
