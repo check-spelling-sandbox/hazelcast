@@ -573,7 +573,7 @@ public final class OperationExecutorImpl implements OperationExecutor, StaticMet
                     + genericThreads.length + " generic threads (" + priorityThreadCount + " dedicated for priority tasks)");
         }
 
-        // When tpc is enabled, the partitionThread are manged by the tpcEngine.
+        // When tpc is enabled, the partitionThread are managed by the tpcEngine.
         if (!tpcServerBootstrap.isEnabled()) {
             startAll(partitionThreads);
         }
@@ -588,7 +588,7 @@ public final class OperationExecutorImpl implements OperationExecutor, StaticMet
 
     @Override
     public void shutdown() {
-        // when tpc is enabled, the partitionThread are manged by the tpcEngine.
+        // when tpc is enabled, the partitionThread are managed by the tpcEngine.
         if (!tpcServerBootstrap.isEnabled()) {
             shutdownAll(partitionThreads);
         }
