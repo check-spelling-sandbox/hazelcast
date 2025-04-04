@@ -36,7 +36,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.Collections;
 
 import static com.hazelcast.jet.core.JobAssertions.assertThat;
-import static com.hazelcast.jet.impl.submitjob.clientside.upload.JobUploadClientFailureTest.getParalleJarPath;
+import static com.hazelcast.jet.impl.submitjob.clientside.upload.JobUploadClientFailureTest.getParallelJarPath;
 import static com.hazelcast.jet.impl.submitjob.clientside.upload.JobUploadClientFailureTest.jarDoesNotExistInTempDirectory;
 import static org.junit.Assert.assertFalse;
 
@@ -61,7 +61,7 @@ public class JobExecuteCommandLineSuccessTest extends JetTestSupport {
         // newJob() is called from another thread, but it succeeds
         // because CLI does not use ThreadLocal to store ExecuteJobParameters
         HazelcastBootstrap.executeJarOnCLI(() -> hazelcastClient,
-                getParalleJarPath().toString(),
+                getParallelJarPath().toString(),
                 null,
                 null,
                 null,
