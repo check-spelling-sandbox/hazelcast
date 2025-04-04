@@ -109,7 +109,7 @@ An instance of a data store differs one system from another (only JDBC is
 implemented atm):
 
 * For JDBC, it’s a `javax.sql.DataSource` (either simple or pooled)
-* For Hazelcast, it is the `HazecastInstance`
+* For Hazelcast, it is the `HazelcastInstance`
 * For Kafka, it is either `KafkaConsumer` or `KafkaProducer`
 * For MongoDB, it is `MongoClient`
 
