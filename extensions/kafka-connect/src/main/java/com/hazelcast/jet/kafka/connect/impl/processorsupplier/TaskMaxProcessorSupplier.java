@@ -33,14 +33,14 @@ class TaskMaxProcessorSupplier implements ProcessorSupplier {
     @Serial
     private static final long serialVersionUID = 1L;
     private final ReadKafkaConnectProcessorSupplier supplier;
-    private final int lastInitiallyActiveProcesorOrder;
+    private final int lastInitiallyActiveProcessorOrder;
     private final int startingProcessorOrder;
 
     TaskMaxProcessorSupplier(int startingProcessorOrder,
-                             int lastInitiallyActiveProcesorOrder,
+                             int lastInitiallyActiveProcessorOrder,
                              ReadKafkaConnectProcessorSupplier supplier) {
         this.startingProcessorOrder = startingProcessorOrder;
-        this.lastInitiallyActiveProcesorOrder = lastInitiallyActiveProcesorOrder;
+        this.lastInitiallyActiveProcessorOrder = lastInitiallyActiveProcessorOrder;
         this.supplier = supplier;
     }
 
@@ -71,7 +71,7 @@ class TaskMaxProcessorSupplier implements ProcessorSupplier {
         int processorOrder = startingProcessorOrder;
         for (ReadKafkaConnectP<?> processor : processors) {
             int thisOrder = processorOrder++;
-            processor.setActive(thisOrder <= lastInitiallyActiveProcesorOrder);
+            processor.setActive(thisOrder <= lastInitiallyActiveProcessorOrder);
             processor.setProcessorOrder(thisOrder);
         }
         return processors;
