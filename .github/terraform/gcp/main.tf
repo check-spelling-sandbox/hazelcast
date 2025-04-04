@@ -97,7 +97,7 @@ resource "google_compute_firewall" "firewall" {
   name    = "${random_pet.prefix.id}-firewall"
   network = google_compute_network.vpc.name
 
-  # Allow SSH, Hazelcast member communication and Hazelcat Management Center website
+  # Allow SSH, Hazelcast member communication and Hazelcast Management Center website
   allow {
     protocol = "tcp"
     ports    = ["22", "5701-5707", "8080"]
