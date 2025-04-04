@@ -101,7 +101,7 @@ public class ClientMultiMapLockTest extends HazelcastTestSupport {
     }
 
     @Test
-    public void testUnlock_whenRentrantlyLockedBySelf() {
+    public void testUnlock_whenReentrantlyLockedBySelf() {
         final MultiMap mm = client.getMultiMap(randomString());
         final Object key = "key";
 
