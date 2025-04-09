@@ -138,7 +138,7 @@ public class KafkaConnectNeo4jIT extends JetTestSupport {
         // Change the uri so that connector fails to connect
         connectorProperties.setProperty("neo4j.server.uri", "bolt://localhost:52403");
         connectorProperties.setProperty("neo4j.retry.backoff.msecs", "5");
-        connectorProperties.setProperty("neo4j.retry.max.attemps", "1");
+        connectorProperties.setProperty("neo4j.retry.max.attempts", "1");
 
         Pipeline pipeline = Pipeline.create();
         RetryStrategy strategy = RetryStrategies.custom()
