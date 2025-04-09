@@ -245,7 +245,7 @@ full implementation of the Filter Analysis, however.
 - **FA** - Filter Analysis, here and after colloquial name for the entire process of analyzing input filter for partition boundness
   and extracting Variants from it. The process itself may not be executed in this exact order however (transformation
   will be performed before analysis for ease of analysis).
-- **Partition Boundess** - characteristic of SQL filters to limit underlying query to a finite number of partitions,
+- **Partition Boundness** - characteristic of SQL filters to limit underlying query to a finite number of partitions,
   it's based on the assumption that a finite number of keys will produce a finite number of partitions. Therefore,
   to determine whether a filter is bounded partitions-wise we must analyze it for the number
   of discrete keys it will pass (filter in).
