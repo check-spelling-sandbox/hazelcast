@@ -355,7 +355,7 @@ class SparseIntArray<E> {
                 indexes = new int[newCapacity];
                 values = new Object[newCapacity];
             } else {
-                // Some space left, its size is bellow the sparse
+                // Some space left, its size is below the sparse
                 // representation threshold (we adjusted for it in
                 // denseCapacityDeltaInt call): reuse the values array and
                 // allocate indexes array.
@@ -407,7 +407,7 @@ class SparseIntArray<E> {
                 long lastIndex = toUnsignedLong(indexes[indexes.length - 1]);
                 long denseCapacity = Math.max(unsignedIndex, lastIndex) + 1;
                 if (denseCapacity <= size + delta) {
-                    // The wasted space is bellow the threshold: convert to
+                    // The wasted space is below the threshold: convert to
                     // dense representation.
 
                     Object[] newValues = new Object[(int) denseCapacity];
@@ -1210,7 +1210,7 @@ class SparseIntArray<E> {
                 indexes = new short[newCapacity];
                 values = new Object[newCapacity];
             } else {
-                // Some space left, its size is bellow the sparse
+                // Some space left, its size is below the sparse
                 // representation threshold (we adjusted for it in
                 // denseCapacityDeltaShort call): reuse the values array and
                 // allocate indexes array.
@@ -1259,7 +1259,7 @@ class SparseIntArray<E> {
                 int lastIndex = toUnsignedInt(indexes[indexes.length - 1]);
                 int denseCapacity = Math.max(unsignedIndex, lastIndex) + 1;
                 if (denseCapacity <= size + delta) {
-                    // The wasted space is bellow the threshold: convert to
+                    // The wasted space is below the threshold: convert to
                     // dense representation.
 
                     Object[] newValues = new Object[denseCapacity];

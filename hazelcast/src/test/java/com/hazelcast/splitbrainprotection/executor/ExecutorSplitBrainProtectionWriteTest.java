@@ -454,7 +454,7 @@ public class ExecutorSplitBrainProtectionWriteTest extends AbstractSplitBrainPro
 
         // 10s is relatively short timeout -> there is some chance the task will be cancelled before it
         // had a chance to be executed. especially in slow environments -> we have to tolerate the CancellationException
-        // see the test bellow for a scenario where the timeout is sufficiently long
+        // see the test below for a scenario where the timeout is sufficiently long
         assertAllowedException(futures, CancellationException.class);
     }
 

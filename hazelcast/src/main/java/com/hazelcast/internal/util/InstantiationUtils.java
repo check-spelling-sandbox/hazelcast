@@ -87,7 +87,7 @@ public final class InstantiationUtils {
                 // 2. Parameters are never primitives because they are passed inside an object array
                 // 3. As a user I expect this utility class to do auto-unboxing of passed parameters
                 //  ->  If a constructor argument is a primitive type then we have to use its boxed version otherwise
-                //      isAssignableFrom() bellow fails. It's because an instance of Integer.class cannot be directly
+                //      isAssignableFrom() below fails. It's because an instance of Integer.class cannot be directly
                 //      assigned to int.class without Java compiler doing its magic.
                 if (param == null) {
                     // passed parameter was null, but the argument in constructor is primitive - it's not matching

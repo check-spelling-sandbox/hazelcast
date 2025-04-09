@@ -52,7 +52,7 @@ public class PredicateDataSerializerHook implements DataSerializerHook {
     public static final int PAGING_PREDICATE = 15;
     public static final int PARTITION_PREDICATE = 16;
     public static final int NULL_OBJECT = 17;
-    // Objects corresponding to the 3 entries bellow are never transferred over
+    // Objects corresponding to the 3 entries below are never transferred over
     // the wire.
     public static final int COMPOSITE_VALUE = 18;
     public static final int NEGATIVE_INFINITY = 19;
