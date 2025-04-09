@@ -71,7 +71,7 @@ public class DiagnosticsConfigTest {
     }
 
     @Test
-    public void testNullAssigmentThrowsException() {
+    public void testNullAssignmentThrowsException() {
         DiagnosticsConfig config = new DiagnosticsConfig();
         assertThrows(NullPointerException.class, () -> config.setLogDirectory(null));
         assertThrows(NullPointerException.class, () -> config.setOutputType(null));

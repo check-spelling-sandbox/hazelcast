@@ -215,9 +215,9 @@ jobs:
             console.log("One of previous steps was failed")
             return true
           
-      - name: Evaluate suggested assignement
+      - name: Evaluate suggested assignment
         uses: actions/github-script@v7
-        id: evaluate-suggested-assignement
+        id: evaluate-suggested-assignment
         with:
           result-encoding: json
           script: |
@@ -225,13 +225,13 @@ jobs:
             if("${{steps.run-for-failure.outputs.result}}" !== "") {
               return { 
                 comment: `Assigned @${issueAuthor} due to failed step in github action`,
-                finalAssignement: issueAuthor
+                finalAssignment: issueAuthor
               }
             }
             if ("${{ fromJson(steps.summary.outputs.result).test.foundFile }}" === "") {
               return { 
                 comment: `Assigned @${issueAuthor} due to not found reference to code in the issue `,
-                finalAssignement: issueAuthor
+                finalAssignment: issueAuthor
               }
             }
             const commit = "${{ fromJson(steps.summary.outputs.result).test.lastCommit.sha }}"
@@ -239,13 +239,13 @@ jobs:
             if ("${{ fromJson(steps.summary.outputs.result).test.lastCommit.author.belongsToOrganization }}" !== "true") {
               return { 
                 comment: `Assigned @${issueAuthor}, because identified author (${commitAuthor}) of last commit (${commit}) is not a member of the organization`, 
-                finalAssignement: issueAuthor
+                finalAssignment: issueAuthor
               }
             }
             //Proper case
             return {
               comment: `Assigned @${commitAuthor} due to being the author of last commit (${commit})`, 
-              finalAssignement: commitAuthor
+              finalAssignment: commitAuthor
             }
             
       - name: Assign user
@@ -257,7 +257,7 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: "${{ fromJson(steps.summary.outputs.result).issue.key }}",
-              assignees: ["${{ fromJson(steps.evaluate-suggested-assignement.outputs.result).finalAssignement }}"]
+              assignees: ["${{ fromJson(steps.evaluate-suggested-assignment.outputs.result).finalAssignment }}"]
             });
             
       - name: Comment on issue
@@ -265,7 +265,7 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |       
-            const comment = "${{ fromJson(steps.evaluate-suggested-assignement.outputs.result).comment }}"
+            const comment = "${{ fromJson(steps.evaluate-suggested-assignment.outputs.result).comment }}"
             const buildUrl = "${{ env.BUILD_URL }}"
             await github.rest.issues.createComment({
               issue_number: context.issue.number,
