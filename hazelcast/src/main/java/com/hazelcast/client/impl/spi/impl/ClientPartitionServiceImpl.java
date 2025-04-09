@@ -55,12 +55,12 @@ public final class ClientPartitionServiceImpl implements ClientPartitionService 
 
     private static class PartitionTable {
         final Connection connection;
-        final int partitionSateVersion;
+        final int partitionStateVersion;
         final Int2ObjectHashMap<UUID> partitions;
 
-        PartitionTable(Connection connection, int partitionSateVersion, Int2ObjectHashMap<UUID> partitions) {
+        PartitionTable(Connection connection, int partitionStateVersion, Int2ObjectHashMap<UUID> partitions) {
             this.connection = connection;
-            this.partitionSateVersion = partitionSateVersion;
+            this.partitionStateVersion = partitionStateVersion;
             this.partitions = partitions;
         }
     }
@@ -104,7 +104,7 @@ public final class ClientPartitionServiceImpl implements ClientPartitionService 
             }
             return true;
         }
-        if (partitionStateVersion <= current.partitionSateVersion) {
+        if (partitionStateVersion <= current.partitionStateVersion) {
             if (logger.isFinestEnabled()) {
                 logFailure(connection, partitionStateVersion, current, "response partition state version is old");
             }
@@ -118,7 +118,7 @@ public final class ClientPartitionServiceImpl implements ClientPartitionService 
         logger.finest(" We will not apply the response, since " + cause + " . Response is from " + connection
                 + ". Current connection " + current.connection
                 + " response state version:" + partitionStateVersion
-                + ". Current state version: " + current.partitionSateVersion);
+                + ". Current state version: " + current.partitionStateVersion);
     }
 
     private Int2ObjectHashMap<UUID> convertToMap(Collection<Map.Entry<UUID, List<Integer>>> partitions) {

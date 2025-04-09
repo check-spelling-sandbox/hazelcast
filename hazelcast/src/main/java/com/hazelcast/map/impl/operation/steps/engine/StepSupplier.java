@@ -185,7 +185,7 @@ public class StepSupplier implements Supplier<Runnable>, Consumer<Step> {
         boolean runningOnPartitionThread = isRunningOnPartitionThread();
         boolean metWithPreconditions = true;
         try {
-            refreshSate(state);
+            refreshState(state);
 
             int threadIndex = -1;
             // we check for error step here to handle potential
@@ -241,7 +241,7 @@ public class StepSupplier implements Supplier<Runnable>, Consumer<Step> {
      * case later operations' state in the queue become stale.
      * By refreshing the {@link State} we are fixing this issue.
      */
-    private void refreshSate(State state) {
+    private void refreshState(State state) {
         MapOperation operation = state.getOperation();
         boolean mapExists = operation.checkMapExists();
         RecordStore recordStore = operation.getRecordStore();
