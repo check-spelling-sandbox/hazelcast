@@ -444,7 +444,7 @@ public abstract class TransactionalMapProxySupport extends TransactionalDistribu
     }
 
     /**
-     * Hook for near cahe invalidations.
+     * Hook for near cache invalidations.
      */
     private class InvalidationHook implements RemoteCallHook {
 
