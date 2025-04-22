@@ -46,7 +46,7 @@ import java.util.UUID;
  * <p>
  * For each partition, there is only one {@link ICacheRecordStore} in the cluster.
  * <p>Implementations of this interface may provide different internal data persistence like on-heap storage.</p>
- * Each expirible cache entry is actually a {@link Data}, {@link CacheRecord} pair.
+ * Each expirable cache entry is actually a {@link Data}, {@link CacheRecord} pair.
  * <p>Key type: always serialized form of {@link Data}.</p>
  * <p>Value types: depend on the configuration.</p>
  *
