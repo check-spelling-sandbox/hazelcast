@@ -255,7 +255,7 @@ For example:
 ```
 (INT, INT) <cmp> (BIGINT, INT)   # ok, INT converted to BIGINT
 (INT, INT) <cmp> OBJECT  # reject ROW and OBJECT comparison
-(INT) <cmp> (VARCHAR) # ok, VARCHAR onverted to INT
+(INT) <cmp> (VARCHAR) # ok, VARCHAR converted to INT
 (INT) <cmp> (INT, INT)  # reject - different number of fields
 (INT, (INT, BIGINT)) <cmp> (TINYINT, (BIGINT, INT))  # ok, same rules for nested ROW
 ```
