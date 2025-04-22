@@ -184,7 +184,7 @@ public interface Index {
      *                         {@code true} means a descending order,
      *                         {@code false} means an ascending order.
      * @param lastEntryKeyData the starting point for iteration is determined by the key of the object
-     * @return iterator over index entries that are matching the given comparions type and value.
+     * @return iterator over index entries that are matching the given comparison type and value.
      * Iteration starts from the next element after lastEntryKeyData.
      */
     default Iterator<IndexKeyEntries> getSqlRecordIteratorBatch(
