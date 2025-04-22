@@ -40,7 +40,7 @@ public class DenseHyperLogLogEncoder implements HyperLogLogEncoder {
     private transient int numOfEmptyRegs;
     private transient double[] invPowLookup;
     private transient int m;
-    private transient long pFenseMask;
+    private transient long pFenceMask;
 
     public DenseHyperLogLogEncoder() {
     }
@@ -59,14 +59,14 @@ public class DenseHyperLogLogEncoder implements HyperLogLogEncoder {
         this.numOfEmptyRegs = m;
         this.register = register != null ? register : new byte[m];
         this.invPowLookup = new double[64 - p + 1];
-        this.pFenseMask = 1 << (64 - p) - 1;
+        this.pFenceMask = 1 << (64 - p) - 1;
         this.prePopulateInvPowLookup();
     }
 
     @Override
     public boolean add(long hash) {
         final int index = (int) hash & (register.length - 1);
-        final int value = Long.numberOfTrailingZeros((hash >>> p) | pFenseMask) + 1;
+        final int value = Long.numberOfTrailingZeros((hash >>> p) | pFenceMask) + 1;
 
         assert index < register.length;
         assert value <= (1 << 8) - 1;

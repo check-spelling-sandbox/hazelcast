@@ -41,7 +41,7 @@ public class SparseHyperLogLogEncoder
 
     private int p;
     private int pMask;
-    private int pFenseMask;
+    private int pFenceMask;
     private long pDiffMask;
     private VariableLengthDiffArray register;
 
@@ -59,7 +59,7 @@ public class SparseHyperLogLogEncoder
     public void init(int p, VariableLengthDiffArray register) {
         this.p = p;
         this.pMask = ((1 << p) - 1);
-        this.pFenseMask = 1 << (64 - p) - 1;
+        this.pFenceMask = 1 << (64 - p) - 1;
         this.pDiffMask = P_PRIME_MASK ^ pMask;
 
         this.mPrime = 1 << P_PRIME;
@@ -177,7 +177,7 @@ public class SparseHyperLogLogEncoder
         if (!hasRunOfZerosEncoded(hash)) {
             // |-25bits-||-1bit-
             // (p - p') || 0
-            return (byte) (Long.numberOfTrailingZeros(stripedZeroFlag >>> p | pFenseMask) + 1);
+            return (byte) (Long.numberOfTrailingZeros(stripedZeroFlag >>> p | pFenceMask) + 1);
         }
 
         // |-25bits-||-6bits-||-1bit-|
