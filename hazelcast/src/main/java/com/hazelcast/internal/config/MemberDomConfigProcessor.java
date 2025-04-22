@@ -1484,7 +1484,7 @@ public class MemberDomConfigProcessor extends AbstractDomConfigProcessor {
             if (c == '_' || c == '-' || c == '.') {
                 upper = true;
             } else if (upper) {
-                // Character.toUpperCase is not Locale dependant, so we're safe here.
+                // Character.toUpperCase is not Locale dependent, so we're safe here.
                 sb.append(Character.toUpperCase(c));
                 upper = false;
             } else {
