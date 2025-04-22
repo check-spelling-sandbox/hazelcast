@@ -4,7 +4,7 @@
       "pn-counter": {
         "my-pn-counter": {
           "replica-count": 128,
-          "split-brain-protection-ref": "definedInOtherTestSplitBraintProtectionRule",
+          "split-brain-protection-ref": "definedInOtherTestSplitBrainProtectionRule",
           "statistics-enabled": false
         }
       }
