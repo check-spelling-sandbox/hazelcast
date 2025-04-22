@@ -186,7 +186,7 @@ Rels Prunability summarized:
 | Rel                  | Prunability                                                                                   |
 |----------------------|-----------------------------------------------------------------------------------------------|
 | FullScanPhysicalRel  | Prunable based on its filter (see Filter Analysis section)                                    |
-| IndexScanPhysicalRel | Not currently supported, planned in the future with similiar semantics to FullScanPhysicalRel |
+| IndexScanPhysicalRel | Not currently supported, planned in the future with similar semantics to FullScanPhysicalRel |
 | JoinPhysicalRel      | Prunable if both inputs are Prunable                                                          |
 | UnionPhysicalRel     | Prunable if all inputs are Prunable                                                           |
 | CalcPhysicalRel      | Prunable if the Scan input is Prunable                                                        |
