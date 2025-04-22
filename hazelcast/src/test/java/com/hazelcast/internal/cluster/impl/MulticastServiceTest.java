@@ -114,7 +114,7 @@ public class MulticastServiceTest {
     }
 
     /**
-     * Verifes the {@link MulticastSocket#setInterface(InetAddress)} is called by default if non-loopback address is used.
+     * Verifies the {@link MulticastSocket#setInterface(InetAddress)} is called by default if non-loopback address is used.
      * This is a regression test for the <a href="https://github.com/hazelcast/hazelcast/issues/19192">issue #19192</a>
      * (hit on Mac OS).
      */
