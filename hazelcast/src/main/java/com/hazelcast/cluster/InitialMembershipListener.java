@@ -24,7 +24,7 @@ package com.hazelcast.cluster;
  * When the InitializingMembershipListener already is registered on a {@link Cluster} and is registered again on the same
  * Cluster instance, it will not receive an additional InitialMembershipEvent. This is a once only event.
  *
- * @author Peter Veentjer.
+ * @author Peter Veentjer
  * @see Cluster#addMembershipListener(MembershipListener)
  * @see MembershipEvent#getMembers()
  */
