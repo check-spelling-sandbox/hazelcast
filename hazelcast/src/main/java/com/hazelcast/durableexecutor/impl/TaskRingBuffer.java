@@ -175,7 +175,7 @@ public class TaskRingBuffer {
      *
      * @param sequence The sequence
      * @return <tt>true</tt> if the sequence corresponds to a task, <tt>false</tt> otherwise
-     * @throws StaleTaskIdException if the solt overwritten
+     * @throws StaleTaskIdException if the slot overwritten
      */
     boolean isTask(int sequence) {
         int index = toIndex(sequence);
