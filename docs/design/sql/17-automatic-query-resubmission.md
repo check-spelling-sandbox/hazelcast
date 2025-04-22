@@ -84,7 +84,7 @@ are often generated, such as through ORM or other SQL tools, and injecting the
 hint might not be possible or easy.
 
 3. Another option is to use a session parameter, e.g. executing `SET
-RETRY_STATEGY=<mode>`. The client will have to parse these commands, but we will
+RETRY_STRATEGY=<mode>`. The client will have to parse these commands, but we will
 not have to provide a full SQL parser.
 
 4. Provide a new option in `ClientConfig`, and a new JDBC URL parameter for 
