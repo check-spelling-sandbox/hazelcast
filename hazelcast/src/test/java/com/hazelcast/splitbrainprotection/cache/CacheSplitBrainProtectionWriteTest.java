@@ -274,7 +274,7 @@ public class CacheSplitBrainProtectionWriteTest extends AbstractSplitBrainProtec
     }
 
     @Test
-    public void putGetwhenSplitBrainProtectionSizeMet() {
+    public void putGetWhenSplitBrainProtectionSizeMet() {
         cache(0).put(123, "foo");
         assertEquals("foo", cache(1).get(123));
     }
