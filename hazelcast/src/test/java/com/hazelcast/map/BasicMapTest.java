@@ -790,7 +790,7 @@ public class BasicMapTest extends HazelcastTestSupport {
     public void testMapPut_whenKeyLocked() throws Exception {
         final IMap<Object, Object> map = getInstance().getMap("testMapPut_whenKeyLocked");
         final String key = "key";
-        final String invalidValue = "valuex";
+        final String invalidValue = "value_";
         final String value = "value";
         map.lock(key);
 
