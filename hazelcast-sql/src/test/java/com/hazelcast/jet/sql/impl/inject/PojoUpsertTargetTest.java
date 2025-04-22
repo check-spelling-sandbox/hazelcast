@@ -145,7 +145,7 @@ public class PojoUpsertTargetTest {
     }
 
     @Test
-    public void when_filterPassed_then_init_succcess() {
+    public void when_filterPassed_then_init_success() {
         var filter = mock(ReflectionClassNameFilter.class);
 
         UpsertTarget target = new PojoUpsertTarget(
