@@ -669,7 +669,7 @@ hazelcast-client:
   #
   # Configuration element's name is "flake-id-generator". The name of the Flake ID generator is defined by the name
   # of the key right under the "flake-id-generator" node.
-  # It has the following sub-ndoes:
+  # It has the following sub-nodes:
   #
   # * "prefetch-count":
   #     Sets how many IDs are pre-fetched on the background when one call to
