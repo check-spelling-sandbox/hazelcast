@@ -60,7 +60,7 @@ public abstract class OperationThread extends HazelcastManagedThread implements 
 
     final int threadId;
     final OperationQueue queue;
-    // This field wil only be accessed by the thread itself when doing 'self'
+    // This field will only be accessed by the thread itself when doing 'self'
     // calls. So no need for any form of synchronization.
     OperationRunner currentRunner;
 

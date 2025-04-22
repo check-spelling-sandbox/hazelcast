@@ -226,7 +226,7 @@ public class SqlPartitionPruningE2ETest extends SqlEndToEndTestSupport {
         final PAKey key = new PAKey(c, "" + c);
         preparePrunableMapWithPartitionAwareKey(singletonList("nestedKey"), mapName, false, key);
 
-        // it can happen by accident that the test passes if partition id happens correct, but usually it wil fail
+        // it can happen by accident that the test passes if partition id happens correct, but usually it will fail
         final String query = "SELECT this FROM " + mapName + " WHERE nestedKey = ?";
 
         // When
@@ -245,7 +245,7 @@ public class SqlPartitionPruningE2ETest extends SqlEndToEndTestSupport {
         final PAKey key = new PAKey(c, "" + c);
         preparePrunableMapWithPartitionAwareKey(singletonList("nestedKey"), mapName, true, key);
 
-        // it can happen by accident that the test passes if partition id happens correct, but usually it wil fail
+        // it can happen by accident that the test passes if partition id happens correct, but usually it will fail
         final String query = "SELECT this FROM " + mapName + " WHERE nestedKey = ?";
 
         // When
@@ -285,7 +285,7 @@ public class SqlPartitionPruningE2ETest extends SqlEndToEndTestSupport {
         final PAKey key = new PAKey(c, "" + c);
         preparePrunableMapWithPartitionAwareKey(singletonList("nestedKey"), mapName, false, key);
 
-        // it can happen by accident that the test passes if partition id happens correct, but usually it wil fail
+        // it can happen by accident that the test passes if partition id happens correct, but usually it will fail
         final String query = "SELECT this FROM " + mapName + " WHERE nestedKey = ?";
 
         // When

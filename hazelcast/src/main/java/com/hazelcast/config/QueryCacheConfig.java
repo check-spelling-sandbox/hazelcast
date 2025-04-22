@@ -132,7 +132,7 @@ public class QueryCacheConfig implements IdentifiedDataSerializable {
     private String name;
 
     /**
-     * The predicate to filter events which wil be applied to the {@code QueryCache}.
+     * The predicate to filter events which will be applied to the {@code QueryCache}.
      */
     private PredicateConfig predicateConfig = new PredicateConfig();
 
