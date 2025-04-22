@@ -75,7 +75,7 @@ Provide functional design details that are pertinent to this specific design spe
 - What parts of the design do you expect to resolve through the implementation of this feature before stabilization?
 - What related issues do you consider out of scope for this document that could be addressed in the future independently of the solution that comes out of this change?
 - How does this functionality impact/augment our Viridian Cloud offering? 
-- What changes, if any, are needed in Viridian to explose this functionality? 
+- What changes, if any, are needed in Viridian to expose this functionality? 
 
 Use the ⚠️ or ❓icon to indicate an outstanding issue or question, and use the ✅ or ℹ️ icon to indicate a resolved issue or question.
 
