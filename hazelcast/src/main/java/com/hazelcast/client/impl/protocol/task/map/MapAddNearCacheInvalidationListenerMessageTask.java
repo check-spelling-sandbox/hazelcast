@@ -50,7 +50,7 @@ public class MapAddNearCacheInvalidationListenerMessageTask
 
     @Override
     protected ClientMessage encodeEvent(Data keyData, Data newValueData, Data oldValueData,
-                                        Data meringValueData, int type, UUID uuid, int numberOfAffectedEntries) {
+                                        Data mergingValueData, int type, UUID uuid, int numberOfAffectedEntries) {
         throw new UnsupportedOperationException();
     }
 

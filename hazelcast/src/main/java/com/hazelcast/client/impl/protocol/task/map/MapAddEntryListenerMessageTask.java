@@ -47,9 +47,9 @@ public class MapAddEntryListenerMessageTask
 
     @Override
     protected ClientMessage encodeEvent(Data keyData, Data newValueData, Data oldValueData,
-                                        Data meringValueData, int type, UUID uuid, int numberOfAffectedEntries) {
+                                        Data mergingValueData, int type, UUID uuid, int numberOfAffectedEntries) {
         return MapAddEntryListenerCodec.encodeEntryEvent(keyData, newValueData,
-                oldValueData, meringValueData, type, uuid, numberOfAffectedEntries);
+                oldValueData, mergingValueData, type, uuid, numberOfAffectedEntries);
     }
 
     @Override

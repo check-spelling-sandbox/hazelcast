@@ -105,9 +105,9 @@ public abstract class AbstractMapAddEntryListenerMessageTask<Parameter>
             Data keyData = dataAwareEntryEvent.getKeyData();
             Data newValueData = dataAwareEntryEvent.getNewValueData();
             Data oldValueData = dataAwareEntryEvent.getOldValueData();
-            Data meringValueData = dataAwareEntryEvent.getMergingValueData();
+            Data mergingValueData = dataAwareEntryEvent.getMergingValueData();
             sendClientMessage(keyData, encodeEvent(keyData
-                    , newValueData, oldValueData, meringValueData, event.getEventType().getType(),
+                    , newValueData, oldValueData, mergingValueData, event.getEventType().getType(),
                     event.getMember().getUuid(), 1));
 
         }
@@ -126,7 +126,7 @@ public abstract class AbstractMapAddEntryListenerMessageTask<Parameter>
     }
 
     protected abstract ClientMessage encodeEvent(Data keyData, Data newValueData,
-                                                 Data oldValueData, Data meringValueData,
+                                                 Data oldValueData, Data mergingValueData,
                                                  int type, UUID uuid, int numberOfEntriesAffected);
 
     @Override
