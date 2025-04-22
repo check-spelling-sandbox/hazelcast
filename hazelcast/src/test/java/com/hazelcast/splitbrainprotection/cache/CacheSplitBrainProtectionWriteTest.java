@@ -280,7 +280,7 @@ public class CacheSplitBrainProtectionWriteTest extends AbstractSplitBrainProtec
     }
 
     @Test
-    public void putRemoveGetShouldReturnNullwhenSplitBrainProtectionSizeMet() {
+    public void putRemoveGetShouldReturnNullWhenSplitBrainProtectionSizeMet() {
         cache(0).put(123, "foo");
         cache(0).remove(123);
         assertNull(cache(1).get(123));
