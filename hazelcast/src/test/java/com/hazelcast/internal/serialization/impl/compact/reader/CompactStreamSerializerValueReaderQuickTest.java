@@ -66,7 +66,7 @@ public class CompactStreamSerializerValueReaderQuickTest extends HazelcastTestSu
 
     @Test
     public void wrongAttributeName() throws IOException {
-        assertNull(reader(PORSCHE).read("wheelsss"));
+        assertNull(reader(PORSCHE).read("wheels__"));
     }
 
     @Test

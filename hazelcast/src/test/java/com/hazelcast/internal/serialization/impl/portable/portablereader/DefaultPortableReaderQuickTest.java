@@ -73,7 +73,7 @@ public class DefaultPortableReaderQuickTest extends HazelcastTestSupport {
 
     @Test
     public void wrongAttributeName() throws IOException {
-        assertNull(reader(PORSCHE).read("wheelsss"));
+        assertNull(reader(PORSCHE).read("wheels__"));
     }
 
     @Test
