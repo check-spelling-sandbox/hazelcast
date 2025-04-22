@@ -107,7 +107,7 @@
             <artifactId>opencensus-contrib-grpc-metrics</artifactId>
             <version>0.31.1</version>
         </dependency>
-        <!-- com.google.cloud.bigdataoss:gcsio has internal depdency convergence -->
+        <!-- com.google.cloud.bigdataoss:gcsio has internal dependency convergence -->
         <dependency>
             <groupId>com.google.re2j</groupId>
             <artifactId>re2j</artifactId>
