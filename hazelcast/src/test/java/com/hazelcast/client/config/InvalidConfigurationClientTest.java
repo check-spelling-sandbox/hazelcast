@@ -110,7 +110,7 @@ public class InvalidConfigurationClientTest {
 
     @Test(expected = InvalidConfigurationException.class)
     public void testWhenInvalid_SocketInterceptorEnabled() {
-        buildConfig("socket-interceptor-enabled", "ttrue");
+        buildConfig("socket-interceptor-enabled", "_true");
     }
 
     @Test
@@ -157,7 +157,7 @@ public class InvalidConfigurationClientTest {
 
     @Test(expected = InvalidConfigurationException.class)
     public void WhenInValid_NativeByteOrder() {
-        buildConfig("use-native-byte-order", "truue");
+        buildConfig("use-native-byte-order", "true_");
     }
 
     @Test

@@ -692,10 +692,10 @@ public class JsonParser_Test {
 
   @Test
   public void true_withIllegalCharacter() {
-    assertParseException(1, "Expected 'r'", "tx");
-    assertParseException(2, "Expected 'u'", "trx");
-    assertParseException(3, "Expected 'e'", "trux");
-    assertParseException(4, "Unexpected character", "truex");
+    assertParseException(1, "Expected 'r'", "t_");
+    assertParseException(2, "Expected 'u'", "tr_");
+    assertParseException(3, "Expected 'e'", "tru_");
+    assertParseException(4, "Unexpected character", "true_");
   }
 
   @Test
