@@ -133,7 +133,7 @@ public class XmlYamlConfigBuilderEqualsTest extends HazelcastTestSupport {
         String yaml = readResourceToString(resource);
 
         // remove imports to prevent the test from failing with importing non-existing files
-        yaml = convertWindowsLineSeperators(yaml);
+        yaml = convertWindowsLineSeparators(yaml);
         yaml = StringUtils.remove(yaml, "import:\n    - your-configuration-YAML-file");
 
         yaml = replaceExampleValuesWithRealFiles(yaml);

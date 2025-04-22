@@ -1670,7 +1670,7 @@ public abstract class HazelcastTestSupport {
     }
 
     /** Converts Windows line separators ({@code \r\n}) to {@code \r} */
-    protected static String convertWindowsLineSeperators(String str) {
+    protected static String convertWindowsLineSeparators(String str) {
         return StringUtils.remove(str, StringUtils.CR);
     }
 }
