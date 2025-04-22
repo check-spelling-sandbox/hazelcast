@@ -497,7 +497,7 @@ the type of the job:
 
 ```java
 public class KafkaDataConnection implements DataConnection {
-    KafkaConcumer createSingleUseConsumer();
+    KafkaConsumer createSingleUseConsumer();
 
     KafkaProducer createSingleUseProducer();
 
