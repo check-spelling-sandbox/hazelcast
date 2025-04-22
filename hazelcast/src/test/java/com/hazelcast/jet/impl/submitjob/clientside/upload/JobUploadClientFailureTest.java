@@ -336,7 +336,7 @@ public class JobUploadClientFailureTest extends JetTestSupport {
 
     @Test
     public void test_jarUpload_invalid_tempdir_whenResourceUploadIsEnabled() {
-        createClusterWithUploadDirectoryPath("directorynotexists");
+        createClusterWithUploadDirectoryPath("nonexistent-directory");
         JetClientInstanceImpl jetService = getClientJetService();
 
         SubmitJobParameters submitJobParameters = SubmitJobParameters.withJarOnClient()
@@ -344,7 +344,7 @@ public class JobUploadClientFailureTest extends JetTestSupport {
 
         assertThatThrownBy(() -> jetService.submitJobFromJar(submitJobParameters))
                 .isInstanceOf(JetException.class)
-                .hasMessage("The upload directory path does not exist: directorynotexists");
+                .hasMessage("The upload directory path does not exist: nonexistent-directory");
     }
 
 
