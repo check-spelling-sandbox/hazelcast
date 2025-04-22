@@ -137,11 +137,11 @@ public class GracefulShutdownTest_SlowShutdown extends JetTestSupport {
         Executors.newSingleThreadExecutor().submit(() -> instances[1].shutdown());
         shutdownInitiated.await();
 
-        var shutdownedMemberUUID = instances[1].getCluster().getLocalMember().getUuid();
+        var shutdownMemberUUID = instances[1].getCluster().getLocalMember().getUuid();
 
         assertShuttingDownMembers(emptySet(), instances[1]);
-        assertTrueEventually(() -> assertShuttingDownMembers(singleton(shutdownedMemberUUID), instances[0]));
-        assertTrueEventually(() -> assertShuttingDownMembers(singleton(shutdownedMemberUUID), instances[2]));
+        assertTrueEventually(() -> assertShuttingDownMembers(singleton(shutdownMemberUUID), instances[0]));
+        assertTrueEventually(() -> assertShuttingDownMembers(singleton(shutdownMemberUUID), instances[2]));
 
         Job job = submit(dag);
         assertThatNoException().isThrownBy(job::join);
@@ -152,11 +152,11 @@ public class GracefulShutdownTest_SlowShutdown extends JetTestSupport {
         Executors.newSingleThreadExecutor().submit(() -> instances[1].shutdown());
         shutdownInitiated.await();
 
-        var shutdownedMemberUUID = instances[1].getCluster().getLocalMember().getUuid();
+        var shutdownMemberUUID = instances[1].getCluster().getLocalMember().getUuid();
 
         assertShuttingDownMembers(emptySet(), instances[1]);
-        assertTrueEventually(() -> assertShuttingDownMembers(singleton(shutdownedMemberUUID), instances[0]));
-        assertTrueEventually(() -> assertShuttingDownMembers(singleton(shutdownedMemberUUID), instances[2]));
+        assertTrueEventually(() -> assertShuttingDownMembers(singleton(shutdownMemberUUID), instances[0]));
+        assertTrueEventually(() -> assertShuttingDownMembers(singleton(shutdownMemberUUID), instances[2]));
 
         shutdownProceed.countDown();
 
