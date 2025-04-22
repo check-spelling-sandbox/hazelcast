@@ -113,7 +113,7 @@ public final class MongoUtilities {
     }
 
     /**
-     * Converts given bson timest1amp to unix epoch.
+     * Converts given unix epoch to bson timestamp.
      */
     @Nullable
     public static BsonTimestamp localDateTimeToTimestamp(@Nullable LocalDateTime time) {
