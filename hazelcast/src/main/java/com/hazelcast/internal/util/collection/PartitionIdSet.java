@@ -283,7 +283,7 @@ public class PartitionIdSet extends AbstractSet<Integer> implements IdentifiedDa
     }
 
     /**
-     * @eturns the first partition ID, if this set is not empty. Otherwise, returns -1.
+     * @returns the first partition ID, if this set is not empty. Otherwise, returns -1.
      */
     public int firstPartition() {
         return bitSet.nextSetBit(0);
