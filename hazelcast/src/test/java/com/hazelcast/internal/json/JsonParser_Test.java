@@ -713,11 +713,11 @@ public class JsonParser_Test {
 
   @Test
   public void false_withIllegalCharacter() {
-    assertParseException(1, "Expected 'a'", "fx");
-    assertParseException(2, "Expected 'l'", "fax");
-    assertParseException(3, "Expected 's'", "falx");
-    assertParseException(4, "Expected 'e'", "falsx");
-    assertParseException(5, "Unexpected character", "falsex");
+    assertParseException(1, "Expected 'a'", "f_");
+    assertParseException(2, "Expected 'l'", "fa_");
+    assertParseException(3, "Expected 's'", "fal_");
+    assertParseException(4, "Expected 'e'", "fals_");
+    assertParseException(5, "Unexpected character", "false_");
   }
 
   private void assertParseException(int offset, String message, final String json) {

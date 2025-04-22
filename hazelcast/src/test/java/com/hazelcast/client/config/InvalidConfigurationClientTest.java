@@ -120,7 +120,7 @@ public class InvalidConfigurationClientTest {
 
     @Test(expected = InvalidConfigurationException.class)
     public void testWhenInvalid_AwsEnabled() {
-        buildConfig("aws-enabled", "falsee");
+        buildConfig("aws-enabled", "false_");
     }
 
     @Test
