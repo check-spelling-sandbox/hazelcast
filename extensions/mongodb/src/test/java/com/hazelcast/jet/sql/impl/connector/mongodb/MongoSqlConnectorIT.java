@@ -66,7 +66,7 @@ public class MongoSqlConnectorIT extends MongoSqlIT {
     }
 
     @Test
-    public void readsFromMongo_withtId_withUnsupportedExprInProjection_withoutUnsupportedExprInPredicate() {
+    public void readsFromMongo_withId_withUnsupportedExprInProjection_withoutUnsupportedExprInPredicate() {
        readsFromMongo(true, true, false);
     }
     @Test
