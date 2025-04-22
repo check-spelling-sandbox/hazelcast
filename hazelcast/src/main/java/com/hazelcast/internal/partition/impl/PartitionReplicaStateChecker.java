@@ -49,7 +49,7 @@ import static com.hazelcast.internal.partition.impl.PartitionStateManager.INITIA
 import static java.lang.Thread.currentThread;
 
 /**
- * Verifies up-to-dateness of each of partition replicas owned by this member.
+ * Verifies up-to-date-ness of each of partition replicas owned by this member.
  * Triggers replica sync process for out-of-date replicas.
  */
 public class PartitionReplicaStateChecker {
