@@ -18,7 +18,7 @@ package com.sample.pojo.person;
 
 import classloading.domain.Person;
 
-class Person$Appereance {
-    Person$Appereance(Person this$0) {
+class Person$Appearance {
+    Person$Appearance(Person this$0) {
     }
 }

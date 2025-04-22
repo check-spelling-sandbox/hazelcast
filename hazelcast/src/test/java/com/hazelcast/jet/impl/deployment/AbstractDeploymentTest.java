@@ -90,7 +90,7 @@ public abstract class AbstractDeploymentTest extends SimpleTestInClusterSupport 
         DAG dag = new DAG();
         dag.newVertex("create and print person", () -> new LoadClassesIsolated(true));
 
-        JobConfig jobConfig = getJobConfigForClass("com.sample.pojo.person.Person$Appereance");
+        JobConfig jobConfig = getJobConfigForClass("com.sample.pojo.person.Person$Appearance");
         executeAndPeel(getJet().newJob(dag, jobConfig));
     }
 
@@ -100,7 +100,7 @@ public abstract class AbstractDeploymentTest extends SimpleTestInClusterSupport 
         LoadClassesIsolated.assertionErrorInClose = null;
         dag.newVertex("v", () -> new LoadClassesIsolated(false));
 
-        JobConfig jobConfig = getJobConfigForClass("com.sample.pojo.person.Person$Appereance");
+        JobConfig jobConfig = getJobConfigForClass("com.sample.pojo.person.Person$Appearance");
 
         Job job = getJet().newJob(dag, jobConfig);
         assertThat(job).eventuallyHasStatus(RUNNING);
@@ -145,7 +145,7 @@ public abstract class AbstractDeploymentTest extends SimpleTestInClusterSupport 
     public void testDeployment_whenZipAddedAsResource_thenClassesFromAllJarsAvailableOnClassLoader() throws Throwable {
         DAG dag = new DAG();
         List<String> onClasspath = new ArrayList<>();
-        onClasspath.add("com.sample.pojo.person.Person$Appereance");
+        onClasspath.add("com.sample.pojo.person.Person$Appearance");
         onClasspath.add("com.sample.pojo.car.Car");
         List<String> notOnClasspath = new ArrayList<>();
         notOnClasspath.add("com.sample.pojo.address.Address");

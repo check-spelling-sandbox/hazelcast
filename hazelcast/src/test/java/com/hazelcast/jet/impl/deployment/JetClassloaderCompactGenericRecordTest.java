@@ -79,7 +79,7 @@ public class JetClassloaderCompactGenericRecordTest extends SimpleTestInClusterS
         JobConfig jobConfig = new JobConfig();
         URL classUrl = UserCodeUtil.urlRelativeToBinariesFolder("sample");
         try (URLClassLoader urlClassLoader = new URLClassLoader(new URL[] {classUrl}, null)) {
-            Class<?> appearance = urlClassLoader.loadClass("com.sample.pojo.person.Person$Appereance");
+            Class<?> appearance = urlClassLoader.loadClass("com.sample.pojo.person.Person$Appearance");
             jobConfig.addClass(appearance);
         }
 
