@@ -147,11 +147,11 @@ class PartialDisconnectionHandler {
         Collection<Set<MemberImpl>> maxCliques = cliqueFinder.computeMaxCliques();
 
         if (cliqueFinder.isTimeLimitReached()) {
-            throw new TimeoutException("Partial disconnection resolution algorithm timed out! disconnectivity map: "
+            throw new TimeoutException("Partial disconnection resolution algorithm timed out! disconnections map: "
                     + disconnections);
         } else if (maxCliques.isEmpty()) {
             throw new IllegalStateException("Partial disconnection resolution algorithm returned no result! "
-                    + "disconnectivity map: " + disconnections);
+                    + "disconnections map: " + disconnections);
         }
 
         Collection<MemberImpl> membersToRemove = new HashSet<>(members);
