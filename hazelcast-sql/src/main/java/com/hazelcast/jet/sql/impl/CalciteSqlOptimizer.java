@@ -41,7 +41,7 @@ import org.apache.calcite.plan.volcano.VolcanoPlanner;
  * During physical planning we look for specific physical implementations of logical nodes. Implementation nodes have
  * {@link Conventions#PHYSICAL} convention. The process contains the following fundamental steps:
  * <ul>
- *     <li>Choosing proper access methods for scan (normal scan, index scan, etc)</li>
+ *     <li>Choosing proper access methods for scan (normal scan, index scan, etc.)</li>
  *     <li>Propagating physical properties from children nodes to their parents</li>
  *     <li>Choosing proper implementations of parent operators based on physical properties of children
  *     (local vs. distributed sorting, blocking vs. streaming aggregation, hash join vs. merge join, etc.)</li>

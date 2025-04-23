@@ -642,7 +642,7 @@ public interface SqlConnector {
     }
 
     /**
-     * Data describing external resource (table, topic, stream, IMap etc)
+     * Data describing external resource (table, topic, stream, IMap, etc.)
      *
      * @since 5.3
      */

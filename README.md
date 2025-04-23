@@ -98,7 +98,7 @@ version that is used in the Maven wrapper script.
 
 Additionally, there is a `quick` build activated by setting the `-Dquick` system
 property that skips validation tasks for faster local builds (e.g. tests, checkstyle
-validation, javadoc, source plugins etc) and does not build `extensions` and `distribution` 
+validation, javadoc, source plugins, etc.) and does not build `extensions` and `distribution`
 modules.
 
 ### Testing

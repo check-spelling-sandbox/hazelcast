@@ -88,7 +88,7 @@ the second query has collation `[a DESC]`.
 
 ### 1.4 MEMO
 
-During the optimization, quite a few alternative plans could be created (thousands, millions, etc). Therefore, it is important
+During the optimization, quite a few alternative plans could be created (thousands, millions, etc.). Therefore, it is important
 to encode the search space efficiently to prevent out-of-memory conditions. The so-called **MEMO** data structure is often used
 for this purpose.
 

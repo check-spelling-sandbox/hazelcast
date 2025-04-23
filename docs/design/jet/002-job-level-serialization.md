@@ -169,7 +169,7 @@ class ValueSerializer implements StreamSerializer<Value> {
 
 one registers them with `JobConfig`, the following way
 (`registerSerializer()` does not add classes to the classpath, we have
-other means to do that, see `addClass()`, `addJar()` etc):
+other means to do that, see `addClass()`, `addJar()`, etc.):
 
 ```java
 JobConfig jobConfig = new JobConfig()

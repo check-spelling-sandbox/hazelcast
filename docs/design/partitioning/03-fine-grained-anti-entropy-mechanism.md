@@ -14,7 +14,7 @@ when an inconsistency is detected. When partition data is large
 processing & network pipeline.
 
 Instead, we will develop finer-grained mechanism to detect
-inconsistencies per data structure (IMap, ICache, IQueue etc) and only
+inconsistencies per data structure (IMap, ICache, IQueue, etc.) and only
 replicate the specific data structure of partition. 
 
 ### Terminology

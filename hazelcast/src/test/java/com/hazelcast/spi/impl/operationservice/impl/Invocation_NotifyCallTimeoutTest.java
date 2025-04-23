@@ -107,7 +107,7 @@ public class Invocation_NotifyCallTimeoutTest extends HazelcastTestSupport {
 
         invocation.notifyCallTimeout();
 
-        // we have a 60 wait timeout, if we wait 5 seconds and account for gc's etc; we should keep more than 40 seconds.
+        // we have a 60 wait timeout, if we wait 5 seconds and account for gc's, etc.; we should keep more than 40 seconds.
         assertTrue("op.waitTimeout " + op.getWaitTimeout() + " is too small", op.getWaitTimeout() >= SECONDS.toMillis(40));
         // we also need to verify that the wait timeout has decreased.
         assertTrue("op.waitTimeout " + op.getWaitTimeout() + " is too small", op.getWaitTimeout() <= SECONDS.toMillis(55));

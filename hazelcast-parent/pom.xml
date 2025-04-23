@@ -1320,7 +1320,7 @@
             </distributionManagement>
         </profile>
         
-        <!-- For use in CI (Continuous Integration) environments (Jenkins, GitHub actions etc) -->
+        <!-- For use in CI (Continuous Integration) environments (Jenkins, GitHub actions, etc.) -->
         <profile>
             <id>CI</id>
             <activation>

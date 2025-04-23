@@ -564,7 +564,7 @@ public abstract class AbstractSerializationService implements InternalSerializat
         //
         // 1-NULL serializer
         // 2-Default serializers, Dataserializable, Compact, Portable, primitives, arrays, String and
-        // some helper Java types(BigInteger etc)
+        // some helper Java types(BigInteger, etc.)
         //   (overridden in step 3 if allowOverrideDefaultSerializers=true and custom serializer is registered)
         // 3-Custom registered types by user
         // 4-JDK serialization ( Serializable and Externalizable ) if a global serializer with Java serialization not registered
@@ -581,7 +581,7 @@ public abstract class AbstractSerializationService implements InternalSerializat
 
     public SerializerAdapter serializerForClass(Class type, boolean includeSchema) {
         //2-Default serializers, Dataserializable, Compact, Portable, primitives, arrays, String and
-        // some helper Java types(BigInteger etc)
+        // some helper Java types(BigInteger, etc.)
         SerializerAdapter serializer = lookupDefaultSerializer(type, includeSchema);
 
         //3-Custom registered types by user

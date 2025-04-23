@@ -34,7 +34,7 @@ import java.util.concurrent.Callable;
 
 /**
  * SecurityContext is responsible for managing lifecycle of security object such as
- * {@link ICredentialsFactory}, {@link IPermissionPolicy} etc, to creating {@link LoginContext}es
+ * {@link ICredentialsFactory}, {@link IPermissionPolicy}, etc., to creating {@link LoginContext}es
  * for member and client authentications and checking permissions for client operations.
  */
 public interface SecurityContext {

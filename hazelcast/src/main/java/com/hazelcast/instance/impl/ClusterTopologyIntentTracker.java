@@ -41,8 +41,8 @@ package com.hazelcast.instance.impl;
  *     <li><b>Ready replicas</b>: replicas which are observed as "ready" by the managed runtime. "Ready" implies that the
  *     managed runtime has queried the configured readiness probe and found the Hazelcast member to be ready (i.e. up & running
  *     and ready to accept and serve requests). Notice that since "ready" state is based on a periodic check by the managed
- *     runtime, its updates can lag for some time, depending on configuration (e.g. what is the period of readiness probe checks
- *     etc). Example:
+ *     runtime, its updates can lag for some time, depending on configuration (e.g. what is the period of readiness probe checks,
+ *     etc.). Example:
  *     <br/>Kubernetes deletes a pod of a running cluster with specified replicas 3. Immediately
  *     "current replicas" drops to 2, however "ready replicas" is still 3 until the readiness probe monitoring period passes
  *     and the readiness check figures out the Hazelcast member is no longer ready.

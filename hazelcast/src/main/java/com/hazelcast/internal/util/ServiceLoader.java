@@ -365,7 +365,7 @@ public final class ServiceLoader {
             if (className.startsWith("com.hazelcast")) {
                 LOGGER.fine("Failed to load " + className + " by " + classLoader
                         + ". This indicates a classloading issue. It can happen in a runtime with "
-                        + "a complicated classloading model (OSGi, Java EE, etc)");
+                        + "a complicated classloading model (OSGi, Java EE, etc.)");
             } else {
                 throw new HazelcastException(e);
             }

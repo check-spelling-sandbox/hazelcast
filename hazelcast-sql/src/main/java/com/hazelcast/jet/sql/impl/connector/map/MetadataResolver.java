@@ -174,7 +174,7 @@ public class MetadataResolver implements IMapResolver {
         InternalSerializationService ss = Util.getSerializationService(nodeEngine.getHazelcastInstance());
 
         // we need access to serialized key and value data to resolve serialization format
-        // (compact, portable, generic, etc).
+        // (compact, portable, generic, etc.).
         Metadata keyMetadata = SampleMetadataResolver.resolve(ss, key, true);
         Metadata valueMetadata = SampleMetadataResolver.resolve(ss, value, false);
         return (keyMetadata != null && valueMetadata != null) ? keyMetadata.merge(valueMetadata) : null;

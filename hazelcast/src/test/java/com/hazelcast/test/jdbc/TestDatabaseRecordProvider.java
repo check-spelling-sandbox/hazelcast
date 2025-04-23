@@ -24,14 +24,14 @@ import java.util.List;
 public interface TestDatabaseRecordProvider {
 
     /**
-     * Creates a database object (table, collection, etc) with two fields:
+     * Creates a database object (table, collection, etc.) with two fields:
      * - id or {@code person-id}, depending on {@code #useQuotedNames} option
      * - name
      */
     ObjectSpec createObject(String objectName, boolean useQuotedNames);
 
     /**
-     * Creates a database object (table, collection, etc) with two fields:
+     * Creates a database object (table, collection, etc.) with two fields:
      * - id or {@code person-id}, depending on {@code #useQuotedNames} option
      * - name
      */
@@ -40,7 +40,7 @@ public interface TestDatabaseRecordProvider {
     }
 
     /**
-     * Creates a database object (table, collection, etc) with provided fields.
+     * Creates a database object (table, collection, etc.) with provided fields.
      */
     void createObject(ObjectSpec spec);
 

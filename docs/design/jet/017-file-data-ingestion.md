@@ -8,7 +8,7 @@ description: Unified API for reading files and improved packaging for cloud sour
 ## 1. Support for common formats and data sources
 
 Format and source of the data are seemingly orthogonal. You can read
-plain text files/csv/avro/.. etc from a local filesystem, S3 etc.
+plain text files/csv/avro/... etc., from a local filesystem, S3, etc.
 
 However, to take an advantage of some properties of certain formats
 (e.g. parallel reading/deserialization of Avro files, selecting columns

@@ -82,7 +82,7 @@ the second query has collation `[a DESC]`.
 
 ### 1.4 MEMO
 
-During the optimization, quite a few alternative plans could be created (thousands, millions, etc). Therefore, it is important
+During the optimization, quite a few alternative plans could be created (thousands, millions, etc.). Therefore, it is important
 to encode the search space efficiently to prevent out-of-memory conditions. The so-called **MEMO** data structure is often used
 for this purpose. 
 
@@ -561,7 +561,7 @@ In other optimizers, most of these rules are typically part of the rewrite phase
 of that cost-based optimization. In Apache Calcite, the `HepPlanner` could be used for this. However, some rules may trigger 
 conflicting actions, causing the heuristic planner to fail. An example is filter "move around" rules: often it is important
 not only to push the filter down, but also to try to push it up, because it may enable further optimizations of the parent node
-(such as transitive predicate push, partition pruning, etc). The heuristic planner may fail to find these alternatives. 
+(such as transitive predicate push, partition pruning, etc.). The heuristic planner may fail to find these alternatives.
 Therefore, we use the cost-based `VolcanoPlanner` as slower, but safer choice. We may reconsider this in the future, and move 
 some logical rules to separate stages that use heuristic planner, as it is done in other projects (e.g. Apache Flink).
 For now this is not important, because we do not support joins, so our queries have small search spaces. 

@@ -34,7 +34,7 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
  * <li>Only use public API. Code that relies on Hazelcast internals, like obtaining a reference to the {@code Node}
  * in a {@code HazelcastInstance}, will only succeed when executed on a {@code HazelcastInstance} of the current
  * version.</li>
- * <li>Test classes used as domain classes, listeners, entry processors etc, when implementing {@code Serializable}
+ * <li>Test classes used as domain classes, listeners, entry processors, etc., when implementing {@code Serializable}
  * must specify a {@code serialVersionUID}, otherwise failures in serialization/deserialization will occur.</li>
  * </ul>
  * </p>

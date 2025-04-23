@@ -42,7 +42,7 @@ import java.util.Map.Entry;
  * {@link MapStore}.
  * <p>
  * This is done by instrumenting these Stores/Loaders with latency tracking probes, so that per Store/Loader all kinds
- * of statistics like count, avg, mag, latency distribution etc is available.
+ * of statistics like count, avg, mag, latency distribution, etc. is available.
  * <p>
  * One of the main purposes of this plugin is to make sure that e.g. a Database is the cause of slow performance. This
  * plugin is useful to be combined with {@link SlowOperationPlugin} to get idea about where the threads are spending

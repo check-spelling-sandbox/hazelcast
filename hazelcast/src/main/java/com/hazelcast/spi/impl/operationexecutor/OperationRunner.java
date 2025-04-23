@@ -48,7 +48,7 @@ import static com.hazelcast.spi.impl.operationservice.CallStatus.WAIT_ORDINAL;
  * currently working on and this makes it possible to hook on all kinds of
  * additional functionality like detecting slow operations, sampling which
  * operations are executed most frequently, check if an operation is still
- * running, etc etc.
+ * running, etc., etc.
  */
 public abstract class OperationRunner {
 

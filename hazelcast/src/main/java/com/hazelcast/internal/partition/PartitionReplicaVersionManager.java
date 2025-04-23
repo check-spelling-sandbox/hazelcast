@@ -59,7 +59,7 @@ public interface PartitionReplicaVersionManager {
     /**
      * Returns replica versions for syncing to backup replicas, ensuring any replica versions
      * that are marked explicitly for sync ({@code REQUIRES_SYNC}) are reset. This is necessary
-     * when syncing primary to backup replicas (anti-entropy, migration etc), otherwise there is
+     * when syncing primary to backup replicas (anti-entropy, migration, etc.), otherwise there is
      * risk of perpetual attempts to sync partition data which may be already in sync.
      *
      * @see     com.hazelcast.internal.partition.impl.PartitionReplicaManager#REQUIRES_SYNC

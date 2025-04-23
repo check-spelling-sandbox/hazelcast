@@ -261,7 +261,7 @@ are not sent to that member. 
 #### Explicit Suspicion
 
 In some cases, even though failure detector does not suspect from a
-member (there are no communication failures, no heartbeat issues etc),
+member (there are no communication failures, no heartbeat issues, etc.),
 members can request to be suspected by another member. Reason behind is,
 member thinks that their view of cluster is already diverged because of
 earlier undetected communication failures.
