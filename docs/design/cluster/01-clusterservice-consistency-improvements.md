@@ -344,7 +344,7 @@ In this scenario, B has missed 2 member list updates (v=5, v=6) and D
  has missed the last member list update: v=6. Lets assume B also
 suspects C for some reason, and F is non-responsive.
 
-When A crashes, B eventually suspects from A and checks if it should
+When A crashes, B eventually suspects A and checks if it should
 start a mastership claim process. Since there is no older member who
 should take the mastership, B starts the mastership claim process. The
 rest of the process is as follows:
