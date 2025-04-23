@@ -243,7 +243,7 @@ In the previous implementation, when a Hazelcast member encounters
 failure of another member (by the decision of failure detector),
 regardless of being master or not, it directly removes the problematic
 member from its member list. This standalone member removal decision
-making can easily lead to divergence of member list between cluster
+making could easily lead to divergence of member list between cluster
 members.
 
 In the new design, when failure detector of a member suspects that
