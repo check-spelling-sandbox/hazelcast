@@ -266,7 +266,7 @@ members can request to be suspected by another member. Reason behind is,
 member thinks that their view of cluster is already diverged because of
 earlier undetected communication failures.
 
-Cases where a member sends explicit suspicion request are:
+Cases where a member sends explicit suspicion requests are:
 
 -   when a master receives a master-confirmation message from an unknown
     endpoint
