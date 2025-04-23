@@ -239,7 +239,7 @@ list and version. 
 
 ### Member Suspicion & Removal
 
-In the previous implementation, when a Hazelcast member encounters
+In the previous implementation, when a Hazelcast member encountered
 failure of another member (by the decision of failure detector),
 regardless of being master or not, it directly removes the problematic
 member from its member list. This standalone member removal decision
