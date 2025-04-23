@@ -241,7 +241,7 @@ list and version. 
 
 In the previous implementation, when a Hazelcast member encountered
 failure of another member (by the decision of failure detector),
-regardless of being master or not, it directly removes the problematic
+regardless of being master or not, it directly removed the problematic
 member from its member list. This standalone member removal decision
 making could easily lead to divergence of member list between cluster
 members.
