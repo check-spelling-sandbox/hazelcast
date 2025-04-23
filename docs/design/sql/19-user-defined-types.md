@@ -9,7 +9,7 @@
 |Quality Engineer||
 |Technical Reviewers|Viliam Durina|
 
-# Background
+## Background
 
 The Predicate API, which SQL is aiming to replace, allowed access to nested
 fields of the keys or values. SQL so far lacks this feature.
