@@ -54,7 +54,7 @@ public class XaReplicationOperation extends Operation implements IdentifiedDataS
                     transactionDTO.getTxnId(),
                     transactionDTO.getXid(),
                     transactionDTO.getOwnerUuid(),
-                    transactionDTO.getTimeoutMilis(),
+                    transactionDTO.getTimeoutMillis(),
                     transactionDTO.getStartTime());
             xaService.putTransaction(transaction);
         }

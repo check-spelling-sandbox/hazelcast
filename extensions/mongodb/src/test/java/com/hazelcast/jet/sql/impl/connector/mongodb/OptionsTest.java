@@ -38,7 +38,7 @@ import static org.junit.Assert.assertThrows;
 public class OptionsTest {
 
     @Test
-    public void parses_milis_startAt() {
+    public void parses_millis_startAt() {
         // given
         long time = System.currentTimeMillis();
         LocalDateTime timeDate = LocalDateTime.ofEpochSecond(time / 1000, 0, UTC);
