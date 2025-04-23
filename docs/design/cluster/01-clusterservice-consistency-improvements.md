@@ -279,8 +279,8 @@ Cases where a member sends explicit suspicion requests are:
     invalid master
 
 When a non-master member receives a heartbeat message from an unknown
-endpoint, it sends a complaint message to master and master receiving a
-complaint explicit suspicion messages to either of one or both of
+endpoint, it sends a complaint message to master and the master upon receiving
+the complaint explicit suspicion sends messages to either of one or both of
 complainee and complainer, according to its own verification.
 
 #### Removing Suspicion
