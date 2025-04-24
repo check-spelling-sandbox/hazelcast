@@ -1010,7 +1010,7 @@ public class JsonObject_Test {
   }
 
   @Test
-  public void member_hashCode_differsForDifferingobjects() {
+  public void member_hashCode_differsForDifferingObjects() {
     Member member = new Member("a", Json.TRUE);
 
     assertNotEquals(member.hashCode(), new Member("b", Json.TRUE).hashCode());
