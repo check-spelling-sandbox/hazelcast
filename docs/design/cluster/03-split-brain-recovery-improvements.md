@@ -1,8 +1,5 @@
 # Split-brain Recovery Improvements
 
-|ℹ️ Since: 5.2|
-|-------------|
-
 ### Table of Contents
 
 + [Background](#background)
@@ -15,7 +12,8 @@
 + [Technical Design](#technical-design)
 + [Testing Criteria](#testing-criteria)
 
-
+|ℹ️ Since: 5.2|
+|-------------|
 
 |||
 |---|---|
