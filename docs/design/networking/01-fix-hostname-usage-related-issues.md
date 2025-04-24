@@ -146,7 +146,7 @@ address of the member. We select this primary address as follows:
   corresponds to `com.hazelcast.instance.ProtocolType#MEMBER` as the primary
   address.
 - For the other protocol connections (this is possible when advanced networking
-  is enabled.), we select the public address of the corresponding protocol as the
+  is enabled), we select the public address of the corresponding protocol as the
   primary address. e.g. we select the public address that corresponds to
   `com.hazelcast.instance.ProtocolType#WAN` for the incoming connections to the
   connection manager which manages only the wan connections.
