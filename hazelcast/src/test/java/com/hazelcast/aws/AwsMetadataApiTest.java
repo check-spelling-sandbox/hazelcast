@@ -56,7 +56,7 @@ public class AwsMetadataApiTest {
         AwsConfig awsConfig = AwsConfig.builder().setConnectionRetries(RETRY_COUNT).build();
         String endpoint = String.format("http://localhost:%s", wireMockRule.port());
         stubFor(put(urlEqualTo(METADATA_TOKEN_URL))
-            .willReturn(aResponse().withStatus(HttpURLConnection.HTTP_OK).withBody("defaulttoken")));
+            .willReturn(aResponse().withStatus(HttpURLConnection.HTTP_OK).withBody("defaultoken")));
         String tokenEndpoint = endpoint.concat(METADATA_TOKEN_URL);
         awsMetadataApi = new AwsMetadataApi(endpoint, endpoint, endpoint, tokenEndpoint, awsConfig);
     }
