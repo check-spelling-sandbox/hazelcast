@@ -169,7 +169,7 @@ public abstract class HttpCommand extends AbstractTextCommand {
      * The format of response:
      *       Status-Line (that includes CRLF itself);
      *       for each header in header do:
-     *          header + CLRF
+     *          header + CRLF
      *       done;
      *       CRLF;
      *       response-body;
