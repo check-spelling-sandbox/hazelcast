@@ -596,7 +596,7 @@ public final class IOUtil {
         try {
             Files.move(source, target, StandardCopyOption.REPLACE_EXISTING);
         } catch (IOException e) {
-            LOGGER.finest("File move failed. Fallbacking to delete&move.", e);
+            LOGGER.finest("File move failed. Falling back to delete&move.", e);
             Files.deleteIfExists(target);
             Files.move(source, target, StandardCopyOption.ATOMIC_MOVE);
         }
