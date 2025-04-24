@@ -173,7 +173,7 @@ are completely different in their contents. Also, multiple hostnames can
 be defined in DNS to refer to the same machine (we may understand these
 hostnames point to the same member if they resolve to the same IP
 address, but how to decide when to do this resolution, and they don't
-always have to resolve to the same IPs .), and so we don't have a chance
+always have to resolve to the same IPs), and so we don't have a chance
 to understand these addresses referring to the same member just only
 looking at their contents. To understand this, we need to connect the
 remote member and process the `MemberHandshake` of this remote member.
