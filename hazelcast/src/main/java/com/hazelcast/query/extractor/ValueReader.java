@@ -21,7 +21,7 @@ package com.hazelcast.query.extractor;
  *
  * <p>The path may be:<ol>
  *   <li>simple -&gt; it includes a single attribute only, like "name"
- *   <li>nested -&gt; it includes more than a single attribute separated with a dot (.), e.g. "person.address.city"
+ *   <li>nested -&gt; it includes more than a single attribute separated with a dot ("."), e.g. "person.address.city"
  * </ol>
  *
  * The path may also include array elements:<ol>
