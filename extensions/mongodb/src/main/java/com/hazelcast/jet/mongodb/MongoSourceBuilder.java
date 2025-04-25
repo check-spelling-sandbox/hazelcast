@@ -384,7 +384,7 @@ public final class MongoSourceBuilder {
          *
          *  MongoSourceBuilder.stream(name, supplier)
          *      .collection("myCollection")
-         *      .mapFn(toClass(MyuDocumentPojo.class));
+         *      .mapFn(toClass(MyDocumentPojo.class));
          * }</pre>
          * @param collectionName Name of the collection that will be queried.
          * @param mongoType user defined type to which the document will be parsed.
@@ -495,7 +495,7 @@ public final class MongoSourceBuilder {
          *
          *  MongoSourceBuilder.stream(name, supplier)
          *      .collection("myCollection")
-         *      .mapFn(toClass(MyuDocumentPojo.class));
+         *      .mapFn(toClass(MyDocumentPojo.class));
          * }</pre>
          * @param collectionName Name of the collection that will be queried.
          * @param mongoType user defined type to which the document will be parsed.
