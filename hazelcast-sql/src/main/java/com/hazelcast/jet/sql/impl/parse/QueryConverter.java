@@ -170,7 +170,7 @@ public class QueryConverter {
      * @param rel Initial relation.
      * @return Resulting relation.
      * @implNote {@link QueryConverter#subqueryRewriterProgram} is a per-HZ instance program,
-     * and should be movedto the static context after the stabilization of the cyclic UDTs.
+     * and should be moved to the static context after the stabilization of the cyclic UDTs.
      */
     private RelNode performUnconditionalRewrites(RelNode rel) {
         HepPlanner planner = new HepPlanner(
