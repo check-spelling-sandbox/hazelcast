@@ -128,7 +128,7 @@ public class FutureUtilTest extends HazelcastTestSupport {
 
         List<Future<Integer>> futures = new ArrayList<>();
         for (int i = 0; i < 2; i++) {
-            Future<Integer> submit = (Future<Integer>) executorService.submit(new TimeoutingTask(waitLock));
+            Future<Integer> submit = (Future<Integer>) executorService.submit(new TimingOutTask(waitLock));
             futures.add(submit);
         }
 
@@ -228,12 +228,12 @@ public class FutureUtilTest extends HazelcastTestSupport {
         }
     }
 
-    private static final class TimeoutingTask
+    private static final class TimingOutTask
             implements Runnable {
 
         private final AtomicBoolean waitLock;
 
-        private TimeoutingTask(AtomicBoolean waitLock) {
+        private TimingOutTask(AtomicBoolean waitLock) {
             this.waitLock = waitLock;
         }
 
