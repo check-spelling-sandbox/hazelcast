@@ -65,7 +65,7 @@ import java.util.concurrent.ConcurrentMap;
  * <ol>
  * <li>
  * if the HazelcastInstance is shut down, the reference to the original HazelcastInstanceImpl is nulled and
- * this HazelcastInstanceImpl and all its dependencies can be GCed. If the HazelcastInstanceImpl would
+ * this HazelcastInstanceImpl and all its dependencies can be GC'd. If the HazelcastInstanceImpl would
  * be exposed directly, it could still retain unusable objects due to its not-null fields.</li>
  * <li>
  * it provides a barrier for accessing the HazelcastInstanceImpl internals. Otherwise a simple cast to HazelcastInstanceImpl

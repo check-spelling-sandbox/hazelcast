@@ -65,7 +65,7 @@ public interface Storage<K, R> {
     /**
      * Returns a record from storage by key. The record is safe to use
      * in the scope of the callers thread so that the backing memory
-     * cannot be GCed.
+     * cannot be GC'd.
      * <p>
      * The call is equivalent to {@link #get(Object)} by default and is
      * overridden for TS storage.
