@@ -18,7 +18,7 @@ package com.hazelcast.internal.serialization.impl;
 
 
 /**
- * The serializaion header consists of one java byte primitive value.
+ * The serialization header consists of one java byte primitive value.
  * Bits are used in the following way (from the least significant to the most significant)
  * 0.) 0=data_serializable, 1=identified_data_serializable
  * 1.) 0=non-versioned, 1=versioned

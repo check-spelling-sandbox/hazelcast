@@ -679,7 +679,7 @@ public class TopicTest extends HazelcastTestSupport {
     }
 
     @Test
-    public void givenTopicHasNoSubscriber_whenMessageIsPublished_thenNoSerialializationIsInvoked() {
+    public void givenTopicHasNoSubscriber_whenMessageIsPublished_thenNoSerializationIsInvoked() {
         final int nodeCount = 2;
         TestHazelcastInstanceFactory factory = createHazelcastInstanceFactory(nodeCount);
         final HazelcastInstance[] instances = factory.newInstances();
