@@ -59,7 +59,7 @@ public class NoIndexLossAfterSplitBrainHealTest extends SplitBrainTestSupport {
     private static final Collection<Predicate<Object, TestObject>> TEST_PREDICATES =
             List.of(Predicates.alwaysTrue(), Predicates.not(Predicates.equal("value", "X")), Predicates.in("value", POSSIBLE_VALUES));
 
-    // Trying to investigate flakey test https://github.com/hazelcast/hazelcast/issues/25725
+    // Trying to investigate flaky test https://github.com/hazelcast/hazelcast/issues/25725
     @ClassRule
     public static ChangeLoggingRule changeLoggingRule = new ChangeLoggingRule("log4j2-debug-map.xml");
 
