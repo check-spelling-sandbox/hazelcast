@@ -126,7 +126,7 @@ public class ClientFailoverConfig {
      * Trial 1     ->  Trial 2    -> Client Shutdown.
      * <p>
      * Assume that client was connected to cluster B, and then it is disconnected from it. In that case, the trial
-     * oder will be as follows:
+     * order will be as follows:
      * C -> A -> B -> C -> A -> B -> Client Shutdown.
      * Trial 1     ->  Trial 2    -> Client Shutdown.
      *
