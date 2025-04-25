@@ -65,7 +65,7 @@ public final class ArchUnitRules {
             .should(notMixJUnit4AndJUnit5Annotations());
 
     /** @see TestsHaveRunnersCondition */
-    public static final ArchRule TESTS_HAVE_RUNNNERS = classes().that()
+    public static final ArchRule TESTS_HAVE_RUNNERS = classes().that()
             .haveSimpleNameEndingWith("Test")
             .and()
             .doNotHaveModifier(JavaModifier.ABSTRACT)
