@@ -235,7 +235,7 @@ public class MethodGetterTest {
     }
 
     @Test
-    public void getReturnType_whenModifierIsPositionAndMethodReturnTypeeIsArray_thenInferReturnTypeFromTheArray() {
+    public void getReturnType_whenModifierIsPositionAndMethodReturnTypeIsArray_thenInferReturnTypeFromTheArray() {
         MethodGetter getter = new MethodGetter(null, limbArrayMethod, "[0]", null);
         Class<?> returnType = getter.getReturnType();
 
