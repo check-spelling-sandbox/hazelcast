@@ -43,10 +43,10 @@ public class ClientReliableMessageRunner<E> extends MessageRunner<E> {
 
     ClientReliableMessageRunner(UUID id, ReliableMessageListener<E> listener,
                                 Ringbuffer<ReliableTopicMessage> ringbuffer, String topicName,
-                                int batchSze, SerializationService serializationService,
+                                int batchSize, SerializationService serializationService,
                                 Executor executor, ConcurrentMap<UUID, MessageRunner<E>> runnersMap,
                                 ILogger logger) {
-        super(id, listener, ringbuffer, topicName, batchSze, serializationService, executor, runnersMap, logger);
+        super(id, listener, ringbuffer, topicName, batchSize, serializationService, executor, runnersMap, logger);
     }
 
     @Override
