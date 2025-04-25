@@ -57,7 +57,7 @@ public class JsonSchemaHelperMultiValueTest extends AbstractJsonSchemaTest {
     public InMemoryFormat inMemoryFormat;
 
     @Override
-    protected InMemoryFormat getInMemoryFormay() {
+    protected InMemoryFormat getInMemoryFormat() {
         return inMemoryFormat;
     }
 

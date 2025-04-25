@@ -221,7 +221,7 @@ public class JsonSchemaHelperNullTest extends AbstractJsonSchemaTest {
     }
 
     @Override
-    protected InMemoryFormat getInMemoryFormay() {
+    protected InMemoryFormat getInMemoryFormat() {
         return inMemoryFormat;
     }
 

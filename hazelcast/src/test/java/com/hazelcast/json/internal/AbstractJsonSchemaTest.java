@@ -46,14 +46,14 @@ public abstract class AbstractJsonSchemaTest {
 
     protected InternalSerializationService serializationService = new DefaultSerializationServiceBuilder().build();
 
-    protected abstract InMemoryFormat getInMemoryFormay();
+    protected abstract InMemoryFormat getInMemoryFormat();
 
     protected JsonParser createParserFromInput(NavigableJsonInputAdapter input) throws IOException {
         return input.createParser(factory);
     }
 
     protected NavigableJsonInputAdapter toAdapter(HazelcastJsonValue jsonValue) {
-        if (getInMemoryFormay() == InMemoryFormat.OBJECT) {
+        if (getInMemoryFormat() == InMemoryFormat.OBJECT) {
             return new StringNavigableJsonAdapter(jsonValue.toString(), 0);
         } else {
             return new DataInputNavigableJsonAdapter(serializationService.createObjectDataInput(serializationService.toData(jsonValue)), JSON_UTF8_START_OFFSET);
