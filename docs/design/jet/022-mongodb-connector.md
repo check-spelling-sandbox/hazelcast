@@ -56,7 +56,7 @@ It's not a goal of this connector to control MongoDB settings; any
 changes in MongoDB configuration or any administration action will still 
 be needed to be done on MongoDB side.
 
-## Actors and Secnarios
+## Actors and Scenarios
 TBD
 
 ## Functional design
