@@ -2037,7 +2037,7 @@ public class XMLConfigBuilderTest extends AbstractConfigBuilderTest {
                 + "           <listener>com.abc.my.splitbrainprotection.listener</listener>"
                 + "           <listener>com.abc.my.second.listener</listener>"
                 + "       </listeners> "
-                + "        <function-class-name>com.hazelcast.SomesplitBrainProtectionFunction</function-class-name>"
+                + "        <function-class-name>com.hazelcast.SomeSplitBrainProtectionFunction</function-class-name>"
                 + "    </split-brain-protection>\n"
                 + HAZELCAST_END_TAG;
 
@@ -2047,7 +2047,7 @@ public class XMLConfigBuilderTest extends AbstractConfigBuilderTest {
         assertFalse(splitBrainProtectionConfig.getListenerConfigs().isEmpty());
         assertEquals("com.abc.my.splitbrainprotection.listener", splitBrainProtectionConfig.getListenerConfigs().get(0).getClassName());
         assertEquals("com.abc.my.second.listener", splitBrainProtectionConfig.getListenerConfigs().get(1).getClassName());
-        assertEquals("com.hazelcast.SomesplitBrainProtectionFunction", splitBrainProtectionConfig.getFunctionClassName());
+        assertEquals("com.hazelcast.SomeSplitBrainProtectionFunction", splitBrainProtectionConfig.getFunctionClassName());
     }
 
     @Override
@@ -2056,7 +2056,7 @@ public class XMLConfigBuilderTest extends AbstractConfigBuilderTest {
         String xml = HAZELCAST_START_TAG
                 + "      <split-brain-protection enabled=\"true\" name=\"mySplitBrainProtection\">\n"
                 + "        <minimum-cluster-size>3</minimum-cluster-size>\n"
-                + "        <function-class-name>com.hazelcast.SomesplitBrainProtectionFunction</function-class-name>"
+                + "        <function-class-name>com.hazelcast.SomeSplitBrainProtectionFunction</function-class-name>"
                 + "        <recently-active-split-brain-protection />"
                 + "    </split-brain-protection>\n"
                 + HAZELCAST_END_TAG;
@@ -2071,7 +2071,7 @@ public class XMLConfigBuilderTest extends AbstractConfigBuilderTest {
         String xml = HAZELCAST_START_TAG
                 + "      <split-brain-protection enabled=\"true\" name=\"mySplitBrainProtection\">\n"
                 + "        <minimum-cluster-size>3</minimum-cluster-size>\n"
-                + "        <function-class-name>com.hazelcast.SomesplitBrainProtectionFunction</function-class-name>"
+                + "        <function-class-name>com.hazelcast.SomeSplitBrainProtectionFunction</function-class-name>"
                 + "        <probabilistic-split-brain-protection />"
                 + "    </split-brain-protection>\n"
                 + HAZELCAST_END_TAG;
