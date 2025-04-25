@@ -253,7 +253,7 @@ public class ConfigValidatorEvictionConfigTest extends HazelcastTestSupport {
     }
 
     @Test(expected = InvalidConfigurationException.class)
-    public void checkMapMaxSizePolicyPerInMemoryFormat_when_NATIVEY() {
+    public void checkMapMaxSizePolicyPerInMemoryFormat_when_NATIVE() {
         MapConfig mapConfig = new MapConfig();
         mapConfig.setInMemoryFormat(InMemoryFormat.NATIVE);
         mapConfig.getEvictionConfig().setMaxSizePolicy(MaxSizePolicy.USED_HEAP_SIZE);
